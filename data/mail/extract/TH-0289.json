@@ -1,18 +1,18 @@
 {
  "thread": "TH-0289",
  "usage": {
-  "input": 3416,
-  "output": 898
+  "input": 3585,
+  "output": 1094
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "An HS-code non-conformance was recorded against vendor Harbor Gate this quarter and is to be reviewed at the Q2 vendor review, including whether Harbor Gate has provided a satisfactory explanation and corrective action.",
+    "summary": "A recorded HS-code non-conformance by Harbor Gate Customs Brokerage is flagged for the Q2 vendor review.",
     "kind": "hs_code_dispute",
     "shipment_id": null,
     "raised_by": "Grace Yoon",
-    "detected_date": null,
+    "detected_date": "2026-06-18",
     "sop_refs": [],
     "evidence": [
      "M-0289"
@@ -22,7 +22,7 @@
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Grace Yoon decided that Minseo Park will take over the Harbor Gate non-conformance follow-up from the import side after Jiwoo Han leaves on 30 June.",
+    "summary": "Grace Yoon takes ownership of discussing the recorded HS-code non-conformance with Harbor Gate Customs Brokerage at the Q2 vendor review, due 31 July 2026.",
     "date": "2026-06-18",
     "decided_by": "Grace Yoon",
     "shipment_id": null,
@@ -36,9 +36,9 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Jiwoo Han to bring notes and related Harbor Gate correspondence on the HS-code non-conformance to the Q2 vendor review.",
-    "owner": "Jiwoo Han",
-    "due": null,
+    "summary": "Discuss the recorded HS-code non-conformance with Harbor Gate Customs Brokerage as part of the Q2 vendor review.",
+    "owner": "Grace Yoon",
+    "due": "2026-07-31",
     "status": "open",
     "shipment_id": null,
     "evidence": [
@@ -47,9 +47,20 @@
    },
    {
     "key": "TASK2",
-    "summary": "Minseo Park to be ready to take over the Harbor Gate follow-up from the import side once Jiwoo Han has left.",
-    "owner": "Minseo Park",
+    "summary": "Send Grace Yoon and Minseo Park all correspondence and notes on the Harbor Gate HS-code issue before leaving on 30 June.",
+    "owner": "Jiwoo Han",
     "due": "2026-06-30",
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0289"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Send Grace Yoon any correspondence with Harbor Gate and notes on how the HS-code issue was caught and corrected.",
+    "owner": "Minseo Park",
+    "due": null,
     "status": "open",
     "shipment_id": null,
     "evidence": [
@@ -59,8 +70,16 @@
   ],
   "deadlines": [
    {
+    "date": "2026-07-31",
+    "what": "Discussion of Harbor Gate HS-code non-conformance in Q2 vendor review due",
+    "shipment_id": null,
+    "evidence": [
+     "M-0289"
+    ]
+   },
+   {
     "date": "2026-06-30",
-    "what": "Harbor Gate HS-code non-conformance item to be settled before Jiwoo Han leaves on 30 June.",
+    "what": "Jiwoo Han's input on the Harbor Gate HS-code issue due before departure",
     "shipment_id": null,
     "evidence": [
      "M-0289"

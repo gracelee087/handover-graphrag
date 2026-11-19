@@ -1,14 +1,14 @@
 {
  "thread": "TH-0221",
  "usage": {
-  "input": 4622,
-  "output": 730
+  "input": 4827,
+  "output": 1064
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "Pacific Meridian voy 019N carrying container PSSU5173790 (HBL MFCIM260003 / MBL PSSU260111) delayed 6 days due to Shanghai port congestion, ETA Busan moved from 2026-01-28 to 2026-02-03, escalated as Severity 1.",
+    "summary": "Pacific Meridian voy 019N carrying container PSSU5173790 (40HC, MBL PSSU260111 / HBL MFCIM260003) was delayed 6 days due to port congestion at Shanghai, moving ETA Busan from 2026-01-28 to 2026-02-03, escalated as Severity 1 due to production risk for Daehan Precision.",
     "kind": "vessel_delay",
     "shipment_id": "S-003",
     "raised_by": "Ryan Tanaka",
@@ -22,7 +22,7 @@
    },
    {
     "key": "ISS2",
-    "summary": "Daehan Precision requested priority customs clearance for container PSSU5173790 upon arrival as the sensors are needed for production; release obtained 2026-02-04.",
+    "summary": "Daehan Precision requested priority customs clearance for the industrial sensors in container PSSU5173790 on arrival in Busan because they are needed for production; release was obtained on 2026-02-04.",
     "kind": "urgent_clearance",
     "shipment_id": "S-003",
     "raised_by": "Jaehyun Lee",
@@ -37,7 +37,7 @@
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Minseo Park decided to accept the 6-day delay without re-routing the cargo and to send Daehan Precision daily ETA updates until arrival in Busan.",
+    "summary": "Minseo Park decided to accept the 6-day delay without re-routing the cargo and to send Daehan Precision a daily ETA update until the vessel arrives in Busan.",
     "date": "2026-01-23",
     "decided_by": "Minseo Park",
     "shipment_id": "S-003",
@@ -51,7 +51,7 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Send Daehan Precision a daily ETA update for container PSSU5173790 until the vessel arrives in Busan.",
+    "summary": "Send Daehan Precision a daily ETA update for HBL MFCIM260003 until the vessel arrives in Busan.",
     "owner": "Jiwoo Han",
     "due": null,
     "status": "done",
@@ -59,18 +59,6 @@
     "evidence": [
      "M-0224",
      "M-0225"
-    ]
-   },
-   {
-    "key": "TASK2",
-    "summary": "Arrange priority customs clearance for HBL MFCIM260003 (container PSSU5173790) as soon as it arrives in Busan.",
-    "owner": "Sunwoo Choi",
-    "due": null,
-    "status": "done",
-    "shipment_id": "S-003",
-    "evidence": [
-     "M-0225",
-     "M-0226"
     ]
    }
   ],

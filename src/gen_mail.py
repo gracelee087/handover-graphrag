@@ -164,6 +164,8 @@ def build_eml(b: dict, mail: dict, when: datetime, parent: str | None, refs: lis
         ext = fn.rsplit(".", 1)[-1].lower()
         maintype, subtype = MIME.get(ext, ("application", "octet-stream"))
         msg.add_attachment(f"[placeholder for {fn}]".encode(), maintype=maintype, subtype=subtype, filename=fn)
+    if msg.is_multipart():
+        msg.set_boundary(f"=={b['id']}==")   # deterministic: re-running the generator must not touch git
     return msg
 
 

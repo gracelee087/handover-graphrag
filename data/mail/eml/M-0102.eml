@@ -6,9 +6,9 @@ Cc: Nara Shin <nara.shin@harborgate.example>
 Subject: Customs clearance [MFCIM260011 / OCLU260407] Infusion Pumps - OCL
  Ningbo Star 2602E
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0176563882583312646=="
+Content-Type: multipart/mixed; boundary="==M-0102=="
 
---===============0176563882583312646==
+--==M-0102==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -42,7 +42,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============0176563882583312646==
+--==M-0102==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260011.zip"
@@ -50,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDExLnppcF0=
 
---===============0176563882583312646==--
+--==M-0102==--

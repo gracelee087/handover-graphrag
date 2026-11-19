@@ -8,9 +8,9 @@ Subject: Re: Trucking & delivery [MFCIM260005 / OCLU260185] Canned Tuna - OCL
 In-Reply-To: <M-0048@meridianfreight.example>
 References: <M-0047@meridianfreight.example> <M-0048@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1196693646288118267=="
+Content-Type: multipart/mixed; boundary="==M-0049=="
 
---===============1196693646288118267==
+--==M-0049==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -33,7 +33,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============1196693646288118267==
+--==M-0049==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260005.pdf"
@@ -41,7 +41,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMDUucGRmXQ==
 
---===============1196693646288118267==
+--==M-0049==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260005.xlsx"
@@ -49,4 +49,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMDUueGxzeF0=
 
---===============1196693646288118267==--
+--==M-0049==--

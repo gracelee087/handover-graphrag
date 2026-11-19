@@ -6,9 +6,9 @@ Cc: Nara Shin <nara.shin@harborgate.example>
 Subject: Customs clearance [MFCIM260012 / PSSU260444] Disposable Syringes -
  Pacific Meridian 019N
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2151933813888562046=="
+Content-Type: multipart/mixed; boundary="==M-0107=="
 
---===============2151933813888562046==
+--==M-0107==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -41,7 +41,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============2151933813888562046==
+--==M-0107==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260012.zip"
@@ -49,4 +49,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDEyLnppcF0=
 
---===============2151933813888562046==--
+--==M-0107==--

@@ -6,9 +6,9 @@ Cc: Nara Shin <nara.shin@harborgate.example>
 Subject: Customs clearance [MFCIM260002 / OCLU260074] Surgical Gloves - OCL
  Ningbo Star 2602E
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6725092140662942967=="
+Content-Type: multipart/mixed; boundary="==M-0015=="
 
---===============6725092140662942967==
+--==M-0015==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -32,7 +32,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============6725092140662942967==
+--==M-0015==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260002.zip"
@@ -40,4 +40,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDAyLnppcF0=
 
---===============6725092140662942967==--
+--==M-0015==--

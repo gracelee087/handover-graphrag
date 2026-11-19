@@ -8,9 +8,9 @@ Subject: Arrival Notice [MFCIM260019 / HMLU260703] Industrial Sensors - HML
 In-Reply-To: <M-0167@meridianfreight.example>
 References: <M-0167@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0234326667982032347=="
+Content-Type: multipart/mixed; boundary="==M-0168=="
 
---===============0234326667982032347==
+--==M-0168==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -37,7 +37,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============0234326667982032347==
+--==M-0168==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260019.pdf"
@@ -45,4 +45,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDE5LnBkZl0=
 
---===============0234326667982032347==--
+--==M-0168==--

@@ -8,9 +8,9 @@ In-Reply-To: <M-0230@meridianfreight.example>
 References: <M-0227@meridianfreight.example> <M-0228@meridianfreight.example>
  <M-0229@meridianfreight.example> <M-0230@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1882767117904093237=="
+Content-Type: multipart/mixed; boundary="==M-0231=="
 
---===============1882767117904093237==
+--==M-0231==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -33,7 +33,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============1882767117904093237==
+--==M-0231==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="HealthCert_MFCIM260006.pdf"
@@ -41,4 +41,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBIZWFsdGhDZXJ0X01GQ0lNMjYwMDA2LnBkZl0=
 
---===============1882767117904093237==--
+--==M-0231==--

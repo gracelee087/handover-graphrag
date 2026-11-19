@@ -1,8 +1,8 @@
 {
  "thread": "TH-0277",
  "usage": {
-  "input": 5242,
-  "output": 1442
+  "input": 5418,
+  "output": 1181
  },
  "extraction": {
   "issues": [
@@ -37,7 +37,7 @@
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Dispute 2 of the 6 detention days on HMLU6066254 with Hanseatic Marine Lines due to the typhoon terminal closure.",
+    "summary": "Minseo Park decided to dispute the 2 typhoon terminal-closure days of the USD 900 detention for HMLU6066254 with Hanseatic Marine Lines and bill Rapid Haul Logistics for the other 4 days caused by their dispatch backlog.",
     "date": "2026-05-15",
     "decided_by": "Minseo Park",
     "shipment_id": "S-016",
@@ -49,31 +49,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "Bill Rapid Haul Logistics for the other 4 detention days on HMLU6066254 caused by their dispatch backlog.",
-    "date": "2026-05-15",
-    "decided_by": "Minseo Park",
-    "shipment_id": "S-016",
-    "resolves": "ISS1",
-    "sop_refs": [],
-    "evidence": [
-     "M-0281"
-    ]
-   },
-   {
-    "key": "DEC3",
-    "summary": "Payment of the disputed portion of the USD 900 detention invoice is to be held until the carrier responds.",
-    "date": "2026-05-15",
-    "decided_by": "Minseo Park",
-    "shipment_id": "S-016",
-    "resolves": "ISS1",
-    "sop_refs": [],
-    "evidence": [
-     "M-0281"
-    ]
-   },
-   {
-    "key": "DEC4",
-    "summary": "Jiwoo Han handed over the carrier dispute with Hanseatic Marine Lines on HMLU6066254 to Daniel Cho ahead of leaving on 30 June.",
+    "summary": "Jiwoo Han handed over the carrier detention dispute for HMLU6066254 to Daniel Cho ahead of her departure on 30 June.",
     "date": "2026-06-23",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-016",
@@ -84,8 +60,8 @@
     ]
    },
    {
-    "key": "DEC5",
-    "summary": "Jiwoo Han handed over issuing the debit note to Rapid Haul Logistics for 4 detention days on HMLU6066254 to Junho Oh.",
+    "key": "DEC3",
+    "summary": "Jiwoo Han handed over the trucker billing (4 days detention debit note to Rapid Haul Logistics) for HMLU6066254 to Junho Oh.",
     "date": "2026-06-23",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-016",
@@ -99,20 +75,9 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Hold payment of the disputed 2-day portion of the USD 900 detention invoice for HMLU6066254 until Hanseatic Marine Lines responds.",
-    "owner": "Junho Oh",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-016",
-    "evidence": [
-     "M-0281"
-    ]
-   },
-   {
-    "key": "TASK2",
-    "summary": "Pursue the 2-day typhoon closure dispute with Marcus Keller at Hanseatic Marine Lines through to a revised invoice or credit for HMLU6066254.",
+    "summary": "Follow up with Hanseatic D&D desk (Marcus Keller) on the detention dispute for the 2 terminal-closure days on container HMLU6066254, MBL HMLU260592.",
     "owner": "Daniel Cho",
-    "due": null,
+    "due": "2026-07-03",
     "status": "open",
     "shipment_id": "S-016",
     "evidence": [
@@ -120,28 +85,34 @@
     ]
    },
    {
-    "key": "TASK3",
-    "summary": "Issue a debit note to Kyungho Nam at Rapid Haul Logistics for 4 of 6 detention days on HMLU6066254, with the carrier detention invoice as backup.",
+    "key": "TASK2",
+    "summary": "Issue a debit note to Rapid Haul Logistics for 4 days detention on container HMLU6066254 out of the USD 900 invoice.",
     "owner": "Junho Oh",
-    "due": null,
+    "due": "2026-07-15",
     "status": "open",
     "shipment_id": "S-016",
     "evidence": [
      "M-0283"
     ]
-   },
-   {
-    "key": "TASK4",
-    "summary": "Ensure detention cases are escalated to the Import Team Lead within 48 hours going forward.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "open",
-    "shipment_id": null,
-    "evidence": [
-     "M-0281"
-    ]
    }
   ],
-  "deadlines": []
+  "deadlines": [
+   {
+    "date": "2026-07-03",
+    "what": "Follow-up with Hanseatic on detention dispute for 2 terminal-closure days on HMLU6066254",
+    "shipment_id": "S-016",
+    "evidence": [
+     "M-0282"
+    ]
+   },
+   {
+    "date": "2026-07-15",
+    "what": "Debit note to Rapid Haul Logistics for 4 days detention on HMLU6066254",
+    "shipment_id": "S-016",
+    "evidence": [
+     "M-0283"
+    ]
+   }
+  ]
  }
 }

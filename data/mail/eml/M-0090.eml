@@ -7,9 +7,9 @@ Subject:
 In-Reply-To: <M-0089@meridianfreight.example>
 References: <M-0088@meridianfreight.example> <M-0089@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6373297195992083372=="
+Content-Type: multipart/mixed; boundary="==M-0090=="
 
---===============6373297195992083372==
+--==M-0090==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -29,7 +29,7 @@ Bora Jung
 Import Buyer
 Blue Harbor Foods
 
---===============6373297195992083372==
+--==M-0090==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260010.pdf"
@@ -37,4 +37,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAxMC5wZGZd
 
---===============6373297195992083372==--
+--==M-0090==--

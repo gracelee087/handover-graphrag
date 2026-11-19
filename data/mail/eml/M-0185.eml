@@ -7,9 +7,9 @@ Subject: Re: Arrival Notice [MFCIM260021 / PSSU260777] Canned Tuna - Pacific
 In-Reply-To: <M-0184@meridianfreight.example>
 References: <M-0183@meridianfreight.example> <M-0184@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============4287597974097131789=="
+Content-Type: multipart/mixed; boundary="==M-0185=="
 
---===============4287597974097131789==
+--==M-0185==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -31,7 +31,7 @@ Bora Jung
 Import Buyer
 Blue Harbor Foods
 
---===============4287597974097131789==
+--==M-0185==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260021.pdf"
@@ -39,4 +39,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAyMS5wZGZd
 
---===============4287597974097131789==--
+--==M-0185==--

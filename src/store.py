@@ -39,6 +39,8 @@ def init_schema(conn) -> None:
         conn.execute(ddl)
     for name, (label, prop) in schema.VECTOR_INDEXES.items():
         conn.execute(schema.vector_index_ddl(name, label, prop))
+    for name, (label, prop) in schema.FULLTEXT_INDEXES.items():
+        conn.execute(schema.fulltext_index_ddl(name, label, prop))
 
 
 def counts(conn) -> dict[str, int]:

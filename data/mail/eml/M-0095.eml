@@ -8,9 +8,9 @@ In-Reply-To: <M-0094@meridianfreight.example>
 References: <M-0091@meridianfreight.example> <M-0092@meridianfreight.example>
  <M-0093@meridianfreight.example> <M-0094@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============3900472933708756758=="
+Content-Type: multipart/mixed; boundary="==M-0095=="
 
---===============3900472933708756758==
+--==M-0095==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -30,7 +30,7 @@ Lena Vogt
 Import Customer Service
 Hanseatic Marine Lines
 
---===============3900472933708756758==
+--==M-0095==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="DO_HMLU260370.pdf"
@@ -38,4 +38,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBET19ITUxVMjYwMzcwLnBkZl0=
 
---===============3900472933708756758==--
+--==M-0095==--

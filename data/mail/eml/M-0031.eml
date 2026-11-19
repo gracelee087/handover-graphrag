@@ -6,9 +6,9 @@ Cc: Nara Shin <nara.shin@harborgate.example>
 Subject: Customs clearance [MFCIM260004 / HMLU260148] Cnc Machine Spare Parts
  - HML Lubeck 031W
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1762014599398405382=="
+Content-Type: multipart/mixed; boundary="==M-0031=="
 
---===============1762014599398405382==
+--==M-0031==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -39,7 +39,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============1762014599398405382==
+--==M-0031==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260004.zip"
@@ -47,4 +47,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDA0LnppcF0=
 
---===============1762014599398405382==--
+--==M-0031==--

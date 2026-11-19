@@ -8,9 +8,9 @@ Subject: Re: Trucking & delivery [MFCIM260023 / OCLU260851] Frozen Salmon
 In-Reply-To: <M-0208@meridianfreight.example>
 References: <M-0207@meridianfreight.example> <M-0208@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6611466634026788950=="
+Content-Type: multipart/mixed; boundary="==M-0209=="
 
---===============6611466634026788950==
+--==M-0209==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -33,7 +33,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============6611466634026788950==
+--==M-0209==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260023.pdf"
@@ -41,7 +41,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMjMucGRmXQ==
 
---===============6611466634026788950==
+--==M-0209==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260023.xlsx"
@@ -49,4 +49,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMjMueGxzeF0=
 
---===============6611466634026788950==--
+--==M-0209==--

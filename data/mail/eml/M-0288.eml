@@ -5,9 +5,9 @@ To: Minseo Park <minseo.park@meridianfreight.example>,
  Grace Yoon <grace.yoon@meridianfreight.example>
 Subject: Monthly import KPI - May 2026
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0313444981126131709=="
+Content-Type: multipart/mixed; boundary="==M-0288=="
 
---===============0313444981126131709==
+--==M-0288==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -39,7 +39,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============0313444981126131709==
+--==M-0288==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Import_KPI_2026-05.xlsx"
@@ -47,4 +47,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBJbXBvcnRfS1BJXzIwMjYtMDUueGxzeF0=
 
---===============0313444981126131709==--
+--==M-0288==--

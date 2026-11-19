@@ -1,5 +1,5 @@
 Message-ID: <M-0087@meridianfreight.example>
-Date: Wed, 11 Mar 2026 17:05:00 +0900
+Date: Mon, 23 Mar 2026 17:05:00 +0900
 From: Jiwoo Han <jiwoo.han@meridianfreight.example>
 To: Junho Oh <junho.oh@meridianfreight.example>
 Cc: Hoon Jang <hoon.jang@meridianfreight.example>
@@ -8,31 +8,33 @@ Subject: Re: Trucking & delivery [MFCIM260009 / PSSU260333] Frozen Salmon
 In-Reply-To: <M-0086@meridianfreight.example>
 References: <M-0085@meridianfreight.example> <M-0086@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============8275068336757222619=="
+Content-Type: multipart/mixed; boundary="==M-0087=="
 
---===============8275068336757222619==
+--==M-0087==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
 Hi Junho,
 
-Shipment MFCIM260009 (MBL PSSU260333, container PSSU4527862) has been deliver=
-ed, and Blue Harbor Foods confirmed the cargo was received in good order.
+Shipment MFCIM260009 (MBL PSSU260333, container PSSU4527862, Pacific Aurora 0=
+14N) has been delivered. Blue Harbor Foods confirmed today that the cargo was=
+ received in good order.
 
-Attached for invoicing:
-- CostSheet_MFCIM260009.xlsx: cost sheet for the shipment
-- POD_MFCIM260009.pdf: signed proof of delivery
+I have attached the following:
+- CostSheet_MFCIM260009.xlsx: the cost sheet to use for invoicing
+- POD_MFCIM260009.pdf: the signed proof of delivery
 
-Hoon, copying you so the signed POD can be filed with the shipment documents.
+Please go ahead with invoicing. Hoon, could you file the POD with the shipmen=
+t documents?
 
-Please let me know if anything on the cost sheet needs clarifying.
+Let me know if you need anything else.
 
 Thanks,
 Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============8275068336757222619==
+--==M-0087==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260009.pdf"
@@ -40,7 +42,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMDkucGRmXQ==
 
---===============8275068336757222619==
+--==M-0087==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260009.xlsx"
@@ -48,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMDkueGxzeF0=
 
---===============8275068336757222619==--
+--==M-0087==--

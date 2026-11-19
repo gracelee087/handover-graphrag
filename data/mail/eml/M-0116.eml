@@ -8,9 +8,9 @@ Subject: Arrival Notice [MFCIM260013 / HMLU260481] Precision Bearings - HML
 In-Reply-To: <M-0115@meridianfreight.example>
 References: <M-0115@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6796498458784342001=="
+Content-Type: multipart/mixed; boundary="==M-0116=="
 
---===============6796498458784342001==
+--==M-0116==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -35,7 +35,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============6796498458784342001==
+--==M-0116==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260013.pdf"
@@ -43,4 +43,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDEzLnBkZl0=
 
---===============6796498458784342001==--
+--==M-0116==--

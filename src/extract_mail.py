@@ -39,6 +39,7 @@ CACHE = ROOT / "data" / "mail" / "extract"
 PRICE_IN, PRICE_OUT = 4.0, 20.0
 HBL_RE = re.compile(r"\bMFCIM26\d{4}\b")
 MBL_RE = re.compile(r"\b(?:HMLU|OCLU|PSSU)26\d{4}\b")
+SID_RE = re.compile(r"\bS-\d{3}\b")
 
 Kind = Literal[tuple(schema.ISSUE_KINDS)]  # type: ignore[valid-type]
 
@@ -93,7 +94,7 @@ SYSTEM = f"""You are building a knowledge graph from the mailbox of an import op
 Read one e-mail thread and extract:
 - issues: problems/exceptions with a shipment (vessel delay, missing documents, demurrage, detention, customs inspection, HS code dispute, D/O or release hold, cargo damage claim, urgent clearance, manifest discrepancy). kind must be one of {schema.ISSUE_KINDS}. One issue per distinct problem, not per mail.
 - decisions: explicit business decisions (who decided what, on which date). Include who absorbs a cost, approvals, policy changes, handovers of responsibility. decided_by is the person who made the decision (not who reported it).
-- tasks: concrete action items with an owner. status "done" only if the thread says it was completed.
+- tasks: action items that a mail explicitly assigns to a named person AND that are still outstanding at the end of the thread (status "open"), or that the thread explicitly reports as completed (status "done"). Do NOT extract as tasks: routine closing steps that follow automatically from a document (issuing an invoice from a cost sheet, filing a POD or declaration), standard operational steps that are part of every file (arranging pick-up, requesting a D/O, sending an arrival notice, telex release) unless a mail hands them over as an open item with a named owner, requests to vendors that the vendor fulfils later in the thread, or anything the same thread shows was done. due is the date written in the mail (YYYY-MM-DD) or null.
 - deadlines: dated cut-offs mentioned (free-time expiry, due dates, ETAs are NOT deadlines).
 Rules: use the exact dates written in the mails (YYYY-MM-DD); summaries are one sentence with concrete facts (amounts, counts, container/B/L numbers). Names must be copied exactly as they appear in the participant list. shipment_id must come from the mapping given (or null). sop_refs are SOP clause citations exactly as written, e.g. "SOP-03 section 4.2" (empty list if none). evidence lists the message ids (M-xxxx) that support the item. keys are short unique labels like ISS1, DEC1, TASK1. Routine operations (sending an arrival notice, booking a truck, confirming receipt) are NOT issues or decisions; a routine request to a vendor is NOT a task unless the thread treats it as an open action item. Only extract an issue when the mails explicitly describe a problem; never infer a problem from something that is merely not mentioned. Return empty lists when a thread has nothing to extract."""
 
@@ -104,9 +105,11 @@ def thread_prompt(th_id: str, mails: list[dict], people_by_email: dict) -> tuple
     mbl = {s["mbl"]: s["id"] for s in W["shipments"]}
     ship_map = {h: hbl[h] for h in HBL_RE.findall(text) if h in hbl}
     ship_map.update({x: mbl[x] for x in MBL_RE.findall(text) if x in mbl})
+    sids = {s["id"] for s in W["shipments"]}
+    ship_map.update({x: x for x in SID_RE.findall(text) if x in sids})   # mails may name a file by its S-id only
     names = sorted({people_by_email[a]["name"] for m in mails for a in [m["from"], *m["to"], *m["cc"]] if a in people_by_email})
     lines = [f"Thread {th_id}", "Participants: " + ", ".join(names),
-             "Shipment mapping (B/L number -> shipment_id): " + (", ".join(f"{k} -> {v}" for k, v in ship_map.items()) or "none"), ""]
+             "Shipment mapping (B/L number or S-id -> shipment_id): " + (", ".join(f"{k} -> {v}" for k, v in ship_map.items()) or "none"), ""]
     for m in mails:
         to = ", ".join(people_by_email[a]["name"] for a in m["to"] if a in people_by_email)
         lines += [f"=== {m['id']} | {m['date'][:10]} | from {people_by_email[m['from']]['name']} | to {to}",

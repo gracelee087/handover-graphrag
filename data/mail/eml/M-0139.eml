@@ -6,9 +6,9 @@ Cc: Nara Shin <nara.shin@harborgate.example>
 Subject: Customs clearance [MFCIM260016 / HMLU260592] Disposable Syringes -
  HML Kiel 035W
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============5005839075277598374=="
+Content-Type: multipart/mixed; boundary="==M-0139=="
 
---===============5005839075277598374==
+--==M-0139==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -39,7 +39,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============5005839075277598374==
+--==M-0139==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260016.zip"
@@ -47,4 +47,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDE2LnppcF0=
 
---===============5005839075277598374==--
+--==M-0139==--

@@ -7,9 +7,9 @@ Subject: Re: Arrival Notice [MFCIM260011 / OCLU260407] Infusion Pumps - OCL
 In-Reply-To: <M-0100@meridianfreight.example>
 References: <M-0099@meridianfreight.example> <M-0100@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1935560751222715178=="
+Content-Type: multipart/mixed; boundary="==M-0101=="
 
---===============1935560751222715178==
+--==M-0101==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -31,7 +31,7 @@ Insoo Hwang
 Supply Chain Manager
 Seoul Medica Supplies
 
---===============1935560751222715178==
+--==M-0101==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260011.pdf"
@@ -39,4 +39,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAxMS5wZGZd
 
---===============1935560751222715178==--
+--==M-0101==--

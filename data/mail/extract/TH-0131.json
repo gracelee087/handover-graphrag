@@ -1,8 +1,8 @@
 {
  "thread": "TH-0131",
  "usage": {
-  "input": 3928,
-  "output": 205
+  "input": 4133,
+  "output": 102
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-04-18",
-    "what": "Free time (7 days) expires for container PSSU2398736 (40HC) under HBL MFCIM260015 / MBL PSSU260555.",
+    "what": "Free time (7 days) expires for container PSSU2398736 under HBL MFCIM260015",
     "shipment_id": "S-015",
     "evidence": [
      "M-0132"

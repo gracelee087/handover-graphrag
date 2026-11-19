@@ -8,9 +8,9 @@ Subject: Arrival Notice [MFCIM260006 / PSSU260222] Frozen Shrimp - Pacific
 In-Reply-To: <M-0050@meridianfreight.example>
 References: <M-0050@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============8474808307211974040=="
+Content-Type: multipart/mixed; boundary="==M-0051=="
 
---===============8474808307211974040==
+--==M-0051==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -41,7 +41,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============8474808307211974040==
+--==M-0051==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260006.pdf"
@@ -49,4 +49,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDA2LnBkZl0=
 
---===============8474808307211974040==--
+--==M-0051==--

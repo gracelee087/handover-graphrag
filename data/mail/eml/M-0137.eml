@@ -8,9 +8,9 @@ Subject:
 In-Reply-To: <M-0136@meridianfreight.example>
 References: <M-0136@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============4091882679778748630=="
+Content-Type: multipart/mixed; boundary="==M-0137=="
 
---===============4091882679778748630==
+--==M-0137==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -42,7 +42,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============4091882679778748630==
+--==M-0137==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260016.pdf"
@@ -50,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDE2LnBkZl0=
 
---===============4091882679778748630==--
+--==M-0137==--

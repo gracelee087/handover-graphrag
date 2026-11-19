@@ -1,8 +1,8 @@
 {
  "thread": "TH-0156",
  "usage": {
-  "input": 3876,
-  "output": 174
+  "input": 4081,
+  "output": 95
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-05-05",
-    "what": "Free time (7 days) expires for container PSSU6094602 under HBL MFCIM260018.",
+    "what": "Free time (7 days) expires for container PSSU6094602 at Busan",
     "shipment_id": "S-018",
     "evidence": [
      "M-0157"

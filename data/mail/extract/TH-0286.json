@@ -1,15 +1,15 @@
 {
  "thread": "TH-0286",
  "usage": {
-  "input": 3515,
-  "output": 721
+  "input": 3767,
+  "output": 777
  },
  "extraction": {
   "issues": [],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Pacific Star Shipping changes the reefer container free time to 5 days effective 1 July 2026.",
+    "summary": "Pacific Star changes free time for reefer containers at Busan to 5 days for reefer containers handled from 1 July 2026 onward.",
     "date": "2026-06-16",
     "decided_by": "Aiko Mori",
     "shipment_id": null,
@@ -21,7 +21,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "Jiwoo Han hands over ownership of the SOP-03 free-time table to Daniel Cho going forward, as Jiwoo is leaving on 30 June.",
+    "summary": "Jiwoo Han hands over responsibility for updating the SOP-03 free-time table for Pacific Star's new 5-day reefer free time to Daniel Cho, as Jiwoo is leaving on 30 June.",
     "date": "2026-06-17",
     "decided_by": "Jiwoo Han",
     "shipment_id": null,
@@ -37,9 +37,9 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Update the Pacific Star reefer line in the SOP-03 free-time table to show the new 5-day free time and the 1 July 2026 start date.",
+    "summary": "Update the SOP-03 free-time table to reflect Pacific Star's new reefer free time of 5 days from 1 July 2026.",
     "owner": "Daniel Cho",
-    "due": null,
+    "due": "2026-07-07",
     "status": "open",
     "shipment_id": null,
     "evidence": [
@@ -47,6 +47,15 @@
     ]
    }
   ],
-  "deadlines": []
+  "deadlines": [
+   {
+    "date": "2026-07-07",
+    "what": "Due date for updating the SOP-03 free-time table with Pacific Star's 5-day reefer free time.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0287"
+    ]
+   }
+  ]
  }
 }

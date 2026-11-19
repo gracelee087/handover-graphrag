@@ -6,9 +6,9 @@ Cc: Haneul Park <haneul.park@kimpark-customs.example>
 Subject: Customs clearance [MFCIM260021 / PSSU260777] Canned Tuna - Pacific
  Meridian 019N
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============7585886252631502312=="
+Content-Type: multipart/mixed; boundary="==M-0186=="
 
---===============7585886252631502312==
+--==M-0186==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -39,7 +39,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============7585886252631502312==
+--==M-0186==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260021.zip"
@@ -47,4 +47,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDIxLnppcF0=
 
---===============7585886252631502312==--
+--==M-0186==--

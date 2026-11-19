@@ -6,9 +6,9 @@ Cc: Haneul Park <haneul.park@kimpark-customs.example>
 Subject:
  Customs clearance [MFCIM260001 / HMLU260037] Canned Tuna - HML Bremen 026W
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6768371311809348810=="
+Content-Type: multipart/mixed; boundary="==M-0004=="
 
---===============6768371311809348810==
+--==M-0004==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -40,7 +40,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============6768371311809348810==
+--==M-0004==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260001.zip"
@@ -48,4 +48,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDAxLnppcF0=
 
---===============6768371311809348810==--
+--==M-0004==--

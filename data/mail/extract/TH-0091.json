@@ -1,29 +1,17 @@
 {
  "thread": "TH-0091",
  "usage": {
-  "input": 4454,
-  "output": 442
+  "input": 4659,
+  "output": 132
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "Arrange pick-up and empty return of container HMLU9996621 (MBL HMLU260370) before free time expires on 2026-03-21 to avoid charges.",
-    "owner": "Jiwoo Han",
-    "due": "2026-03-21",
-    "status": "open",
-    "shipment_id": "S-010",
-    "evidence": [
-     "M-0095"
-    ]
-   }
-  ],
+  "tasks": [],
   "deadlines": [
    {
     "date": "2026-03-21",
-    "what": "Free time expiry (10 days from arrival on 2026-03-11) for container HMLU9996621 under MBL HMLU260370.",
+    "what": "Free time expiry (10 days from arrival 2026-03-11) for container HMLU9996621 under MBL HMLU260370; pick-up and empty return required before then to avoid charges.",
     "shipment_id": "S-010",
     "evidence": [
      "M-0095"

@@ -8,9 +8,9 @@ Subject: Re: Trucking & delivery [MFCIM260018 / PSSU260666] Hydraulic Press
 In-Reply-To: <M-0165@meridianfreight.example>
 References: <M-0164@meridianfreight.example> <M-0165@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============4064894885007802826=="
+Content-Type: multipart/mixed; boundary="==M-0166=="
 
---===============4064894885007802826==
+--==M-0166==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -35,7 +35,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============4064894885007802826==
+--==M-0166==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260018.pdf"
@@ -43,7 +43,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMTgucGRmXQ==
 
---===============4064894885007802826==
+--==M-0166==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260018.xlsx"
@@ -51,4 +51,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMTgueGxzeF0=
 
---===============4064894885007802826==--
+--==M-0166==--

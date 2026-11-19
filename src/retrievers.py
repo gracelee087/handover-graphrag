@@ -137,13 +137,92 @@ def fmt_clause(c: dict) -> str:
     return f"[{c['doc']} {c['number']}] {c['title']}: {c['text']}"
 
 
+ID_RE = re.compile(r"\b(MFCIM26\d{4}|(?:HMLU|OCLU|PSSU)26\d{4}|(?:HMLU|OCLU|PSSU)\d{7}|S-\d{3})\b")
+
+ANCHOR = """
+UNWIND $ids AS x
+MATCH (s:Shipment) WHERE s.hbl = x OR s.mbl = x OR s.container = x OR s.id = x
+OPTIONAL MATCH (s)-[:CONSIGNEE]->(cons:Organization)
+OPTIONAL MATCH (s)-[:CARRIED_BY]->(car:Organization)
+OPTIONAL MATCH (s)-[:CLEARED_BY]->(brk:Organization)
+OPTIONAL MATCH (n)-[:CONCERNS]->(s) WHERE n:Issue OR n:Decision OR n:Task
+OPTIONAL MATCH (n)-[r:DECIDED_BY|ASSIGNED_TO|RAISED_BY]->(p:Person)
+OPTIONAL MATCH (n)-[:GOVERNED_BY]->(g:Clause)<-[:HAS_CLAUSE]-(:Section)<-[:HAS_SECTION]-(gd:SOPDocument)
+OPTIONAL MATCH (n)-[:FROM_CHUNK]->(:Chunk)-[:FROM_DOCUMENT]->(ev:Email)
+WITH s, cons, car, brk, n, collect(DISTINCT type(r) + ' ' + p.name) AS people,
+     collect(DISTINCT {id: g.id, doc: gd.id, number: g.number, title: g.title, text: g.text}) AS governed,
+     collect(DISTINCT ev.id) AS evidence
+RETURN s.id AS id, s.hbl AS hbl, s.mbl AS mbl, s.container AS container, s.vessel AS vessel, s.voyage AS voyage,
+       s.eta AS eta, s.free_time_days AS free_time_days, s.cargo AS cargo, s.hs_code AS hs_code,
+       cons.name AS consignee, car.name AS carrier, brk.name AS broker,
+       collect(DISTINCT CASE WHEN n IS NULL THEN NULL ELSE {label: labels(n)[0], id: n.id, summary: n.summary,
+            kind: n.kind, date: coalesce(n.date, n.detected_date, n.due), status: n.status,
+            people: people, governed: governed, evidence: evidence} END) AS items
+"""
+
+
+def fulltext_hits(conn, question: str, k: int = TOP_K) -> list[dict]:
+    q = re.sub(r"[^\w\s\-./,]", " ", question)   # keep identifiers, drop query-syntax characters
+    return run(conn, f"""
+        MATCH (c:{schema.CHUNK_LABEL})
+        SEARCH c IN (FULLTEXT INDEX chunk_text FOR $q LIMIT $k) SCORE AS score
+        MATCH (c)-[:{schema.REL_FROM_DOCUMENT}]->(e:Email)<-[:SENT]-(p:Person)
+        RETURN c.id AS chunk, e.id AS email, e.date AS date, p.name AS sender, e.subject AS subject,
+               c.{schema.CHUNK_TEXT_PROP} AS text, score ORDER BY score DESC""", {"q": q, "k": k})
+
+
+def hybrid_seeds(conn, question: str, k: int = TOP_K) -> list[dict]:
+    """Reciprocal-rank fusion of vector and full-text hits (Relate: SEARCH on both index kinds)."""
+    fused: dict[str, float] = {}
+    hits: dict[str, dict] = {}
+    for ranked in (vector_hits(conn, question, k), fulltext_hits(conn, question, k)):
+        for rank, h in enumerate(ranked):
+            fused[h["email"]] = fused.get(h["email"], 0.0) + 1.0 / (60 + rank)
+            hits.setdefault(h["email"], h)
+    return [hits[e] for e, _ in sorted(fused.items(), key=lambda kv: -kv[1])[: k + 2]]
+
+
+def fmt_item(x: dict) -> str:
+    line = f"- {x['label']} {x['id']}: {x.get('summary') or x.get('what')}"
+    if x.get("kind"):
+        line += f" (kind {x['kind']})"
+    if x.get("date"):
+        line += f" (date {x['date']})"
+    if x.get("status"):
+        line += f" (status {x['status']})"
+    if x.get("people"):
+        line += " | " + "; ".join(p for p in x["people"] if p)
+    if x.get("resolves"):
+        line += " | resolves: " + "; ".join(x["resolves"])
+    gov = [g for g in x.get("governed") or [] if g and g.get("id")]
+    if gov:
+        line += " | governed by " + ", ".join(f"{g['doc']} {g['number']}" for g in gov)
+    if x.get("evidence"):
+        line += " | evidence " + ", ".join(f"[{e}]" for e in x["evidence"] if e)
+    return line
+
+
 def retrieve_graph(conn, question: str) -> tuple[str, list[str], None]:
-    hits = vector_hits(conn, question)
+    hits = hybrid_seeds(conn, question)
     emails = [h["email"] for h in hits]
     rows = run(conn, EXPAND, {"emails": emails})
     text_by_email = {h["email"]: h["text"] for h in hits}
     parts = []
     clauses_seen: dict[str, dict] = {}
+    # identifier anchors: the shipment card plus everything extracted about that shipment
+    ids = sorted(set(ID_RE.findall(question)))
+    if ids:
+        for a in run(conn, ANCHOR, {"ids": ids}):
+            block = [f"### Shipment {a['id']} (anchored by the question): HBL {a['hbl']}, MBL {a['mbl']}, container {a['container']}, "
+                     f"{a['vessel']} {a['voyage']}, ETA {a['eta']}, free time {a['free_time_days']} days, cargo {a['cargo']} (HS {a['hs_code']}), "
+                     f"consignee {a['consignee']}, carrier {a['carrier']}, broker {a['broker']}"]
+            for x in a["items"]:
+                if x:
+                    block.append(fmt_item(x))
+                    for g in x.get("governed") or []:
+                        if g and g.get("id"):
+                            clauses_seen[g["id"]] = g
+            parts.append("\n".join(block))
     for r in rows:
         block = [f"### Mail [{r['email']}] {r['date'][:10]} | thread {r['thread']} | from {r['sender']} ({r['sender_org']}) "
                  f"to {', '.join(r['recipients'])}", text_by_email.get(r["email"], r["subject"])]
@@ -155,23 +234,10 @@ def retrieve_graph(conn, question: str) -> tuple[str, list[str], None]:
         for x in r["extracted"]:
             if not x:
                 continue
-            line = f"- {x['label']} {x['id']}: {x['summary'] or x['what']}"
-            if x.get("kind"):
-                line += f" (kind {x['kind']})"
-            if x.get("date"):
-                line += f" (date {x['date']})"
-            if x.get("status"):
-                line += f" (status {x['status']})"
-            if x["people"]:
-                line += " | " + "; ".join(p for p in x["people"] if p)
-            if x["resolves"]:
-                line += " | resolves: " + "; ".join(x["resolves"])
-            if x["governed"]:
-                gov = [g for g in x["governed"] if g and g.get("id")]
-                line += " | governed by " + ", ".join(f"{g['doc']} {g['number']}" for g in gov)
-                for g in gov:
+            block.append(fmt_item(x))
+            for g in x.get("governed") or []:
+                if g and g.get("id"):
                     clauses_seen[g["id"]] = g
-            block.append(line)
         for c in r["cites"]:
             if c and c.get("id"):
                 clauses_seen[c["id"]] = c
@@ -184,8 +250,34 @@ def retrieve_graph(conn, question: str) -> tuple[str, list[str], None]:
             for n in neigh))
     if clauses_seen:
         parts.append("### SOP clauses linked to the above\n" + "\n".join(fmt_clause(c) for c in clauses_seen.values()))
-    retrieved = emails + [n["email"] for n in neigh] + list(clauses_seen)
+    # the SOPs are a second corpus: search the clauses directly too (vector + full-text), for rule questions
+    direct = [c for c in clause_hits(conn, question) if c["id"] not in clauses_seen]
+    if direct:
+        parts.append("### SOP clauses matching the question\n" + "\n".join(fmt_clause(c) for c in direct))
+    retrieved = emails + [n["email"] for n in neigh] + list(clauses_seen) + [c["id"] for c in direct]
     return "\n\n".join(parts), retrieved, None
+
+
+def clause_hits(conn, question: str, k: int = 3) -> list[dict]:
+    """Top clauses by RRF of vector and full-text search over Clause nodes."""
+    q = re.sub(r"[^\w\s\-./,]", " ", question)
+    vec = run(conn, f"""
+        MATCH (c:Clause) SEARCH c IN (VECTOR INDEX clause_embedding FOR vector($v, {schema.EMBEDDING_DIM}, FLOAT32) LIMIT $k) SCORE AS s
+        MATCH (d:SOPDocument)-[:HAS_SECTION]->(:Section)-[:HAS_CLAUSE]->(c)
+        RETURN c.id AS id, d.id AS doc, c.number AS number, c.title AS title, c.text AS text ORDER BY s DESC""",
+        {"v": embed(question), "k": k})
+    ft = run(conn, """
+        MATCH (c:Clause) SEARCH c IN (FULLTEXT INDEX clause_text FOR $q LIMIT $k) SCORE AS s
+        MATCH (d:SOPDocument)-[:HAS_SECTION]->(:Section)-[:HAS_CLAUSE]->(c)
+        RETURN c.id AS id, d.id AS doc, c.number AS number, c.title AS title, c.text AS text ORDER BY s DESC""",
+        {"q": q, "k": k})
+    fused: dict[str, float] = {}
+    seen: dict[str, dict] = {}
+    for ranked in (vec, ft):
+        for rank, c in enumerate(ranked):
+            fused[c["id"]] = fused.get(c["id"], 0.0) + 1.0 / (60 + rank)
+            seen.setdefault(c["id"], c)
+    return [seen[i] for i, _ in sorted(fused.items(), key=lambda kv: -kv[1])[:k]]
 
 
 # --------------------------------------------------------------------------- 3. text2cypher
@@ -201,7 +293,7 @@ Node labels and properties:
   Chunk {{id, text, embedding}}                     one chunk per e-mail body
   Issue {{id, summary, kind, shipment_id, detected_date, sop_refs}}   kind in {schema.ISSUE_KINDS}
   Decision {{id, summary, date, shipment_id, sop_refs}}
-  Task {{id, summary, due, status (open|done), shipment_id}}
+  Task {{id, summary, due, status (open|done|duplicate - a restatement of another thread's task, see DUPLICATE_OF), shipment_id}}
   Deadline {{id, date, what, shipment_id}}
   SOPDocument {{id (SOP-01..SOP-05), title, version, effective_date, filename}}
   Section {{id, number, title}}
@@ -215,7 +307,7 @@ Relationships:
   (Issue|Decision|Task|Deadline)-[:FROM_CHUNK]->(Chunk)        provenance: which mail the item was extracted from
   (Issue|Decision|Task|Deadline)-[:CONCERNS]->(Shipment)
   (Decision)-[:DECIDED_BY]->(Person), (Task)-[:ASSIGNED_TO]->(Person), (Issue)-[:RAISED_BY]->(Person)
-  (Decision)-[:RESOLVES]->(Issue), (Task)-[:HAS_DEADLINE]->(Deadline)
+  (Decision)-[:RESOLVES]->(Issue), (Task)-[:HAS_DEADLINE]->(Deadline), (Task)-[:DUPLICATE_OF]->(Task)
   (SOPDocument)-[:HAS_SECTION]->(Section), (Section)-[:HAS_CLAUSE]->(Clause), (Section)-[:NEXT_SECTION]->(Section), (Clause)-[:NEXT_CLAUSE]->(Clause)
   (Issue|Decision)-[:GOVERNED_BY]->(Clause), (Email)-[:CITES]->(Clause)
 Dialect: openCypher / Cypher 25 on Relate (embedded Neo4j-compatible). No APOC, no GDS. Dates are strings: compare with < > or use date(substring(e.date,0,10)).
@@ -235,10 +327,13 @@ def gen_cypher(client: anthropic.Anthropic, question: str, error: str | None = N
     content = f"Question: {question}"
     if error:
         content += f"\n\nYour previous query failed:\n{previous}\n\nError: {error}\n\nReturn a corrected query."
-    resp = client.messages.create(model=schema.LLM_MODEL, max_tokens=800, system=T2C_SYSTEM,
+    # max_tokens must leave room for adaptive thinking; 800 truncated queries mid-clause in the first eval run
+    resp = client.messages.create(model=schema.LLM_MODEL, max_tokens=4000, system=T2C_SYSTEM,
                                   messages=[{"role": "user", "content": content}])
     text = "".join(b.text for b in resp.content if b.type == "text").strip()
     text = re.sub(r"^```(?:cypher)?\s*|\s*```$", "", text, flags=re.I | re.M).strip()
+    if resp.stop_reason == "max_tokens":
+        text += "\n// TRUNCATED: generation hit max_tokens"
     return text, {"input": resp.usage.input_tokens, "output": resp.usage.output_tokens}
 
 

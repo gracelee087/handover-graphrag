@@ -7,9 +7,9 @@ Subject: Re: Arrival Notice [MFCIM260017 / OCLU260629] Diagnostic Reagent Kits
 In-Reply-To: <M-0148@meridianfreight.example>
 References: <M-0147@meridianfreight.example> <M-0148@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0029743777303676974=="
+Content-Type: multipart/mixed; boundary="==M-0149=="
 
---===============0029743777303676974==
+--==M-0149==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -29,7 +29,7 @@ Insoo Hwang
 Supply Chain Manager
 Seoul Medica Supplies
 
---===============0029743777303676974==
+--==M-0149==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260017.pdf"
@@ -37,4 +37,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAxNy5wZGZd
 
---===============0029743777303676974==--
+--==M-0149==--

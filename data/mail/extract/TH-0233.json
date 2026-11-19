@@ -1,43 +1,34 @@
 {
  "thread": "TH-0233",
  "usage": {
-  "input": 5669,
-  "output": 958
+  "input": 5888,
+  "output": 1098
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "Container PSSU4527862 (HBL MFCIM260009) incurred demurrage from 17 March 2026 after Pacific Star declined a late free-time extension request, invoiced at 4 days totalling USD 1,120.",
+    "summary": "Container PSSU4527862 (HBL MFCIM260009) stayed at the terminal past the 16 March 2026 free-time expiry because the consignee's cold storage was full, and Pacific Star declined the late extension request, resulting in 4 days of demurrage invoiced at USD 1,120.",
     "kind": "demurrage",
     "shipment_id": "S-009",
     "raised_by": "Aiko Mori",
     "detected_date": "2026-03-17",
     "sop_refs": [],
     "evidence": [
+     "M-0233",
+     "M-0234",
+     "M-0235",
      "M-0236",
      "M-0237",
      "M-0238",
      "M-0239"
-    ]
-   },
-   {
-    "key": "ISS2",
-    "summary": "Blue Harbor Foods requested a pick-up hold of about a week for PSSU4527862 because their cold storage warehouse was full.",
-    "kind": "other",
-    "shipment_id": "S-009",
-    "raised_by": "Bora Jung",
-    "detected_date": "2026-03-09",
-    "sop_refs": [],
-    "evidence": [
-     "M-0233"
     ]
    }
   ],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Pacific Star Shipping declined the 5-day free-time extension for PSSU4527862 because the request arrived on the expiry day rather than before it.",
+    "summary": "Pacific Star Shipping declined the 5-day free-time extension for PSSU4527862 because the request arrived on the expiry day, so demurrage accrues from 17 March 2026.",
     "date": "2026-03-17",
     "decided_by": "Aiko Mori",
     "shipment_id": "S-009",
@@ -49,7 +40,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "Meridian absorbs 50% (USD 560) of the USD 1,120 demurrage on PSSU4527862 and bills the remaining USD 560 to Blue Harbor Foods.",
+    "summary": "Meridian will absorb 50% (USD 560) of the USD 1,120 demurrage on PSSU4527862 and bill the remaining USD 560 to Blue Harbor Foods.",
     "date": "2026-03-24",
     "decided_by": "Minseo Park",
     "shipment_id": "S-009",
@@ -64,7 +55,7 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Send Bora Jung a settlement letter explaining the 50/50 split of the USD 1,120 demurrage.",
+    "summary": "Send Bora Jung a settlement letter explaining the 50/50 split of the USD 1,120 demurrage on PSSU4527862.",
     "owner": "Jiwoo Han",
     "due": null,
     "status": "done",
@@ -84,23 +75,12 @@
     "evidence": [
      "M-0240"
     ]
-   },
-   {
-    "key": "TASK3",
-    "summary": "Arrange pick-up of PSSU4527862 as soon as possible to stop demurrage accruing.",
-    "owner": "Bora Jung",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-009",
-    "evidence": [
-     "M-0237"
-    ]
    }
   ],
   "deadlines": [
    {
     "date": "2026-03-16",
-    "what": "Pacific Star free time (10 days) for container PSSU4527862 expires.",
+    "what": "Pacific Star Shipping 10-day free time expiry for container PSSU4527862.",
     "shipment_id": "S-009",
     "evidence": [
      "M-0234",

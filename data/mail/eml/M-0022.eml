@@ -8,9 +8,9 @@ Subject: Re: Trucking & delivery [MFCIM260002 / OCLU260074] Surgical Gloves -
 In-Reply-To: <M-0021@meridianfreight.example>
 References: <M-0020@meridianfreight.example> <M-0021@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============6035383528232749912=="
+Content-Type: multipart/mixed; boundary="==M-0022=="
 
---===============6035383528232749912==
+--==M-0022==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -33,7 +33,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============6035383528232749912==
+--==M-0022==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260002.pdf"
@@ -41,7 +41,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMDIucGRmXQ==
 
---===============6035383528232749912==
+--==M-0022==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260002.xlsx"
@@ -49,4 +49,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMDIueGxzeF0=
 
---===============6035383528232749912==--
+--==M-0022==--

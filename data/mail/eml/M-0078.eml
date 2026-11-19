@@ -8,9 +8,9 @@ Subject: Re: Arrival Notice [MFCIM260009 / PSSU260333] Frozen Salmon Fillets -
 In-Reply-To: <M-0077@meridianfreight.example>
 References: <M-0077@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2439034560129098383=="
+Content-Type: multipart/mixed; boundary="==M-0078=="
 
---===============2439034560129098383==
+--==M-0078==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -37,7 +37,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============2439034560129098383==
+--==M-0078==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260009.pdf"
@@ -45,4 +45,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDA5LnBkZl0=
 
---===============2439034560129098383==--
+--==M-0078==--

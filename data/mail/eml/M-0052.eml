@@ -7,9 +7,9 @@ Subject: Re: Arrival Notice [MFCIM260006 / PSSU260222] Frozen Shrimp - Pacific
 In-Reply-To: <M-0051@meridianfreight.example>
 References: <M-0050@meridianfreight.example> <M-0051@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2127002868692143222=="
+Content-Type: multipart/mixed; boundary="==M-0052=="
 
---===============2127002868692143222==
+--==M-0052==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -30,7 +30,7 @@ Bora Jung
 Import Buyer
 Blue Harbor Foods
 
---===============2127002868692143222==
+--==M-0052==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260006.pdf"
@@ -38,4 +38,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAwNi5wZGZd
 
---===============2127002868692143222==--
+--==M-0052==--

@@ -1,15 +1,52 @@
 {
  "thread": "TH-0290",
  "usage": {
-  "input": 3933,
-  "output": 919
+  "input": 4496,
+  "output": 2815
  },
  "extraction": {
-  "issues": [],
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "A cargo damage case requires a surveyor report and a formal claim to be submitted to Orient Container Line by 10 July 2026.",
+    "kind": "cargo_damage_claim",
+    "shipment_id": null,
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-06-24",
+    "sop_refs": [],
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "A detention dispute is open with the Hanseatic D&D desk over charges for two terminal-closure days.",
+    "kind": "detention",
+    "shipment_id": null,
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-06-24",
+    "sop_refs": [],
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "key": "ISS3",
+    "summary": "S-021 required a manifest correction, and Pacific Star's written confirmation of it still has to be filed in the S-021 document register.",
+    "kind": "manifest_discrepancy",
+    "shipment_id": "S-021",
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-06-24",
+    "sop_refs": [],
+    "evidence": [
+     "M-0291"
+    ]
+   }
+  ],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Minseo Park decided that Daniel Cho takes over all open Daehan Precision and Seoul Medica import files from 2026-07-01 as single point of contact, following Jiwoo Han's departure on 30 June.",
+    "summary": "Daniel Cho takes over all open Daehan Precision and Seoul Medica import files from 1 July because Jiwoo Han leaves on 30 June.",
     "date": "2026-06-19",
     "decided_by": "Minseo Park",
     "shipment_id": null,
@@ -23,9 +60,9 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Jiwoo Han to prepare handover notes for Daniel Cho covering open tasks, carrier and broker contacts, and watch-outs for the Daehan Precision and Seoul Medica files.",
+    "summary": "Jiwoo Han to prepare a written handover for Daniel Cho covering open tasks, owners, due dates and key carrier/broker contacts.",
     "owner": "Jiwoo Han",
-    "due": "2026-06-30",
+    "due": null,
     "status": "done",
     "shipment_id": null,
     "evidence": [
@@ -35,9 +72,9 @@
    },
    {
     "key": "TASK2",
-    "summary": "Daniel Cho to block time with Jiwoo Han to go through the handover.",
+    "summary": "Daniel Cho to go through the files with Jiwoo Han before she leaves on 30 June.",
     "owner": "Daniel Cho",
-    "due": null,
+    "due": "2026-06-30",
     "status": "open",
     "shipment_id": null,
     "evidence": [
@@ -46,34 +83,137 @@
    },
    {
     "key": "TASK3",
-    "summary": "Daniel Cho to ensure the Arrival Notice for S-025 is sent to the consignee ahead of arrival.",
+    "summary": "Daniel Cho to collect the surveyor report and submit a formal claim to Orient Container Line.",
     "owner": "Daniel Cho",
-    "due": null,
+    "due": "2026-07-10",
     "status": "open",
     "shipment_id": null,
     "evidence": [
-     "M-0292"
+     "M-0291"
     ]
    },
    {
     "key": "TASK4",
-    "summary": "Daniel Cho to keep chasing the outstanding POD for S-024 so the file can be closed.",
+    "summary": "Daniel Cho to follow up the Hanseatic D&D desk on the detention dispute for the two terminal-closure days.",
     "owner": "Daniel Cho",
-    "due": null,
+    "due": "2026-07-03",
     "status": "open",
     "shipment_id": null,
     "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "key": "TASK5",
+    "summary": "Daniel Cho to obtain the signed POD for S-024 and hand the cost sheet to Accounting.",
+    "owner": "Daniel Cho",
+    "due": "2026-07-01",
+    "status": "open",
+    "shipment_id": "S-024",
+    "evidence": [
+     "M-0291",
      "M-0292"
+    ]
+   },
+   {
+    "key": "TASK6",
+    "summary": "Daniel Cho to send the Arrival Notice and request documents for S-025 (ETA 29 June), which has not yet been sent.",
+    "owner": "Daniel Cho",
+    "due": "2026-06-26",
+    "status": "open",
+    "shipment_id": "S-025",
+    "evidence": [
+     "M-0291",
+     "M-0292"
+    ]
+   },
+   {
+    "key": "TASK7",
+    "summary": "Grace Yoon to hold the Q2 vendor review and discuss the recorded non-conformance with Harbor Gate Customs Brokerage.",
+    "owner": "Grace Yoon",
+    "due": "2026-07-31",
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "key": "TASK8",
+    "summary": "Daniel Cho to update the SOP-03 free-time table for Pacific Star's new 5-day reefer free time from July.",
+    "owner": "Daniel Cho",
+    "due": "2026-07-07",
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
     ]
    }
   ],
   "deadlines": [
    {
-    "date": "2026-06-30",
-    "what": "Jiwoo Han's last day; handover to Daniel Cho must be completed before she leaves.",
+    "date": "2026-07-10",
+    "what": "Submit the formal claim with the surveyor report to Orient Container Line.",
     "shipment_id": null,
     "evidence": [
-     "M-0290",
+     "M-0291"
+    ]
+   },
+   {
+    "date": "2026-07-03",
+    "what": "Follow up with the Hanseatic D&D desk on the detention dispute.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "date": "2026-07-15",
+    "what": "Issue the debit note to Rapid Haul Logistics for 4 days of detention.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "date": "2026-07-01",
+    "what": "Obtain the signed POD for S-024 and hand the cost sheet to Accounting.",
+    "shipment_id": "S-024",
+    "evidence": [
+     "M-0291",
+     "M-0292"
+    ]
+   },
+   {
+    "date": "2026-06-26",
+    "what": "Send the Arrival Notice and request documents for S-025.",
+    "shipment_id": "S-025",
+    "evidence": [
+     "M-0291",
+     "M-0292"
+    ]
+   },
+   {
+    "date": "2026-07-31",
+    "what": "Complete the Q2 vendor review covering the Harbor Gate non-conformance.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "date": "2026-07-07",
+    "what": "Update the SOP-03 free-time table for Pacific Star's reefer free time.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0291"
+    ]
+   },
+   {
+    "date": "2026-07-04",
+    "what": "File Pacific Star's written manifest-correction confirmation in the S-021 document register.",
+    "shipment_id": "S-021",
+    "evidence": [
      "M-0291"
     ]
    }

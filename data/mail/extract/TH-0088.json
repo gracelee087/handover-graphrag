@@ -1,17 +1,29 @@
 {
  "thread": "TH-0088",
  "usage": {
-  "input": 3850,
-  "output": 262
+  "input": 4055,
+  "output": 472
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Inform Blue Harbor Foods of the expected customs clearance date for container HMLU9996621 (HBL MFCIM260010) so they can plan delivery and stock.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-010",
+    "evidence": [
+     "M-0090"
+    ]
+   }
+  ],
   "deadlines": [
    {
     "date": "2026-03-21",
-    "what": "Free time (10 days) expires for container HMLU9996621 under HBL MFCIM260010 / MBL HMLU260370.",
+    "what": "Free time (10 days) for container HMLU9996621 expires",
     "shipment_id": "S-010",
     "evidence": [
      "M-0089"

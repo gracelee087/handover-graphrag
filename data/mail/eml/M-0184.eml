@@ -8,9 +8,9 @@ Subject: Re: Arrival Notice [MFCIM260021 / PSSU260777] Canned Tuna - Pacific
 In-Reply-To: <M-0183@meridianfreight.example>
 References: <M-0183@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============3462801217794948230=="
+Content-Type: multipart/mixed; boundary="==M-0184=="
 
---===============3462801217794948230==
+--==M-0184==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -42,7 +42,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============3462801217794948230==
+--==M-0184==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260021.pdf"
@@ -50,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDIxLnBkZl0=
 
---===============3462801217794948230==--
+--==M-0184==--

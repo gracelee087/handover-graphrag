@@ -8,9 +8,9 @@ In-Reply-To: <M-0072@meridianfreight.example>
 References: <M-0069@meridianfreight.example> <M-0070@meridianfreight.example>
  <M-0071@meridianfreight.example> <M-0072@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============7970540543237846513=="
+Content-Type: multipart/mixed; boundary="==M-0073=="
 
---===============7970540543237846513==
+--==M-0073==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -30,7 +30,7 @@ Wei Zhang
 Import Documentation
 Orient Container Line
 
---===============7970540543237846513==
+--==M-0073==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="DO_OCLU260296.pdf"
@@ -38,4 +38,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBET19PQ0xVMjYwMjk2LnBkZl0=
 
---===============7970540543237846513==--
+--==M-0073==--

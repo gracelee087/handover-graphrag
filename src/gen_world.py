@@ -174,7 +174,7 @@ for i in range(1, 26):
         "vessel": vessel, "voyage": voyage,
         "pol": pol_code, "pol_name": pol_name, "pod": "KRPUS", "pod_name": "Busan",
         "eta": eta.isoformat(), "ata": None if i == 25 else eta.isoformat(),
-        "free_time_days": 10 if consignee == "ORG-BHF" else 7,   # SOP-03 2.1: BHF contract +3
+        "free_time_days": 10 if consignee == "ORG-BHF" else 7,   # SOP-03 2.1: BHF contract = flat 10 days, others 7 dry
         "carrier": carrier, "broker": broker, "consignee": consignee, "shipper": shipper,
         "cargo": cargo, "hs_code": hs,
         "cargo_value_usd": rng.randint(18000, 240000),
@@ -237,7 +237,7 @@ SOPS = [
              {"number": "1.1", "title": "Free time", "gist": "The number of calendar days from container discharge during which no demurrage is charged by the carrier."},
              {"number": "1.2", "title": "Demurrage vs Detention", "gist": "Demurrage accrues while the container is inside the terminal; detention accrues after gate-out until empty return."}]},
          {"number": "2", "title": "Standard Free Time", "clauses": [
-             {"number": "2.1", "title": "Contract free time table", "gist": "Table: Hanseatic Marine Lines 7 days dry / 5 days reefer; Orient Container Line 7 days dry / 5 days reefer; Pacific Star Shipping 7 days dry / 4 days reefer; Blue Harbor Foods contract adds 3 days on all carriers."},
+             {"number": "2.1", "title": "Contract free time table", "gist": "Table: Hanseatic Marine Lines 7 days dry / 5 days reefer; Orient Container Line 7 days dry / 5 days reefer; Pacific Star Shipping 7 days dry / 4 days reefer; Blue Harbor Foods contract: flat 10 days on all carriers, dry and reefer (replaces the carrier figures)."},
              {"number": "2.2", "title": "Recording", "gist": "Free-time expiry date is recorded in the file on the day the Arrival Notice is issued."}]},
          {"number": "3", "title": "Monitoring", "clauses": [
              {"number": "3.1", "title": "Daily watch list", "gist": "Operator reviews all containers with free time expiring within 3 days every morning."},
@@ -435,14 +435,35 @@ def new_thread(subject: str, shipment: str | None, kind: str, incident: str | No
 def beat(th: dict, dt: str, frm: str, to: list[str], intent: str, cc: list[str] | None = None,
          attachments: list[str] | None = None, decisions: list[str] | None = None,
          tasks: list[str] | None = None) -> None:
-    """One e-mail. `decisions`/`tasks` list the ids this mail evidences."""
+    """One e-mail. `decisions`/`tasks` list the ids this mail evidences.
+
+    Every open task a mail evidences is spelled out in the intent (owner + due date) so the written
+    mail carries the facts the gold answers rely on; the writer may not invent dates on its own."""
     global _mid
     _mid += 1
+    for tid in tasks or []:
+        t = TASK[tid]
+        if t["status"] == "open":
+            intent += f" State explicitly: {P[t['owner']]['name']} is to {lower_first(t['summary'])} Due date {long_date(t['due'])}."
     th["beats"].append({
         "id": f"M-{_mid:04d}", "date": workday(dt), "from": frm, "to": to, "cc": cc or [],
         "intent": intent, "attachments": attachments or [],
         "decisions": decisions or [], "tasks": tasks or [],
     })
+
+
+def lower_first(s: str) -> str:
+    return s[0].lower() + s[1:] if s and not s.startswith(("SOP", "Q2", "POD", "HS")) else s
+
+
+def long_date(iso: str) -> str:
+    d = date.fromisoformat(iso)
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
+# the demurrage case (I-03): pick-up only happened after 4 days of demurrage, so its routine
+# delivery thread starts later. Other incident files end inside their incident thread.
+DELIVERY_SHIFT = {"I-03": 11}
 
 
 def subj_of(sid: str) -> str:
@@ -485,17 +506,19 @@ for s in SHIPMENTS:
          attachments=[f"DO_{s['mbl']}.pdf"])
 
     # Thread C: trucking -> delivery -> POD -> cost sheet
+    # Incidents delay the release, so the routine delivery thread starts later for those files.
+    base = plus(eta, DELIVERY_SHIFT.get(s["incident"], 0))
     th = new_thread(f"Trucking & delivery {subj_of(sid)}", sid, "delivery")
-    beat(th, plus(eta, 2), OP, [TRUCK_MGR],
-         f"Book trucking for container {s['container']} from Busan New Port to consignee, pick-up {plus(eta, 3)}, delivery slot next morning.",
+    beat(th, plus(base, 2), OP, [TRUCK_MGR],
+         f"Book trucking for container {s['container']} from Busan New Port to consignee, pick-up {plus(base, 3)}, delivery slot next morning.",
          cc=[cns_ct])
     if s["status"] == "awaiting_pod":
-        beat(th, plus(eta, 2), TRUCK_DISP, [OP], "Dispatcher confirms truck and driver; asks for D/O copy.")
+        beat(th, plus(base, 2), TRUCK_DISP, [OP], "Dispatcher confirms truck and driver; asks for D/O copy.")
         continue   # T-04: POD for S-024 still outstanding
     if s["incident"] == "I-07":
         continue   # delivery of S-017 ends in the damage claim thread
-    beat(th, plus(eta, 4), cns_ct, [OP], "Consignee confirms cargo received in good order.")
-    beat(th, plus(eta, 5), OP, [ACCT], f"Cost sheet for {s['hbl']} attached for invoicing; signed POD attached.",
+    beat(th, plus(base, 4), cns_ct, [OP], "Consignee confirms cargo received in good order.")
+    beat(th, plus(base, 5), OP, [ACCT], f"Cost sheet for {s['hbl']} attached for invoicing; signed POD attached.",
          cc=[DOCS], attachments=[f"POD_{s['hbl']}.pdf", f"CostSheet_{s['hbl']}.xlsx"])
 
 
@@ -618,7 +641,7 @@ beat(th, "2026-06-18", OPS_MGR, [LEAD, OP], "Q2 review agenda: discuss the recor
 
 th = new_thread("Handover of import files - Jiwoo Han leaving 30 June", None, "handover")
 beat(th, DEC["D-12"]["date"], LEAD, [OP, JUNIOR, OPS_MGR], "Decision D-12: Daniel Cho takes over all open Daehan Precision and Seoul Medica files from 1 July.", decisions=["D-12"])
-beat(th, "2026-06-24", OP, [JUNIOR], "Handover summary: open tasks T-01..T-08, contacts per carrier/broker, watch-outs (telex release, free-time reminders, written empty-return dates).", cc=[LEAD], attachments=["Handover_Notes_JH.docx"], tasks=["T-04", "T-05"])
+beat(th, "2026-06-24", OP, [JUNIOR], "Handover summary for Daniel. The body itself lists, as a numbered list, all eight open tasks with the person responsible and the due date (details follow). Then the main contacts per carrier and broker, and three watch-outs: confirm telex release before requesting the D/O, set free-time expiry reminders, get written empty-return dates from truckers.", cc=[LEAD], attachments=["Handover_Notes_JH.docx"], tasks=["T-01", "T-02", "T-03", "T-04", "T-05", "T-06", "T-07", "T-08"])
 beat(th, "2026-06-25", OP, [JUNIOR], "S-025 pre-arrival: Arrival Notice still to be sent (task T-05); S-024 POD still outstanding (task T-04).", tasks=["T-04", "T-05"])
 
 # ---------------------------------------------------------------------------

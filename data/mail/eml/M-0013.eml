@@ -8,9 +8,9 @@ Subject: Re: Arrival Notice [MFCIM260002 / OCLU260074] Surgical Gloves - OCL
 In-Reply-To: <M-0012@meridianfreight.example>
 References: <M-0012@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2119839584814113015=="
+Content-Type: multipart/mixed; boundary="==M-0013=="
 
---===============2119839584814113015==
+--==M-0013==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -42,7 +42,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============2119839584814113015==
+--==M-0013==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260002.pdf"
@@ -50,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDAyLnBkZl0=
 
---===============2119839584814113015==--
+--==M-0013==--

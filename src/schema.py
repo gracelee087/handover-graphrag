@@ -145,6 +145,17 @@ def vector_index_ddl(name: str, label: str, prop: str) -> str:
     )
 
 
+FULLTEXT_INDEXES = {
+    # name: (label, property)   -- hybrid seeding in retrievers.py (identifiers like HBL numbers)
+    "chunk_text": (CHUNK_LABEL, CHUNK_TEXT_PROP),
+    "clause_text": ("Clause", "text"),
+}
+
+
+def fulltext_index_ddl(name: str, label: str, prop: str) -> str:
+    return f"CREATE FULLTEXT INDEX {name} IF NOT EXISTS FOR (n:{label}) ON EACH [n.{prop}]"
+
+
 # Relate store (hackathon deliverable: single-file persistent store, committed to git)
 STORE_PATH = "data/handover.rl"
 

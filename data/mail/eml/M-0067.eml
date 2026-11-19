@@ -8,9 +8,9 @@ Subject: Arrival Notice [MFCIM260008 / OCLU260296] Cnc Machine Spare Parts -
 In-Reply-To: <M-0066@meridianfreight.example>
 References: <M-0066@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0906518407554304917=="
+Content-Type: multipart/mixed; boundary="==M-0067=="
 
---===============0906518407554304917==
+--==M-0067==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -38,7 +38,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============0906518407554304917==
+--==M-0067==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260008.pdf"
@@ -46,4 +46,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDA4LnBkZl0=
 
---===============0906518407554304917==--
+--==M-0067==--

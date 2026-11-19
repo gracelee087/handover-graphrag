@@ -1,8 +1,8 @@
 {
  "thread": "TH-0242",
  "usage": {
-  "input": 4271,
-  "output": 1453
+  "input": 4476,
+  "output": 1158
  },
  "extraction": {
   "issues": [
@@ -22,8 +22,8 @@
    },
    {
     "key": "ISS2",
-    "summary": "Customs queried the import licence number declared for the infusion pumps under HBL MFCIM260011 and required the licence to be confirmed before completing the inspection.",
-    "kind": "other",
+    "summary": "Customs queried the import licence number declared for the medical devices under HBL MFCIM260011 and required a copy of the licence from the consignee before completing the inspection.",
+    "kind": "missing_documents",
     "shipment_id": "S-011",
     "raised_by": "Sunwoo Choi",
     "detected_date": "2026-03-19",
@@ -50,7 +50,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "The consignee (Insoo Hwang) is to send the import licence copy directly to customs to resolve the licence number query.",
+    "summary": "Insoo Hwang is to send the import licence copy directly to customs to resolve the licence number query for HBL MFCIM260011.",
     "date": "2026-03-23",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-011",
@@ -64,47 +64,13 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Notify the consignee of the inspection and request a copy of the import licence for HBL MFCIM260011.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "done",
-    "shipment_id": "S-011",
-    "evidence": [
-     "M-0242",
-     "M-0243"
-    ]
-   },
-   {
-    "key": "TASK2",
-    "summary": "Send the import licence copy directly to customs to resolve the licence number query.",
-    "owner": "Insoo Hwang",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-011",
-    "evidence": [
-     "M-0244"
-    ]
-   },
-   {
-    "key": "TASK3",
-    "summary": "Attend the physical inspection of container OCLU3488652 with Sunwoo Choi.",
+    "summary": "Jiwoo Han to attend the physical inspection of container OCLU3488652 with Sunwoo Choi; attendance confirmed and inspection passed.",
     "owner": "Jiwoo Han",
     "due": null,
     "status": "done",
     "shipment_id": "S-011",
     "evidence": [
      "M-0244",
-     "M-0245"
-    ]
-   },
-   {
-    "key": "TASK4",
-    "summary": "Issue the D/O for HBL MFCIM260011 so the infusion pumps can be delivered to Seoul Medica Supplies.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-011",
-    "evidence": [
      "M-0245"
     ]
    }

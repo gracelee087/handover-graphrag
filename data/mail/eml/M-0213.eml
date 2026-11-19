@@ -6,9 +6,9 @@ Cc: Haneul Park <haneul.park@kimpark-customs.example>
 Subject: Customs clearance [MFCIM260024 / PSSU260888] Frozen Shrimp - Pacific
  Borealis 023N
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============8619509956302870901=="
+Content-Type: multipart/mixed; boundary="==M-0213=="
 
---===============8619509956302870901==
+--==M-0213==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -34,7 +34,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============8619509956302870901==
+--==M-0213==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260024.zip"
@@ -42,4 +42,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDI0LnppcF0=
 
---===============8619509956302870901==--
+--==M-0213==--

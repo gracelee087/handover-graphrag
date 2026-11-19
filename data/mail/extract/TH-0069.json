@@ -1,29 +1,17 @@
 {
  "thread": "TH-0069",
  "usage": {
-  "input": 4567,
-  "output": 232
+  "input": 4772,
+  "output": 106
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "Arrange pickup of container OCLU2125860 (MBL OCLU260296) before free time expires on 2026-03-06 to avoid demurrage.",
-    "owner": "Jiwoo Han",
-    "due": "2026-03-06",
-    "status": "open",
-    "shipment_id": "S-008",
-    "evidence": [
-     "M-0073"
-    ]
-   }
-  ],
+  "tasks": [],
   "deadlines": [
    {
     "date": "2026-03-06",
-    "what": "7-day free time expiry for container OCLU2125860 (MBL OCLU260296); pickup required before then to avoid demurrage.",
+    "what": "Free time (7 days) expires for container OCLU2125860; pickup required before then to avoid demurrage.",
     "shipment_id": "S-008",
     "evidence": [
      "M-0073"

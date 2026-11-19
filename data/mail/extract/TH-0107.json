@@ -1,8 +1,8 @@
 {
  "thread": "TH-0107",
  "usage": {
-  "input": 4514,
-  "output": 307
+  "input": 4719,
+  "output": 116
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-03-29",
-    "what": "Last free day for container PSSU5689097 (7 days free from arrival on 2026-03-23); pick-up must be arranged before then to avoid charges.",
+    "what": "Last free day for container PSSU5689097 (7 days free from arrival 2026-03-23); pick-up needed before then to avoid charges",
     "shipment_id": "S-012",
     "evidence": [
      "M-0111"

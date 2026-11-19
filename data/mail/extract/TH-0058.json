@@ -1,17 +1,29 @@
 {
  "thread": "TH-0058",
  "usage": {
-  "input": 4570,
-  "output": 252
+  "input": 4775,
+  "output": 236
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Inform Seoul Medica Supplies that duty and VAT on the infusion pumps (HBL MFCIM260007) will be payable at clearance so funds can be arranged.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-007",
+    "evidence": [
+     "M-0059"
+    ]
+   }
+  ],
   "deadlines": [
    {
     "date": "2026-02-28",
-    "what": "Last free day for container HMLU3394415 (7 days free time from arrival 2026-02-22); pickup must be arranged before then to avoid charges.",
+    "what": "Last free day for container HMLU3394415 (7 days free time from arrival 2026-02-22); pickup needed before then to avoid charges.",
     "shipment_id": "S-007",
     "evidence": [
      "M-0062"

@@ -1,105 +1,80 @@
 {
  "thread": "TH-0227",
  "usage": {
-  "input": 4846,
-  "output": 961
+  "input": 5051,
+  "output": 759
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "Health certificate for frozen shrimp (HBL MFCIM260006 / MBL PSSU260222, container PSSU1961220 40RF) was missing, blocking filing of the import declaration until Blue Harbor Foods supplied it on 2026-02-23.",
+    "summary": "Health certificate for frozen shrimp (HBL MFCIM260006 / MBL PSSU260222, container PSSU1961220 40RF) was missing, preventing the broker from filing the import declaration until Blue Harbor Foods sent it on 2026-02-23.",
     "kind": "missing_documents",
     "shipment_id": "S-006",
     "raised_by": "Dongwook Kim",
     "detected_date": "2026-02-12",
-    "sop_refs": [
-     "SOP-03 section 3.2"
-    ],
+    "sop_refs": [],
     "evidence": [
      "M-0227",
      "M-0228",
      "M-0229",
      "M-0230"
     ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "Customs clearance for container PSSU1961220 was urgent because free time expired on 2026-02-25, so the declaration was filed via priority slot and release obtained on 2026-02-24.",
+    "kind": "urgent_clearance",
+    "shipment_id": "S-006",
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-02-23",
+    "sop_refs": [
+     "SOP-03 section 3.2"
+    ],
+    "evidence": [
+     "M-0229",
+     "M-0231",
+     "M-0232"
+    ]
    }
   ],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Jiwoo Han decided to file the import declaration for HBL MFCIM260006 on 2026-02-23 using the priority slot because free time expires on 2026-02-25.",
+    "summary": "Written notice sent to consignee before free-time expiry stating any charges after 2026-02-25 for container PSSU1961220 would be for the consignee's account.",
     "date": "2026-02-23",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-006",
     "resolves": "ISS1",
-    "sop_refs": [],
-    "evidence": [
-     "M-0231",
-     "M-0232"
-    ]
-   },
-   {
-    "key": "DEC2",
-    "summary": "Jiwoo Han notified Blue Harbor Foods in writing that any charges arising after free time expiry on 2026-02-25 for container PSSU1961220 would be for the consignee's account.",
-    "date": "2026-02-23",
-    "decided_by": "Jiwoo Han",
-    "shipment_id": "S-006",
-    "resolves": null,
     "sop_refs": [
      "SOP-03 section 3.2"
     ],
     "evidence": [
      "M-0229"
     ]
-   }
-  ],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "Bora Jung to send the missing health certificate for HBL MFCIM260006 frozen shrimp shipment.",
-    "owner": "Bora Jung",
-    "due": null,
-    "status": "done",
-    "shipment_id": "S-006",
-    "evidence": [
-     "M-0228",
-     "M-0229",
-     "M-0230"
-    ]
    },
    {
-    "key": "TASK2",
-    "summary": "Dongwook Kim to file the import declaration for HBL MFCIM260006 / MBL PSSU260222 via the priority slot.",
-    "owner": "Dongwook Kim",
-    "due": "2026-02-25",
-    "status": "done",
+    "key": "DEC2",
+    "summary": "Decided to file the import declaration for HBL MFCIM260006 on 2026-02-23 using the priority slot to clear within free time ending 2026-02-25.",
+    "date": "2026-02-23",
+    "decided_by": "Jiwoo Han",
     "shipment_id": "S-006",
+    "resolves": "ISS2",
+    "sop_refs": [],
     "evidence": [
-     "M-0231",
-     "M-0232"
-    ]
-   },
-   {
-    "key": "TASK3",
-    "summary": "Jiwoo Han to arrange the D/O so cleared container PSSU1961220 (40RF) can be released for delivery to Blue Harbor Foods.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-006",
-    "evidence": [
-     "M-0232"
+     "M-0231"
     ]
    }
   ],
+  "tasks": [],
   "deadlines": [
    {
     "date": "2026-02-25",
-    "what": "Free time (10 days) expiry for container PSSU1961220 with Pacific Star Shipping.",
+    "what": "Free time expiry for container PSSU1961220 (40RF) with Pacific Star Shipping.",
     "shipment_id": "S-006",
     "evidence": [
      "M-0228",
      "M-0229",
-     "M-0230",
      "M-0231",
      "M-0232"
     ]

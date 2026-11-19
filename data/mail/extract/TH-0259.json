@@ -1,14 +1,14 @@
 {
  "thread": "TH-0259",
  "usage": {
-  "input": 5282,
-  "output": 1181
+  "input": 5310,
+  "output": 846
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "Wet damage found on 14 cartons of diagnostic reagent kits at delivery of container OCLU6145131 (HBL MFCIM260017 / MBL OCLU260629), escalated as Severity 1 with expected claim over USD 10,000.",
+    "summary": "Wet damage found on 14 cartons of diagnostic reagent kits in container OCLU6145131 at delivery under HBL MFCIM260017 / MBL OCLU260629, with claim expected to exceed USD 10,000.",
     "kind": "cargo_damage_claim",
     "shipment_id": "S-017",
     "raised_by": "Insoo Hwang",
@@ -17,15 +17,14 @@
     "evidence": [
      "M-0259",
      "M-0260",
-     "M-0261",
-     "M-0264"
+     "M-0261"
     ]
    }
   ],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Appoint an independent surveyor to inspect the 14 damaged cartons and establish cause and extent of damage.",
+    "summary": "Grace Yoon decided to appoint an independent surveyor, pursue the wet damage claim against Orient Container Line, and send weekly claim updates to the consignee until closure.",
     "date": "2026-05-01",
     "decided_by": "Grace Yoon",
     "shipment_id": "S-017",
@@ -37,31 +36,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "Pursue the wet damage claim for HBL MFCIM260017 against the carrier Orient Container Line.",
-    "date": "2026-05-01",
-    "decided_by": "Grace Yoon",
-    "shipment_id": "S-017",
-    "resolves": "ISS1",
-    "sop_refs": [],
-    "evidence": [
-     "M-0262"
-    ]
-   },
-   {
-    "key": "DEC3",
-    "summary": "Send Seoul Medica Supplies a weekly update on the claim status until it is closed.",
-    "date": "2026-05-01",
-    "decided_by": "Grace Yoon",
-    "shipment_id": "S-017",
-    "resolves": "ISS1",
-    "sop_refs": [],
-    "evidence": [
-     "M-0262"
-    ]
-   },
-   {
-    "key": "DEC4",
-    "summary": "Jiwoo Han hands over the MFCIM260017 claim file to Daniel Cho as she leaves on 30 June.",
+    "summary": "Jiwoo Han handed over the claim file for HBL MFCIM260017 to Daniel Cho ahead of leaving on 30 June.",
     "date": "2026-06-22",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-017",
@@ -75,18 +50,29 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Send formal claim notice to Orient Container Line for 14 wet-damaged cartons in OCLU6145131 within 3 days of delivery, reserving all rights.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "done",
+    "summary": "Collect the surveyor report and submit the formal claim to Orient Container Line for MBL OCLU260629 / container OCLU6145131.",
+    "owner": "Daniel Cho",
+    "due": "2026-07-10",
+    "status": "open",
     "shipment_id": "S-017",
     "evidence": [
-     "M-0260",
-     "M-0261"
+     "M-0264"
     ]
    },
    {
     "key": "TASK2",
+    "summary": "Continue weekly claim updates to Insoo Hwang at Seoul Medica Supplies until the claim is closed.",
+    "owner": "Daniel Cho",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-017",
+    "evidence": [
+     "M-0262",
+     "M-0264"
+    ]
+   },
+   {
+    "key": "TASK3",
     "summary": "Arrange an independent surveyor to inspect the 14 damaged cartons.",
     "owner": "Jiwoo Han",
     "due": null,
@@ -97,43 +83,17 @@
      "M-0263",
      "M-0264"
     ]
-   },
-   {
-    "key": "TASK3",
-    "summary": "Follow up on the pending survey report and take the claim forward with Orient Container Line.",
-    "owner": "Daniel Cho",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-017",
-    "evidence": [
-     "M-0264"
-    ]
-   },
-   {
-    "key": "TASK4",
-    "summary": "Send weekly claim status updates to Insoo Hwang at Seoul Medica Supplies until the claim is closed.",
-    "owner": "Daniel Cho",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-017",
-    "evidence": [
-     "M-0262",
-     "M-0263",
-     "M-0264"
-    ]
-   },
-   {
-    "key": "TASK5",
-    "summary": "Monitor the claim file for MFCIM260017 as team lead.",
-    "owner": "Minseo Park",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-017",
-    "evidence": [
-     "M-0262"
-    ]
    }
   ],
-  "deadlines": []
+  "deadlines": [
+   {
+    "date": "2026-07-10",
+    "what": "Submit formal claim with surveyor report to Orient Container Line",
+    "shipment_id": "S-017",
+    "evidence": [
+     "M-0264"
+    ]
+   }
+  ]
  }
 }

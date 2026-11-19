@@ -1,15 +1,15 @@
 {
  "model": "claude-opus-5-5",
  "threads": 81,
- "input_tokens": 334824,
- "output_tokens": 28469,
- "cost_usd_list_price": 1.909,
+ "input_tokens": 351783,
+ "output_tokens": 23142,
+ "cost_usd_list_price": 1.87,
  "stats": {
   "nodes": {
-   "Deadline": 48,
-   "Task": 63,
-   "Issue": 17,
-   "Decision": 28
+   "Deadline": 59,
+   "Issue": 20,
+   "Decision": 24,
+   "Task": 31
   },
   "unresolved_people": [],
   "bad_shipment_ids": [],

@@ -1,20 +1,20 @@
 {
  "thread": "TH-0270",
  "usage": {
-  "input": 5064,
-  "output": 1302
+  "input": 5388,
+  "output": 727
  },
  "extraction": {
   "issues": [
    {
     "key": "ISS1",
-    "summary": "Busan customs manifest for MBL PSSU260777 / HBL MFCIM260021 (container PSSU2430001, canned tuna) showed 18 pallets versus 20 pallets on the B/L, blocking the import declaration and requiring a post-arrival manifest correction.",
+    "summary": "Customs manifest for MBL PSSU260777 (container PSSU2430001) shows 18 pallets versus 20 pallets on the B/L, blocking the import declaration for HBL MFCIM260021 until a post-arrival manifest correction was accepted on 2026-05-19.",
     "kind": "manifest_discrepancy",
     "shipment_id": "S-021",
     "raised_by": "Dongwook Kim",
     "detected_date": "2026-05-18",
     "sop_refs": [
-     "SOP-02 3.2"
+     "SOP-02 section 3.2"
     ],
     "evidence": [
      "M-0270",
@@ -28,7 +28,7 @@
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "Minseo Park decided to file the post-arrival manifest correction to 20 pallets at Meridian's cost of USD 90 rather than delay the cargo over cost allocation, and to request written confirmation of the error from Pacific Star Shipping.",
+    "summary": "Minseo Park decided Meridian files the post-arrival manifest correction at its own cost of USD 90 and obtains written confirmation of the correction from Pacific Star.",
     "date": "2026-05-18",
     "decided_by": "Minseo Park",
     "shipment_id": "S-021",
@@ -41,7 +41,7 @@
    },
    {
     "key": "DEC2",
-    "summary": "Jiwoo Han handed over the outstanding follow-up on S-021 (filing Pacific Star's written manifest-error confirmation in the register) to Hoon Jang ahead of leaving at the end of June.",
+    "summary": "Jiwoo Han handed over the task of filing Pacific Star's written manifest-correction confirmation to Hoon Jang as she leaves on 30 June.",
     "date": "2026-06-22",
     "decided_by": "Jiwoo Han",
     "shipment_id": "S-021",
@@ -55,33 +55,9 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Ryan Tanaka (Pacific Star Shipping) to file the manifest correction for MBL PSSU260777 from 18 to 20 pallets.",
-    "owner": "Ryan Tanaka",
-    "due": null,
-    "status": "done",
-    "shipment_id": "S-021",
-    "evidence": [
-     "M-0271",
-     "M-0275"
-    ]
-   },
-   {
-    "key": "TASK2",
-    "summary": "Dongwook Kim to file the import declaration for HBL MFCIM260021 once the corrected manifest is in the system.",
-    "owner": "Dongwook Kim",
-    "due": null,
-    "status": "done",
-    "shipment_id": "S-021",
-    "evidence": [
-     "M-0270",
-     "M-0275"
-    ]
-   },
-   {
-    "key": "TASK3",
-    "summary": "Hoon Jang to file Pacific Star Shipping's outstanding written confirmation of the 18-vs-20 pallet manifest error and correction in the register against S-021 once received.",
+    "summary": "File Pacific Star's written manifest-correction confirmation for HBL MFCIM260021 / MBL PSSU260777 in the S-021 document register once received (contact Ryan Tanaka).",
     "owner": "Hoon Jang",
-    "due": null,
+    "due": "2026-07-04",
     "status": "open",
     "shipment_id": "S-021",
     "evidence": [
@@ -90,6 +66,15 @@
     ]
    }
   ],
-  "deadlines": []
+  "deadlines": [
+   {
+    "date": "2026-07-04",
+    "what": "Due date for filing Pacific Star's written manifest-correction confirmation in the S-021 document register.",
+    "shipment_id": "S-021",
+    "evidence": [
+     "M-0276"
+    ]
+   }
+  ]
  }
 }

@@ -7,9 +7,9 @@ Subject: Re: Arrival Notice [MFCIM260020 / OCLU260740] Disposable Syringes -
 In-Reply-To: <M-0173@meridianfreight.example>
 References: <M-0172@meridianfreight.example> <M-0173@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2426424528899939997=="
+Content-Type: multipart/mixed; boundary="==M-0174=="
 
---===============2426424528899939997==
+--==M-0174==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -29,7 +29,7 @@ Insoo Hwang
 Supply Chain Manager
 Seoul Medica Supplies
 
---===============2426424528899939997==
+--==M-0174==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CI_PL_MFCIM260020.pdf"
@@ -37,4 +37,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDSV9QTF9NRkNJTTI2MDAyMC5wZGZd
 
---===============2426424528899939997==--
+--==M-0174==--

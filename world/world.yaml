@@ -1029,7 +1029,8 @@ sops:
     - number: '2.1'
       title: Contract free time table
       gist: 'Table: Hanseatic Marine Lines 7 days dry / 5 days reefer; Orient Container Line 7 days dry / 5 days reefer; Pacific
-        Star Shipping 7 days dry / 4 days reefer; Blue Harbor Foods contract adds 3 days on all carriers.'
+        Star Shipping 7 days dry / 4 days reefer; Blue Harbor Foods contract: flat 10 days on all carriers, dry and reefer
+        (replaces the carrier figures).'
       id: SOP-03-C2.1
     - number: '2.2'
       title: Recording
@@ -2568,19 +2569,19 @@ threads:
   incident: null
   beats:
   - id: M-0085
-    date: '2026-03-09'
+    date: '2026-03-19'
     from: P-001
     to:
     - P-028
     cc:
     - P-026
-    intent: Book trucking for container PSSU4527862 from Busan New Port to consignee, pick-up 2026-03-09, delivery slot next
+    intent: Book trucking for container PSSU4527862 from Busan New Port to consignee, pick-up 2026-03-20, delivery slot next
       morning.
     attachments: []
     decisions: []
     tasks: []
   - id: M-0086
-    date: '2026-03-10'
+    date: '2026-03-23'
     from: P-026
     to:
     - P-001
@@ -2590,7 +2591,7 @@ threads:
     decisions: []
     tasks: []
   - id: M-0087
-    date: '2026-03-11'
+    date: '2026-03-23'
     from: P-001
     to:
     - P-008
@@ -4835,7 +4836,8 @@ threads:
     - P-003
     cc:
     - P-002
-    intent: 'Handover of the claim file: survey done, report pending - task T-01 assigned to Daniel.'
+    intent: 'Handover of the claim file: survey done, report pending - task T-01 assigned to Daniel. State explicitly: Daniel
+      Cho is to collect surveyor report and submit formal claim to Orient Container Line. Due date 10 July 2026.'
     attachments: []
     decisions: []
     tasks:
@@ -4974,7 +4976,9 @@ threads:
     to:
     - P-011
     cc: []
-    intent: 'Task T-08: file the carrier''s written confirmation in the register once received.'
+    intent: 'Task T-08: file the carrier''s written confirmation in the register once received. State explicitly: Hoon Jang
+      is to file Pacific Star''s written manifest-correction confirmation in the S-021 document register. Due date 4 July
+      2026.'
     attachments: []
     decisions: []
     tasks:
@@ -5047,7 +5051,8 @@ threads:
     - P-003
     cc:
     - P-002
-    intent: 'Handover: task T-02 (carrier dispute) to Daniel.'
+    intent: 'Handover: task T-02 (carrier dispute) to Daniel. State explicitly: Daniel Cho is to follow up Hanseatic D&D desk
+      on detention dispute for the two terminal-closure days. Due date 3 July 2026.'
     attachments: []
     decisions: []
     tasks:
@@ -5059,7 +5064,8 @@ threads:
     - P-008
     cc:
     - P-002
-    intent: 'Handover: task T-03 (debit note to Rapid Haul for 4 days) to Junho.'
+    intent: 'Handover: task T-03 (debit note to Rapid Haul for 4 days) to Junho. State explicitly: Junho Oh is to issue debit
+      note to Rapid Haul Logistics for 4 days detention. Due date 15 July 2026.'
     attachments: []
     decisions: []
     tasks:
@@ -5120,7 +5126,8 @@ threads:
     - P-003
     cc:
     - P-002
-    intent: 'Task T-07: update the SOP-03 free-time table after the change.'
+    intent: 'Task T-07: update the SOP-03 free-time table after the change. State explicitly: Daniel Cho is to update the
+      SOP-03 free-time table after Pacific Star''s new reefer free time (5 days from July). Due date 7 July 2026.'
     attachments: []
     decisions: []
     tasks:
@@ -5157,7 +5164,9 @@ threads:
     - P-002
     - P-001
     cc: []
-    intent: 'Q2 review agenda: discuss the recorded HS-code non-conformance (I-05) with Harbor Gate (task T-06).'
+    intent: 'Q2 review agenda: discuss the recorded HS-code non-conformance (I-05) with Harbor Gate (task T-06). State explicitly:
+      Grace Yoon is to Q2 vendor review: discuss recorded non-conformance with Harbor Gate Customs Brokerage. Due date 31
+      July 2026.'
     attachments: []
     decisions: []
     tasks:
@@ -5188,21 +5197,40 @@ threads:
     - P-003
     cc:
     - P-002
-    intent: 'Handover summary: open tasks T-01..T-08, contacts per carrier/broker, watch-outs (telex release, free-time reminders,
-      written empty-return dates).'
+    intent: 'Handover summary for Daniel. The body itself lists, as a numbered list, all eight open tasks with the person
+      responsible and the due date (details follow). Then the main contacts per carrier and broker, and three watch-outs:
+      confirm telex release before requesting the D/O, set free-time expiry reminders, get written empty-return dates from
+      truckers. State explicitly: Daniel Cho is to collect surveyor report and submit formal claim to Orient Container Line.
+      Due date 10 July 2026. State explicitly: Daniel Cho is to follow up Hanseatic D&D desk on detention dispute for the
+      two terminal-closure days. Due date 3 July 2026. State explicitly: Junho Oh is to issue debit note to Rapid Haul Logistics
+      for 4 days detention. Due date 15 July 2026. State explicitly: Daniel Cho is to obtain signed POD for S-024 and hand
+      cost sheet to Accounting. Due date 1 July 2026. State explicitly: Daniel Cho is to send Arrival Notice and request documents
+      for S-025 (ETA 29 June). Due date 26 June 2026. State explicitly: Grace Yoon is to Q2 vendor review: discuss recorded
+      non-conformance with Harbor Gate Customs Brokerage. Due date 31 July 2026. State explicitly: Daniel Cho is to update
+      the SOP-03 free-time table after Pacific Star''s new reefer free time (5 days from July). Due date 7 July 2026. State
+      explicitly: Hoon Jang is to file Pacific Star''s written manifest-correction confirmation in the S-021 document register.
+      Due date 4 July 2026.'
     attachments:
     - Handover_Notes_JH.docx
     decisions: []
     tasks:
+    - T-01
+    - T-02
+    - T-03
     - T-04
     - T-05
+    - T-06
+    - T-07
+    - T-08
   - id: M-0292
     date: '2026-06-25'
     from: P-001
     to:
     - P-003
     cc: []
-    intent: 'S-025 pre-arrival: Arrival Notice still to be sent (task T-05); S-024 POD still outstanding (task T-04).'
+    intent: 'S-025 pre-arrival: Arrival Notice still to be sent (task T-05); S-024 POD still outstanding (task T-04). State
+      explicitly: Daniel Cho is to obtain signed POD for S-024 and hand cost sheet to Accounting. Due date 1 July 2026. State
+      explicitly: Daniel Cho is to send Arrival Notice and request documents for S-025 (ETA 29 June). Due date 26 June 2026.'
     attachments: []
     decisions: []
     tasks:

@@ -1,29 +1,17 @@
 {
  "thread": "TH-0080",
  "usage": {
-  "input": 4497,
-  "output": 239
+  "input": 4702,
+  "output": 120
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "Arrange pick-up and empty return of reefer container PSSU4527862 (MBL PSSU260333) before free time expires on 2026-03-15 to avoid charges.",
-    "owner": "Jiwoo Han",
-    "due": "2026-03-15",
-    "status": "open",
-    "shipment_id": "S-009",
-    "evidence": [
-     "M-0084"
-    ]
-   }
-  ],
+  "tasks": [],
   "deadlines": [
    {
     "date": "2026-03-15",
-    "what": "Expiry of 10 days free time for container PSSU4527862 (arrival 2026-03-06); pick-up and empty return required before then.",
+    "what": "Free time (10 days from arrival 2026-03-06) expires for container PSSU4527862; pick-up and empty return required before then to avoid charges.",
     "shipment_id": "S-009",
     "evidence": [
      "M-0084"

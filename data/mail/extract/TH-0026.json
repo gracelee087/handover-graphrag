@@ -1,26 +1,13 @@
 {
  "thread": "TH-0026",
  "usage": {
-  "input": 3791,
-  "output": 414
+  "input": 3996,
+  "output": 32
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "File the import declaration for HBL MFCIM260003 / MBL PSSU260111 (container PSSU5173790, HS 9031.80) on arrival of Pacific Meridian 019N and update Jiwoo Han once it is accepted.",
-    "owner": "Sunwoo Choi",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-003",
-    "evidence": [
-     "M-0026",
-     "M-0027"
-    ]
-   }
-  ],
+  "tasks": [],
   "deadlines": []
  }
 }

@@ -6,4 +6,3 @@ __pycache__/
 # LLM generation caches (the generated corpus itself IS committed so judges need no API key)
 data/mail/json/
 data/sop/json/
-eval/results/

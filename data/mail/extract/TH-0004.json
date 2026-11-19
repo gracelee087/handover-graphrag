@@ -1,8 +1,8 @@
 {
  "thread": "TH-0004",
  "usage": {
-  "input": 4450,
-  "output": 133
+  "input": 4655,
+  "output": 130
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-01-26",
-    "what": "Free time (10 days from arrival on 2026-01-17) for container HMLU9595553 under MBL HMLU260037 expires; pick-up must be arranged before then to avoid charges.",
+    "what": "Free time (10 days from arrival on 2026-01-17) for container HMLU9595553 under MBL HMLU260037 expires; pick-up needed before then to avoid charges.",
     "shipment_id": "S-001",
     "evidence": [
      "M-0008"

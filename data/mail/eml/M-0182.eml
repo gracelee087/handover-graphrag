@@ -8,9 +8,9 @@ Subject: Re: Trucking & delivery [MFCIM260020 / OCLU260740] Disposable
 In-Reply-To: <M-0181@meridianfreight.example>
 References: <M-0180@meridianfreight.example> <M-0181@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0688160491977598422=="
+Content-Type: multipart/mixed; boundary="==M-0182=="
 
---===============0688160491977598422==
+--==M-0182==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -34,7 +34,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============0688160491977598422==
+--==M-0182==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="POD_MFCIM260020.pdf"
@@ -42,7 +42,7 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMjAucGRmXQ==
 
---===============0688160491977598422==
+--==M-0182==
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="CostSheet_MFCIM260020.xlsx"
@@ -50,4 +50,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMjAueGxzeF0=
 
---===============0688160491977598422==--
+--==M-0182==--

@@ -8,9 +8,9 @@ Subject: Re: Arrival Notice [MFCIM260020 / OCLU260740] Disposable Syringes -
 In-Reply-To: <M-0172@meridianfreight.example>
 References: <M-0172@meridianfreight.example>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1739113236498254475=="
+Content-Type: multipart/mixed; boundary="==M-0173=="
 
---===============1739113236498254475==
+--==M-0173==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -40,7 +40,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============1739113236498254475==
+--==M-0173==
 Content-Type: application/pdf
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="ArrivalNotice_MFCIM260020.pdf"
@@ -48,4 +48,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBBcnJpdmFsTm90aWNlX01GQ0lNMjYwMDIwLnBkZl0=
 
---===============1739113236498254475==--
+--==M-0173==--

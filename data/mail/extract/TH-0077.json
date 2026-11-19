@@ -1,8 +1,8 @@
 {
  "thread": "TH-0077",
  "usage": {
-  "input": 3872,
-  "output": 181
+  "input": 4077,
+  "output": 90
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-03-16",
-    "what": "Free time (10 days) for reefer container PSSU4527862 under HBL MFCIM260009 expires",
+    "what": "Free time (10 days) expires for container PSSU4527862",
     "shipment_id": "S-009",
     "evidence": [
      "M-0078"

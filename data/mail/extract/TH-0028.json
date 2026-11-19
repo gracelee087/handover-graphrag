@@ -1,8 +1,8 @@
 {
  "thread": "TH-0028",
  "usage": {
-  "input": 3897,
-  "output": 237
+  "input": 4102,
+  "output": 103
  },
  "extraction": {
   "issues": [],
@@ -11,7 +11,7 @@
   "deadlines": [
    {
     "date": "2026-02-10",
-    "what": "Free time (7 days) expires for container HMLU9536390 under HBL MFCIM260004 / MBL HMLU260148.",
+    "what": "Free time (7 days) expires for container HMLU9536390 under HBL MFCIM260004.",
     "shipment_id": "S-004",
     "evidence": [
      "M-0029"

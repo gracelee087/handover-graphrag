@@ -6,9 +6,9 @@ Cc: Haneul Park <haneul.park@kimpark-customs.example>
 Subject:
  Customs clearance [MFCIM260010 / HMLU260370] Olive Oil - HML Bremen 026W
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============2675840862646800899=="
+Content-Type: multipart/mixed; boundary="==M-0091=="
 
---===============2675840862646800899==
+--==M-0091==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
@@ -38,7 +38,7 @@ Jiwoo Han
 Senior Import Operator
 Meridian Freight Co.
 
---===============2675840862646800899==
+--==M-0091==
 Content-Type: application/zip
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Docs_MFCIM260010.zip"
@@ -46,4 +46,4 @@ MIME-Version: 1.0
 
 W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDEwLnppcF0=
 
---===============2675840862646800899==--
+--==M-0091==--

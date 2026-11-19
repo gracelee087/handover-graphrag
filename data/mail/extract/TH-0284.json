@@ -1,15 +1,15 @@
 {
  "thread": "TH-0284",
  "usage": {
-  "input": 3691,
-  "output": 469
+  "input": 3896,
+  "output": 457
  },
  "extraction": {
   "issues": [],
   "decisions": [
    {
     "key": "DEC1",
-    "summary": "All Blue Harbor Foods reefer imports will be routed for customs clearance via Kim & Park Customs Services' Busan office only, effective Q2 2026.",
+    "summary": "All Blue Harbor Foods reefer imports will be routed via Kim & Park Customs Services' Busan office only, effective Q2 2026.",
     "date": "2026-04-28",
     "decided_by": "Grace Yoon",
     "shipment_id": null,
@@ -24,7 +24,7 @@
   "tasks": [
    {
     "key": "TASK1",
-    "summary": "Ensure the import team applies the Kim & Park Busan-only routing to all Blue Harbor Foods reefer files.",
+    "summary": "Ensure the import team applies the Kim & Park Busan-only broker routing to all Blue Harbor Foods reefer files.",
     "owner": "Minseo Park",
     "due": null,
     "status": "open",
@@ -35,7 +35,7 @@
    },
    {
     "key": "TASK2",
-    "summary": "Include the Blue Harbor reefer Kim & Park Busan routing in the handover from Jiwoo Han to Daniel Cho before Jiwoo leaves on 2026-06-30.",
+    "summary": "Include the Blue Harbor reefer Kim & Park Busan routing in the handover from Jiwoo to Daniel before Jiwoo leaves on 30 June 2026.",
     "owner": "Jiwoo Han",
     "due": "2026-06-30",
     "status": "open",
@@ -48,7 +48,7 @@
   "deadlines": [
    {
     "date": "2026-06-30",
-    "what": "Jiwoo Han leaves; handover of Blue Harbor reefer routing to Daniel Cho must be completed.",
+    "what": "Jiwoo Han leaves; Daniel Cho takes over Blue Harbor reefer routing handover.",
     "shipment_id": null,
     "evidence": [
      "M-0285"

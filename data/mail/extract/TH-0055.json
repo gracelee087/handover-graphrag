@@ -1,25 +1,13 @@
 {
  "thread": "TH-0055",
  "usage": {
-  "input": 3932,
-  "output": 436
+  "input": 4137,
+  "output": 203
  },
  "extraction": {
   "issues": [],
   "decisions": [],
-  "tasks": [
-   {
-    "key": "TASK1",
-    "summary": "Advise Seoul Medica Supplies of the expected clearance date for the infusion pumps under HBL MFCIM260007 (container HMLU3394415) so they can plan delivery.",
-    "owner": "Jiwoo Han",
-    "due": null,
-    "status": "open",
-    "shipment_id": "S-007",
-    "evidence": [
-     "M-0057"
-    ]
-   }
-  ],
+  "tasks": [],
   "deadlines": [
    {
     "date": "2026-03-01",

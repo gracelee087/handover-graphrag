@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "factual/vector": {
+   "n": 8,
+   "correct": 4,
+   "partial": 0,
+   "score": 0.5
+  },
+  "factual/graph": {
+   "n": 8,
+   "correct": 8,
+   "partial": 0,
+   "score": 1.0
+  },
+  "factual/text2cypher": {
+   "n": 8,
+   "correct": 8,
+   "partial": 0,
+   "score": 1.0
+  },
+  "aggregate/vector": {
+   "n": 8,
+   "correct": 1,
+   "partial": 2,
+   "score": 0.25
+  },
+  "aggregate/graph": {
+   "n": 8,
+   "correct": 1,
+   "partial": 2,
+   "score": 0.25
+  },
+  "aggregate/text2cypher": {
+   "n": 8,
+   "correct": 7,
+   "partial": 0,
+   "score": 0.875
+  },
+  "multihop/vector": {
+   "n": 8,
+   "correct": 6,
+   "partial": 1,
+   "score": 0.812
+  },
+  "multihop/graph": {
+   "n": 8,
+   "correct": 7,
+   "partial": 1,
+   "score": 0.938
+  },
+  "multihop/text2cypher": {
+   "n": 8,
+   "correct": 7,
+   "partial": 1,
+   "score": 0.938
+  },
+  "compliance/vector": {
+   "n": 8,
+   "correct": 1,
+   "partial": 5,
+   "score": 0.438
+  },
+  "compliance/graph": {
+   "n": 8,
+   "correct": 5,
+   "partial": 3,
+   "score": 0.812
+  },
+  "compliance/text2cypher": {
+   "n": 8,
+   "correct": 2,
+   "partial": 4,
+   "score": 0.5
+  },
+  "handover/vector": {
+   "n": 8,
+   "correct": 3,
+   "partial": 2,
+   "score": 0.5
+  },
+  "handover/graph": {
+   "n": 8,
+   "correct": 4,
+   "partial": 4,
+   "score": 0.75
+  },
+  "handover/text2cypher": {
+   "n": 8,
+   "correct": 5,
+   "partial": 3,
+   "score": 0.812
+  },
+  "ALL/vector": {
+   "n": 40,
+   "correct": 15,
+   "partial": 10,
+   "score": 0.5
+  },
+  "ALL/graph": {
+   "n": 40,
+   "correct": 25,
+   "partial": 10,
+   "score": 0.75
+  },
+  "ALL/text2cypher": {
+   "n": 40,
+   "correct": 29,
+   "partial": 8,
+   "score": 0.825
+  }
+ },
+ "cost_usd": 3.754,
+ "judge_cost_usd": 0.72,
+ "latency_s": {
+  "vector": 4.5,
+  "graph": 5.3,
+  "text2cypher": 10.8
+ }
+}
