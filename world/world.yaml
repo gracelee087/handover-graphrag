@@ -1,0 +1,5210 @@
+meta:
+  company: Meridian Freight Co.
+  domain: meridianfreight.example
+  period_start: '2026-01-05'
+  period_end: '2026-06-30'
+  predecessor: P-001
+  successor: P-003
+  seed: 20260119
+  generated_by: src/gen_world.py
+organizations:
+- id: ORG-MFC
+  name: Meridian Freight Co.
+  type: forwarder
+  domain: meridianfreight.example
+- id: ORG-HML
+  name: Hanseatic Marine Lines
+  type: carrier
+  domain: hml-lines.example
+  mbl_prefix: HMLU
+- id: ORG-OCL
+  name: Orient Container Line
+  type: carrier
+  domain: ocl-shipping.example
+  mbl_prefix: OCLU
+- id: ORG-PSS
+  name: Pacific Star Shipping
+  type: carrier
+  domain: pacstar.example
+  mbl_prefix: PSSU
+- id: ORG-HGC
+  name: Harbor Gate Customs Brokerage
+  type: broker
+  domain: harborgate.example
+- id: ORG-KPC
+  name: Kim & Park Customs Services
+  type: broker
+  domain: kimpark-customs.example
+- id: ORG-DPC
+  name: Daehan Precision Co.
+  type: consignee
+  domain: daehanprecision.example
+- id: ORG-SMS
+  name: Seoul Medica Supplies
+  type: consignee
+  domain: seoulmedica.example
+- id: ORG-BHF
+  name: Blue Harbor Foods
+  type: consignee
+  domain: blueharborfoods.example
+- id: ORG-NMG
+  name: Nordlicht Maschinenbau GmbH
+  type: shipper
+  domain: nordlicht-mb.example
+- id: ORG-RHL
+  name: Rapid Haul Logistics
+  type: trucker
+  domain: rapidhaul.example
+- id: ORG-BNT
+  name: Busan New Port Terminal
+  type: terminal
+  domain: bnpt.example
+people:
+- id: P-001
+  name: Jiwoo Han
+  org: ORG-MFC
+  title: Senior Import Operator (leaving 30 June 2026)
+  email: jiwoo.han@meridianfreight.example
+  is_internal: true
+- id: P-002
+  name: Minseo Park
+  org: ORG-MFC
+  title: Import Team Lead
+  email: minseo.park@meridianfreight.example
+  is_internal: true
+- id: P-003
+  name: Daniel Cho
+  org: ORG-MFC
+  title: Import Operator (successor)
+  email: daniel.cho@meridianfreight.example
+  is_internal: true
+- id: P-004
+  name: Yuna Seo
+  org: ORG-MFC
+  title: Export Operator
+  email: yuna.seo@meridianfreight.example
+  is_internal: true
+- id: P-005
+  name: Thomas Kwon
+  org: ORG-MFC
+  title: Sales Manager
+  email: thomas.kwon@meridianfreight.example
+  is_internal: true
+- id: P-006
+  name: Hyejin Lim
+  org: ORG-MFC
+  title: Sales Representative
+  email: hyejin.lim@meridianfreight.example
+  is_internal: true
+- id: P-007
+  name: Sora Baek
+  org: ORG-MFC
+  title: Accounting Manager
+  email: sora.baek@meridianfreight.example
+  is_internal: true
+- id: P-008
+  name: Junho Oh
+  org: ORG-MFC
+  title: Accounts Payable Clerk
+  email: junho.oh@meridianfreight.example
+  is_internal: true
+- id: P-009
+  name: Grace Yoon
+  org: ORG-MFC
+  title: Operations Manager
+  email: grace.yoon@meridianfreight.example
+  is_internal: true
+- id: P-010
+  name: Eunji Kang
+  org: ORG-MFC
+  title: Customer Service
+  email: eunji.kang@meridianfreight.example
+  is_internal: true
+- id: P-011
+  name: Hoon Jang
+  org: ORG-MFC
+  title: Documentation Clerk
+  email: hoon.jang@meridianfreight.example
+  is_internal: true
+- id: P-012
+  name: Sejin Ryu
+  org: ORG-MFC
+  title: IT & Admin
+  email: sejin.ryu@meridianfreight.example
+  is_internal: true
+- id: P-013
+  name: Lena Vogt
+  org: ORG-HML
+  title: Import Customer Service
+  email: lena.vogt@hml-lines.example
+  is_internal: false
+- id: P-014
+  name: Marcus Keller
+  org: ORG-HML
+  title: Demurrage & Detention Desk
+  email: marcus.keller@hml-lines.example
+  is_internal: false
+- id: P-015
+  name: Wei Zhang
+  org: ORG-OCL
+  title: Import Documentation
+  email: wei.zhang@ocl-shipping.example
+  is_internal: false
+- id: P-016
+  name: Mei Lin
+  org: ORG-OCL
+  title: Key Account Manager
+  email: mei.lin@ocl-shipping.example
+  is_internal: false
+- id: P-017
+  name: Ryan Tanaka
+  org: ORG-PSS
+  title: Import Customer Service
+  email: ryan.tanaka@pacstar.example
+  is_internal: false
+- id: P-018
+  name: Aiko Mori
+  org: ORG-PSS
+  title: Equipment Control
+  email: aiko.mori@pacstar.example
+  is_internal: false
+- id: P-019
+  name: Sunwoo Choi
+  org: ORG-HGC
+  title: Licensed Customs Broker
+  email: sunwoo.choi@harborgate.example
+  is_internal: false
+- id: P-020
+  name: Nara Shin
+  org: ORG-HGC
+  title: Clearance Coordinator
+  email: nara.shin@harborgate.example
+  is_internal: false
+- id: P-021
+  name: Dongwook Kim
+  org: ORG-KPC
+  title: Licensed Customs Broker
+  email: dongwook.kim@kimpark-customs.example
+  is_internal: false
+- id: P-022
+  name: Haneul Park
+  org: ORG-KPC
+  title: Clearance Assistant
+  email: haneul.park@kimpark-customs.example
+  is_internal: false
+- id: P-023
+  name: Jaehyun Lee
+  org: ORG-DPC
+  title: Purchasing Manager
+  email: jaehyun.lee@daehanprecision.example
+  is_internal: false
+- id: P-024
+  name: Soyeon Moon
+  org: ORG-DPC
+  title: Logistics Coordinator
+  email: soyeon.moon@daehanprecision.example
+  is_internal: false
+- id: P-025
+  name: Insoo Hwang
+  org: ORG-SMS
+  title: Supply Chain Manager
+  email: insoo.hwang@seoulmedica.example
+  is_internal: false
+- id: P-026
+  name: Bora Jung
+  org: ORG-BHF
+  title: Import Buyer
+  email: bora.jung@blueharborfoods.example
+  is_internal: false
+- id: P-027
+  name: Klaus Richter
+  org: ORG-NMG
+  title: Export Sales
+  email: klaus.richter@nordlicht-mb.example
+  is_internal: false
+- id: P-028
+  name: Kyungho Nam
+  org: ORG-RHL
+  title: Dispatch Manager
+  email: kyungho.nam@rapidhaul.example
+  is_internal: false
+- id: P-029
+  name: Woojin Seok
+  org: ORG-RHL
+  title: Dispatcher
+  email: woojin.seok@rapidhaul.example
+  is_internal: false
+- id: P-030
+  name: Taeyang Koo
+  org: ORG-BNT
+  title: Gate Operations
+  email: taeyang.koo@bnpt.example
+  is_internal: false
+shipments:
+- id: S-001
+  mbl: HMLU260037
+  hbl: MFCIM260001
+  container: HMLU9595553
+  container_type: 20GP
+  vessel: HML Bremen
+  voyage: 026W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-01-17'
+  ata: '2026-01-17'
+  free_time_days: 10
+  carrier: ORG-HML
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: canned tuna
+  hs_code: '1604.14'
+  cargo_value_usd: 73836
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-002
+  mbl: OCLU260074
+  hbl: MFCIM260002
+  container: OCLU4169487
+  container_type: 20GP
+  vessel: OCL Ningbo Star
+  voyage: 2602E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-01-23'
+  ata: '2026-01-23'
+  free_time_days: 7
+  carrier: ORG-OCL
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: surgical gloves
+  hs_code: '4015.12'
+  cargo_value_usd: 236601
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-003
+  mbl: PSSU260111
+  hbl: MFCIM260003
+  container: PSSU5173790
+  container_type: 40HC
+  vessel: Pacific Meridian
+  voyage: 019N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-01-28'
+  ata: '2026-01-28'
+  free_time_days: 7
+  carrier: ORG-PSS
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: null
+  cargo: industrial sensors
+  hs_code: '9031.80'
+  cargo_value_usd: 203151
+  status: delivered
+  has_incident: true
+  incident: I-01
+- id: S-004
+  mbl: HMLU260148
+  hbl: MFCIM260004
+  container: HMLU9536390
+  container_type: 20GP
+  vessel: HML Lubeck
+  voyage: 031W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-02-03'
+  ata: '2026-02-03'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: ORG-NMG
+  cargo: CNC machine spare parts
+  hs_code: '8466.93'
+  cargo_value_usd: 69076
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-005
+  mbl: OCLU260185
+  hbl: MFCIM260005
+  container: OCLU2232702
+  container_type: 20GP
+  vessel: OCL Qingdao Star
+  voyage: 2609E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-02-10'
+  ata: '2026-02-10'
+  free_time_days: 10
+  carrier: ORG-OCL
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: canned tuna
+  hs_code: '1604.14'
+  cargo_value_usd: 123242
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-006
+  mbl: PSSU260222
+  hbl: MFCIM260006
+  container: PSSU1961220
+  container_type: 40RF
+  vessel: Pacific Borealis
+  voyage: 023N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-02-15'
+  ata: '2026-02-15'
+  free_time_days: 10
+  carrier: ORG-PSS
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: frozen shrimp
+  hs_code: '0306.17'
+  cargo_value_usd: 122520
+  status: delivered
+  has_incident: true
+  incident: I-02
+- id: S-007
+  mbl: HMLU260259
+  hbl: MFCIM260007
+  container: HMLU3394415
+  container_type: 40HC
+  vessel: HML Kiel
+  voyage: 035W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-02-22'
+  ata: '2026-02-22'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: infusion pumps
+  hs_code: '9018.90'
+  cargo_value_usd: 78143
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-008
+  mbl: OCLU260296
+  hbl: MFCIM260008
+  container: OCLU2125860
+  container_type: 40HC
+  vessel: OCL Dalian Star
+  voyage: 2615E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-02-28'
+  ata: '2026-02-28'
+  free_time_days: 7
+  carrier: ORG-OCL
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: null
+  cargo: CNC machine spare parts
+  hs_code: '8466.93'
+  cargo_value_usd: 75785
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-009
+  mbl: PSSU260333
+  hbl: MFCIM260009
+  container: PSSU4527862
+  container_type: 40RF
+  vessel: Pacific Aurora
+  voyage: 014N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-03-06'
+  ata: '2026-03-06'
+  free_time_days: 10
+  carrier: ORG-PSS
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: frozen salmon fillets
+  hs_code: '0304.81'
+  cargo_value_usd: 52281
+  status: delivered
+  has_incident: true
+  incident: I-03
+- id: S-010
+  mbl: HMLU260370
+  hbl: MFCIM260010
+  container: HMLU9996621
+  container_type: 40HC
+  vessel: HML Bremen
+  voyage: 026W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-03-11'
+  ata: '2026-03-11'
+  free_time_days: 10
+  carrier: ORG-HML
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: olive oil
+  hs_code: '1509.10'
+  cargo_value_usd: 184419
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-011
+  mbl: OCLU260407
+  hbl: MFCIM260011
+  container: OCLU3488652
+  container_type: 40HC
+  vessel: OCL Ningbo Star
+  voyage: 2602E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-03-18'
+  ata: '2026-03-18'
+  free_time_days: 7
+  carrier: ORG-OCL
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: infusion pumps
+  hs_code: '9018.90'
+  cargo_value_usd: 171389
+  status: delivered
+  has_incident: true
+  incident: I-04
+- id: S-012
+  mbl: PSSU260444
+  hbl: MFCIM260012
+  container: PSSU5689097
+  container_type: 20GP
+  vessel: Pacific Meridian
+  voyage: 019N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-03-23'
+  ata: '2026-03-23'
+  free_time_days: 7
+  carrier: ORG-PSS
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: disposable syringes
+  hs_code: '9018.31'
+  cargo_value_usd: 67170
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-013
+  mbl: HMLU260481
+  hbl: MFCIM260013
+  container: HMLU6383102
+  container_type: 40HC
+  vessel: HML Lubeck
+  voyage: 031W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-03-29'
+  ata: '2026-03-29'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: ORG-NMG
+  cargo: precision bearings
+  hs_code: '8482.10'
+  cargo_value_usd: 25992
+  status: delivered
+  has_incident: true
+  incident: I-05
+- id: S-014
+  mbl: OCLU260518
+  hbl: MFCIM260014
+  container: OCLU9895775
+  container_type: 20GP
+  vessel: OCL Qingdao Star
+  voyage: 2609E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-04-05'
+  ata: '2026-04-05'
+  free_time_days: 10
+  carrier: ORG-OCL
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: olive oil
+  hs_code: '1509.10'
+  cargo_value_usd: 52249
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-015
+  mbl: PSSU260555
+  hbl: MFCIM260015
+  container: PSSU2398736
+  container_type: 40HC
+  vessel: Pacific Borealis
+  voyage: 023N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-04-11'
+  ata: '2026-04-11'
+  free_time_days: 7
+  carrier: ORG-PSS
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: ORG-NMG
+  cargo: industrial sensors
+  hs_code: '9031.80'
+  cargo_value_usd: 167846
+  status: delivered
+  has_incident: true
+  incident: I-06
+- id: S-016
+  mbl: HMLU260592
+  hbl: MFCIM260016
+  container: HMLU6066254
+  container_type: 40HC
+  vessel: HML Kiel
+  voyage: 035W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-04-17'
+  ata: '2026-04-17'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: disposable syringes
+  hs_code: '9018.31'
+  cargo_value_usd: 20391
+  status: delivered
+  has_incident: true
+  incident: I-10
+- id: S-017
+  mbl: OCLU260629
+  hbl: MFCIM260017
+  container: OCLU6145131
+  container_type: 40HC
+  vessel: OCL Dalian Star
+  voyage: 2615E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-04-23'
+  ata: '2026-04-23'
+  free_time_days: 7
+  carrier: ORG-OCL
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: diagnostic reagent kits
+  hs_code: '3822.00'
+  cargo_value_usd: 175691
+  status: delivered
+  has_incident: true
+  incident: I-07
+- id: S-018
+  mbl: PSSU260666
+  hbl: MFCIM260018
+  container: PSSU6094602
+  container_type: 40HC
+  vessel: Pacific Aurora
+  voyage: 014N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-04-28'
+  ata: '2026-04-28'
+  free_time_days: 7
+  carrier: ORG-PSS
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: null
+  cargo: hydraulic press components
+  hs_code: '8462.29'
+  cargo_value_usd: 232955
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-019
+  mbl: HMLU260703
+  hbl: MFCIM260019
+  container: HMLU6425478
+  container_type: 20GP
+  vessel: HML Bremen
+  voyage: 026W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-05-05'
+  ata: '2026-05-05'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: ORG-NMG
+  cargo: industrial sensors
+  hs_code: '9031.80'
+  cargo_value_usd: 229995
+  status: delivered
+  has_incident: true
+  incident: I-08
+- id: S-020
+  mbl: OCLU260740
+  hbl: MFCIM260020
+  container: OCLU3345935
+  container_type: 20GP
+  vessel: OCL Ningbo Star
+  voyage: 2602E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-05-10'
+  ata: '2026-05-10'
+  free_time_days: 7
+  carrier: ORG-OCL
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: disposable syringes
+  hs_code: '9018.31'
+  cargo_value_usd: 163090
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-021
+  mbl: PSSU260777
+  hbl: MFCIM260021
+  container: PSSU2430001
+  container_type: 40HC
+  vessel: Pacific Meridian
+  voyage: 019N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-05-16'
+  ata: '2026-05-16'
+  free_time_days: 10
+  carrier: ORG-PSS
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: canned tuna
+  hs_code: '1604.14'
+  cargo_value_usd: 65800
+  status: delivered
+  has_incident: true
+  incident: I-09
+- id: S-022
+  mbl: HMLU260814
+  hbl: MFCIM260022
+  container: HMLU7660532
+  container_type: 20GP
+  vessel: HML Lubeck
+  voyage: 031W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-05-22'
+  ata: '2026-05-22'
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-DPC
+  shipper: ORG-NMG
+  cargo: hydraulic press components
+  hs_code: '8462.29'
+  cargo_value_usd: 183919
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-023
+  mbl: OCLU260851
+  hbl: MFCIM260023
+  container: OCLU5648055
+  container_type: 40RF
+  vessel: OCL Qingdao Star
+  voyage: 2609E
+  pol: CNTAO
+  pol_name: Qingdao
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-05-29'
+  ata: '2026-05-29'
+  free_time_days: 10
+  carrier: ORG-OCL
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: frozen salmon fillets
+  hs_code: '0304.81'
+  cargo_value_usd: 156597
+  status: delivered
+  has_incident: false
+  incident: null
+- id: S-024
+  mbl: PSSU260888
+  hbl: MFCIM260024
+  container: PSSU4898494
+  container_type: 40RF
+  vessel: Pacific Borealis
+  voyage: 023N
+  pol: USLAX
+  pol_name: Los Angeles
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-06-03'
+  ata: '2026-06-03'
+  free_time_days: 10
+  carrier: ORG-PSS
+  broker: ORG-KPC
+  consignee: ORG-BHF
+  shipper: null
+  cargo: frozen shrimp
+  hs_code: '0306.17'
+  cargo_value_usd: 201995
+  status: awaiting_pod
+  has_incident: false
+  incident: null
+- id: S-025
+  mbl: HMLU260925
+  hbl: MFCIM260025
+  container: HMLU6274990
+  container_type: 20GP
+  vessel: HML Kiel
+  voyage: 035W
+  pol: NLRTM
+  pol_name: Rotterdam
+  pod: KRPUS
+  pod_name: Busan
+  eta: '2026-06-29'
+  ata: null
+  free_time_days: 7
+  carrier: ORG-HML
+  broker: ORG-HGC
+  consignee: ORG-SMS
+  shipper: null
+  cargo: diagnostic reagent kits
+  hs_code: '3822.00'
+  cargo_value_usd: 228134
+  status: pre_arrival
+  has_incident: false
+  incident: null
+sops:
+- id: SOP-01
+  title: Import Clearance Standard Operating Procedure
+  version: v3.2
+  effective_date: '2025-09-01'
+  filename: SOP-01_Import_Clearance.pdf
+  sections:
+  - number: '1'
+    title: Purpose and Scope
+    clauses:
+    - number: '1.1'
+      title: Purpose
+      gist: Defines the mandatory steps for sea import clearance handled by the Import Operations team.
+      id: SOP-01-C1.1
+    - number: '1.2'
+      title: Scope
+      gist: Applies to all FCL and LCL sea imports where Meridian acts as forwarder or NVOCC; air imports are covered by SOP-06.
+      id: SOP-01-C1.2
+    id: SOP-01-S1
+  - number: '2'
+    title: Roles and Responsibilities
+    clauses:
+    - number: '2.1'
+      title: Import Operator
+      gist: Owns the file from pre-alert to delivery; single point of contact for consignee, broker, carrier, trucker.
+      id: SOP-01-C2.1
+    - number: '2.2'
+      title: Import Team Lead
+      gist: Approves exceptions, signs off on cost absorption up to USD 2,000, receives escalations.
+      id: SOP-01-C2.2
+    - number: '2.3'
+      title: Documentation Clerk
+      gist: Issues House B/L, maintains document register, archives originals.
+      id: SOP-01-C2.3
+    id: SOP-01-S2
+  - number: '3'
+    title: Pre-arrival
+    clauses:
+    - number: '3.1'
+      title: Pre-alert review
+      gist: Operator reviews the pre-alert within 1 working day of receipt and confirms HBL/MBL data match.
+      id: SOP-01-C3.1
+    - number: '3.2'
+      title: Arrival Notice
+      gist: Arrival Notice is sent to consignee no later than 3 working days before ETA; it must quote MBL, HBL, container,
+        vessel/voyage, ETA and free time.
+      id: SOP-01-C3.2
+    - number: '3.3'
+      title: Document collection
+      gist: Commercial invoice, packing list and C/O (if preferential) are requested from the consignee at the time of the
+        Arrival Notice; see SOP-02 for the checklist.
+      id: SOP-01-C3.3
+    id: SOP-01-S3
+  - number: '4'
+    title: Customs Declaration
+    clauses:
+    - number: '4.1'
+      title: Broker instruction
+      gist: A complete document set is forwarded to the appointed customs broker at least 2 working days before ETA.
+      id: SOP-01-C4.1
+    - number: '4.2'
+      title: HS code verification
+      gist: Operator cross-checks the broker's proposed HS code against the consignee's import history; any change is confirmed
+        in writing with the consignee before filing.
+      id: SOP-01-C4.2
+    - number: '4.3'
+      title: Duty and tax payment
+      gist: Duty is paid by the consignee directly unless a disbursement is pre-approved by Accounting.
+      id: SOP-01-C4.3
+    id: SOP-01-S4
+  - number: '5'
+    title: Inspection and Release
+    clauses:
+    - number: '5.1'
+      title: Inspection notice
+      gist: If customs selects the shipment for physical inspection, the operator informs the consignee within 1 working day
+        and records the inspection in the file.
+      id: SOP-01-C5.1
+    - number: '5.2'
+      title: Delivery Order
+      gist: D/O is requested from the carrier only after customs release AND confirmed O/BL surrender or telex release.
+      id: SOP-01-C5.2
+    - number: '5.3'
+      title: Trucking booking
+      gist: Trucking is booked at least 1 working day before planned pick-up and the consignee is given the delivery slot
+        in writing.
+      id: SOP-01-C5.3
+    id: SOP-01-S5
+  - number: '6'
+    title: File Closure
+    clauses:
+    - number: '6.1'
+      title: Proof of delivery
+      gist: Signed POD is obtained within 3 working days of delivery and attached to the file.
+      id: SOP-01-C6.1
+    - number: '6.2'
+      title: Invoicing handover
+      gist: Cost sheet handed to Accounting within 5 working days of delivery.
+      id: SOP-01-C6.2
+    id: SOP-01-S6
+- id: SOP-02
+  title: Import Document Checklist and B/L Handling
+  version: v2.0
+  effective_date: '2025-06-15'
+  filename: SOP-02_Document_Checklist_BL_Handling.pdf
+  sections:
+  - number: '1'
+    title: Mandatory Document Set
+    clauses:
+    - number: '1.1'
+      title: Checklist
+      gist: 'Table of required documents per cargo type: commercial invoice, packing list, B/L, C/O, import licence (medical
+        devices), health certificate (food).'
+      id: SOP-02-C1.1
+    - number: '1.2'
+      title: Completeness check
+      gist: Operator ticks the checklist in the file before instructing the broker; missing items are chased with the consignee
+        in writing.
+      id: SOP-02-C1.2
+    id: SOP-02-S1
+  - number: '2'
+    title: Bill of Lading
+    clauses:
+    - number: '2.1'
+      title: Master vs House
+      gist: MBL is issued by the carrier to Meridian; HBL is issued by Meridian to the consignee. Both numbers appear on every
+        mail subject about the shipment.
+      id: SOP-02-C2.1
+    - number: '2.2'
+      title: Original B/L
+      gist: Where an original B/L is issued, all three originals or one duly endorsed original must be surrendered before
+        cargo release.
+      id: SOP-02-C2.2
+    - number: '2.3'
+      title: Telex release / Sea waybill
+      gist: Telex release confirmation from the carrier replaces O/BL surrender; a screenshot of the confirmation is filed.
+      id: SOP-02-C2.3
+    - number: '2.4'
+      title: Release confirmation before D/O
+      gist: No D/O request is sent to the carrier until O/BL surrender or telex release is confirmed and recorded in the file.
+      id: SOP-02-C2.4
+    id: SOP-02-S2
+  - number: '3'
+    title: Amendments
+    clauses:
+    - number: '3.1'
+      title: B/L correction
+      gist: Any B/L amendment after vessel departure requires the shipper's written request and consignee's acknowledgement;
+        amendment fees are quoted to the requesting party.
+      id: SOP-02-C3.1
+    - number: '3.2'
+      title: Manifest correction
+      gist: Manifest corrections at destination must be filed before the vessel's ATA; late corrections are escalated to the
+        Team Lead.
+      id: SOP-02-C3.2
+    id: SOP-02-S3
+  - number: '4'
+    title: Archiving
+    clauses:
+    - number: '4.1'
+      title: Retention
+      gist: All import documents are retained for 5 years in the document management system.
+      id: SOP-02-C4.1
+    id: SOP-02-S4
+- id: SOP-03
+  title: Demurrage and Detention Avoidance and Free-time Policy
+  version: v4.1
+  effective_date: '2025-11-01'
+  filename: SOP-03_Demurrage_Detention_Freetime.pdf
+  sections:
+  - number: '1'
+    title: Definitions
+    clauses:
+    - number: '1.1'
+      title: Free time
+      gist: The number of calendar days from container discharge during which no demurrage is charged by the carrier.
+      id: SOP-03-C1.1
+    - number: '1.2'
+      title: Demurrage vs Detention
+      gist: Demurrage accrues while the container is inside the terminal; detention accrues after gate-out until empty return.
+      id: SOP-03-C1.2
+    id: SOP-03-S1
+  - number: '2'
+    title: Standard Free Time
+    clauses:
+    - number: '2.1'
+      title: Contract free time table
+      gist: 'Table: Hanseatic Marine Lines 7 days dry / 5 days reefer; Orient Container Line 7 days dry / 5 days reefer; Pacific
+        Star Shipping 7 days dry / 4 days reefer; Blue Harbor Foods contract adds 3 days on all carriers.'
+      id: SOP-03-C2.1
+    - number: '2.2'
+      title: Recording
+      gist: Free-time expiry date is recorded in the file on the day the Arrival Notice is issued.
+      id: SOP-03-C2.2
+    id: SOP-03-S2
+  - number: '3'
+    title: Monitoring
+    clauses:
+    - number: '3.1'
+      title: Daily watch list
+      gist: Operator reviews all containers with free time expiring within 3 days every morning.
+      id: SOP-03-C3.1
+    - number: '3.2'
+      title: Consignee reminder
+      gist: Consignee is reminded in writing 3 working days before free-time expiry if customs release or pick-up is not yet
+        confirmed.
+      id: SOP-03-C3.2
+    id: SOP-03-S3
+  - number: '4'
+    title: Extension and Charges
+    clauses:
+    - number: '4.1'
+      title: Extension request
+      gist: Free-time extension is requested from the carrier's D&D desk in writing when a delay is foreseeable.
+      id: SOP-03-C4.1
+    - number: '4.2'
+      title: Extension timing
+      gist: The extension request must be sent no later than 2 working days before free time expires; requests after expiry
+        are generally refused by carriers.
+      id: SOP-03-C4.2
+    - number: '4.3'
+      title: Charge allocation
+      gist: Demurrage caused by consignee document delay is billed to the consignee; demurrage caused by Meridian's error
+        is absorbed with Team Lead approval and recorded as a cost-absorption decision.
+      id: SOP-03-C4.3
+    - number: '4.4'
+      title: Dispute
+      gist: D&D invoices are disputed with the carrier within 7 days of receipt when the charge contradicts the recorded free
+        time.
+      id: SOP-03-C4.4
+    id: SOP-03-S4
+  - number: '5'
+    title: Empty Return
+    clauses:
+    - number: '5.1'
+      title: Return deadline
+      gist: Trucker confirms empty return date in writing; operator records the return date to close detention exposure.
+      id: SOP-03-C5.1
+    id: SOP-03-S5
+- id: SOP-04
+  title: Exception and Escalation Policy
+  version: v2.3
+  effective_date: '2025-10-01'
+  filename: SOP-04_Exception_Escalation.pdf
+  sections:
+  - number: '1'
+    title: Exception Categories
+    clauses:
+    - number: '1.1'
+      title: Categories
+      gist: 'Table of exception categories: vessel delay > 3 days, customs inspection, document discrepancy, demurrage/detention
+        exposure, cargo damage or shortage, regulatory hold.'
+      id: SOP-04-C1.1
+    - number: '1.2'
+      title: Severity
+      gist: 'Severity 1: potential cost over USD 500 or delivery delay over 5 days; Severity 2: all other exceptions.'
+      id: SOP-04-C1.2
+    id: SOP-04-S1
+  - number: '2'
+    title: Reporting
+    clauses:
+    - number: '2.1'
+      title: Consignee notification
+      gist: Consignee is informed of any exception within 1 working day of Meridian becoming aware of it.
+      id: SOP-04-C2.1
+    - number: '2.2'
+      title: Incident record
+      gist: Each exception is logged in the file with date detected, cause, expected impact and owner.
+      id: SOP-04-C2.2
+    id: SOP-04-S2
+  - number: '3'
+    title: Escalation
+    clauses:
+    - number: '3.1'
+      title: 48-hour escalation
+      gist: Severity 1 exceptions are escalated to the Import Team Lead in writing within 48 hours of detection.
+      id: SOP-04-C3.1
+    - number: '3.2'
+      title: Management escalation
+      gist: Exceptions with potential cost over USD 2,000 or a claim against Meridian are escalated to the Operations Manager
+        by the Team Lead.
+      id: SOP-04-C3.2
+    - number: '3.3'
+      title: Decision recording
+      gist: Every escalation ends with a recorded decision stating what was decided, by whom and on which date.
+      id: SOP-04-C3.3
+    id: SOP-04-S3
+  - number: '4'
+    title: Claims
+    clauses:
+    - number: '4.1'
+      title: Claim notice
+      gist: Cargo damage or shortage noted at delivery is notified to the carrier in writing within 3 days of delivery to
+        preserve recourse.
+      id: SOP-04-C4.1
+    - number: '4.2'
+      title: Evidence
+      gist: Photos, delivery receipt remarks and a survey report (if value over USD 10,000) are collected before any settlement
+        discussion.
+      id: SOP-04-C4.2
+    id: SOP-04-S4
+- id: SOP-05
+  title: Customs Broker and Vendor Management Policy
+  version: v1.4
+  effective_date: '2025-04-01'
+  filename: SOP-05_Broker_Vendor_Management.pdf
+  sections:
+  - number: '1'
+    title: Approved Vendors
+    clauses:
+    - number: '1.1'
+      title: Approved list
+      gist: Only brokers and truckers on the approved vendor list may be instructed; the list is maintained by the Operations
+        Manager.
+      id: SOP-05-C1.1
+    - number: '1.2'
+      title: Broker allocation
+      gist: 'Table: Harbor Gate Customs Brokerage handles Daehan Precision and Seoul Medica; Kim & Park Customs Services handles
+        Blue Harbor Foods (food and agricultural).'
+      id: SOP-05-C1.2
+    id: SOP-05-S1
+  - number: '2'
+    title: Instruction and Quotation
+    clauses:
+    - number: '2.1'
+      title: Written instruction
+      gist: Brokers and truckers are instructed by e-mail with the HBL number in the subject; verbal instructions are confirmed
+        in writing the same day.
+      id: SOP-05-C2.1
+    - number: '2.2'
+      title: Rate validity
+      gist: Vendor rates are agreed annually; any charge outside the rate sheet requires a quotation approved by the Team
+        Lead before the service is performed.
+      id: SOP-05-C2.2
+    id: SOP-05-S2
+  - number: '3'
+    title: Performance Review
+    clauses:
+    - number: '3.1'
+      title: Quarterly review
+      gist: Operations Manager reviews broker clearance lead time and trucker on-time rate each quarter.
+      id: SOP-05-C3.1
+    - number: '3.2'
+      title: Non-conformance
+      gist: Repeated errors by a vendor are recorded and discussed with the vendor; two recorded non-conformances in a quarter
+        trigger a review of the allocation.
+      id: SOP-05-C3.2
+    id: SOP-05-S3
+  - number: '4'
+    title: Invoices
+    clauses:
+    - number: '4.1'
+      title: Invoice check
+      gist: Vendor invoices are checked against the instruction and the rate sheet by the operator before Accounting pays
+        them.
+      id: SOP-05-C4.1
+    id: SOP-05-S4
+incidents:
+- id: I-01
+  shipment: S-003
+  kind: vessel_delay
+  severity: 1
+  detected: '2026-01-22'
+  escalated: '2026-01-22'
+  consignee_informed: '2026-01-22'
+  summary: Vessel delayed 6 days by Shanghai port congestion; consignee production line at risk.
+  clauses:
+  - SOP-04-C2.1
+  - SOP-04-C3.1
+  compliant: true
+  compliance_note: Consignee informed same day; Team Lead escalated the same day (within 48h).
+- id: I-02
+  shipment: S-006
+  kind: missing_documents
+  severity: 2
+  detected: '2026-02-12'
+  escalated: null
+  consignee_informed: '2026-02-12'
+  summary: Health certificate missing for frozen shrimp; broker could not file; free time at risk.
+  clauses:
+  - SOP-02-C1.2
+  - SOP-03-C3.2
+  compliant: true
+  compliance_note: Missing item chased in writing the same day; written reminder sent 3 working days before free-time expiry.
+- id: I-03
+  shipment: S-009
+  kind: demurrage
+  severity: 1
+  detected: '2026-03-17'
+  escalated: '2026-03-23'
+  consignee_informed: '2026-03-17'
+  summary: Consignee asked to hold pick-up; extension requested only on the day free time expired; 4 days demurrage USD 1,120.
+  clauses:
+  - SOP-03-C4.2
+  - SOP-04-C3.1
+  compliant: false
+  compliance_note: Extension request sent on expiry day (SOP-03 4.2 requires 2 working days before). Escalation took 5 days
+    (SOP-04 3.1 requires 48h).
+- id: I-04
+  shipment: S-011
+  kind: customs_inspection
+  severity: 2
+  detected: '2026-03-19'
+  escalated: null
+  consignee_informed: '2026-03-19'
+  summary: Physical inspection ordered on infusion pumps; import licence number queried.
+  clauses:
+  - SOP-01-C5.1
+  - SOP-04-C2.1
+  compliant: true
+  compliance_note: Consignee informed within one working day; inspection recorded.
+- id: I-05
+  shipment: S-013
+  kind: hs_code_dispute
+  severity: 2
+  detected: '2026-04-01'
+  escalated: null
+  consignee_informed: null
+  summary: Broker filed under HS 8482.99 instead of the consignee's usual 8482.10 without written confirmation; duty difference
+    USD 380.
+  clauses:
+  - SOP-01-C4.2
+  compliant: false
+  compliance_note: HS code change filed without written confirmation from consignee.
+- id: I-06
+  shipment: S-015
+  kind: do_release_hold
+  severity: 1
+  detected: '2026-04-13'
+  escalated: '2026-04-13'
+  consignee_informed: '2026-04-13'
+  summary: D/O requested before telex release was confirmed; carrier refused release, 2 days lost, demurrage USD 560.
+  clauses:
+  - SOP-02-C2.4
+  - SOP-04-C3.1
+  compliant: false
+  compliance_note: D/O requested before release confirmation (SOP-02 2.4). Escalation itself was on time.
+- id: I-07
+  shipment: S-017
+  kind: cargo_damage_claim
+  severity: 1
+  detected: '2026-04-27'
+  escalated: '2026-04-27'
+  consignee_informed: '2026-04-27'
+  summary: Wet damage on 14 cartons of diagnostic reagent kits at delivery; claim notice to carrier within 3 days.
+  clauses:
+  - SOP-04-C4.1
+  - SOP-04-C4.2
+  - SOP-04-C3.2
+  compliant: true
+  compliance_note: Claim notice sent the next day; photos and survey arranged; escalated to Ops Manager.
+- id: I-08
+  shipment: S-019
+  kind: urgent_clearance
+  severity: 2
+  detected: '2026-05-06'
+  escalated: null
+  consignee_informed: '2026-05-06'
+  summary: Consignee requested same-day clearance for production stop; broker expedited; trucking booked same day.
+  clauses:
+  - SOP-01-C5.3
+  - SOP-05-C2.2
+  compliant: false
+  compliance_note: Trucking booked same day (SOP-01 5.3 requires 1 working day notice) and expedite fee incurred without approved
+    quotation (SOP-05 2.2).
+- id: I-09
+  shipment: S-021
+  kind: manifest_discrepancy
+  severity: 2
+  detected: '2026-05-18'
+  escalated: '2026-05-18'
+  consignee_informed: '2026-05-18'
+  summary: Carrier manifest showed 18 pallets vs B/L 20; correction filed after ATA, escalated to Team Lead.
+  clauses:
+  - SOP-02-C3.2
+  - SOP-04-C2.1
+  compliant: true
+  compliance_note: Late correction correctly escalated to Team Lead as SOP-02 3.2 requires.
+- id: I-10
+  shipment: S-016
+  kind: detention
+  severity: 1
+  detected: '2026-05-08'
+  escalated: null
+  consignee_informed: '2026-05-11'
+  summary: Empty container returned 6 days late by trucker; detention invoice USD 900; no written return date recorded.
+  clauses:
+  - SOP-03-C5.1
+  - SOP-04-C3.1
+  - SOP-04-C2.1
+  compliant: false
+  compliance_note: No written empty-return date (SOP-03 5.1); never escalated within 48h (SOP-04 3.1); consignee informed
+    after 2 days (SOP-04 2.1).
+decisions:
+- id: D-01
+  date: '2026-01-23'
+  by: P-002
+  incident: I-01
+  shipment: S-003
+  summary: Accept the delay; no re-routing. Daily ETA update to Daehan Precision until berthing.
+- id: D-02
+  date: '2026-02-23'
+  by: P-001
+  incident: I-02
+  shipment: S-006
+  summary: File the declaration on the day the health certificate arrives; use Kim & Park's priority slot.
+- id: D-03
+  date: '2026-03-24'
+  by: P-002
+  incident: I-03
+  shipment: S-009
+  summary: Meridian absorbs 50% of USD 1,120 demurrage (USD 560) because the extension request was late; the rest billed to
+    Blue Harbor Foods.
+- id: D-04
+  date: '2026-03-23'
+  by: P-001
+  incident: I-04
+  shipment: S-011
+  summary: Attend the inspection with the broker; consignee sends the import licence copy directly to customs.
+- id: D-05
+  date: '2026-04-06'
+  by: P-002
+  incident: I-05
+  shipment: S-013
+  summary: Keep the filed HS code (broker's classification confirmed correct); record a non-conformance against Harbor Gate
+    for filing without written confirmation.
+- id: D-06
+  date: '2026-04-14'
+  by: P-002
+  incident: I-06
+  shipment: S-015
+  summary: Absorb USD 560 demurrage as Meridian error; re-train the team on SOP-02 2.4 release confirmation.
+- id: D-07
+  date: '2026-05-01'
+  by: P-009
+  incident: I-07
+  shipment: S-017
+  summary: Appoint an independent surveyor; pursue the claim against Orient Container Line; Seoul Medica is kept informed
+    weekly.
+- id: D-08
+  date: '2026-05-06'
+  by: P-001
+  incident: I-08
+  shipment: S-019
+  summary: Approve broker expedite fee USD 150 verbally and book Rapid Haul for same-day pick-up to prevent the Daehan line
+    stop.
+- id: D-09
+  date: '2026-05-18'
+  by: P-002
+  incident: I-09
+  shipment: S-021
+  summary: File the manifest correction at Meridian's cost (USD 90) and ask Pacific Star to confirm the correction in writing.
+- id: D-10
+  date: '2026-05-15'
+  by: P-002
+  incident: I-10
+  shipment: S-016
+  summary: Dispute the detention invoice with Hanseatic for 2 of the 6 days (terminal closure); bill Rapid Haul for the remaining
+    4 days.
+- id: D-11
+  date: '2026-04-28'
+  by: P-009
+  incident: null
+  shipment: null
+  summary: From Q2 2026 all reefer imports for Blue Harbor Foods are routed via Kim & Park's Busan office only.
+- id: D-12
+  date: '2026-06-19'
+  by: P-002
+  incident: null
+  shipment: null
+  summary: Daniel Cho takes over all open Daehan Precision and Seoul Medica files from Jiwoo Han effective 1 July 2026.
+tasks:
+- id: T-01
+  status: open
+  owner: P-003
+  shipment: S-017
+  incident: I-07
+  due: '2026-07-10'
+  summary: Collect surveyor report and submit formal claim to Orient Container Line.
+- id: T-02
+  status: open
+  owner: P-003
+  shipment: S-016
+  incident: I-10
+  due: '2026-07-03'
+  summary: Follow up Hanseatic D&D desk on detention dispute for the two terminal-closure days.
+- id: T-03
+  status: open
+  owner: P-008
+  shipment: S-016
+  incident: I-10
+  due: '2026-07-15'
+  summary: Issue debit note to Rapid Haul Logistics for 4 days detention.
+- id: T-04
+  status: open
+  owner: P-003
+  shipment: S-024
+  incident: null
+  due: '2026-07-01'
+  summary: Obtain signed POD for S-024 and hand cost sheet to Accounting.
+- id: T-05
+  status: open
+  owner: P-003
+  shipment: S-025
+  incident: null
+  due: '2026-06-26'
+  summary: Send Arrival Notice and request documents for S-025 (ETA 29 June).
+- id: T-06
+  status: open
+  owner: P-009
+  shipment: null
+  incident: I-05
+  due: '2026-07-31'
+  summary: 'Q2 vendor review: discuss recorded non-conformance with Harbor Gate Customs Brokerage.'
+- id: T-07
+  status: open
+  owner: P-003
+  shipment: null
+  incident: null
+  due: '2026-07-07'
+  summary: Update the SOP-03 free-time table after Pacific Star's new reefer free time (5 days from July).
+- id: T-08
+  status: open
+  owner: P-011
+  shipment: S-021
+  incident: I-09
+  due: '2026-07-04'
+  summary: File Pacific Star's written manifest-correction confirmation in the S-021 document register.
+- id: T-09
+  status: done
+  owner: P-001
+  shipment: S-009
+  incident: I-03
+  due: '2026-03-27'
+  done: '2026-03-26'
+  summary: Send 50/50 demurrage settlement letter to Blue Harbor Foods.
+- id: T-10
+  status: done
+  owner: P-001
+  shipment: S-015
+  incident: I-06
+  due: '2026-04-21'
+  done: '2026-04-20'
+  summary: Circulate SOP-02 2.4 reminder to the import team.
+threads:
+- id: TH-001
+  subject: Arrival Notice [MFCIM260001 / HMLU260037] Canned Tuna - HML Bremen 026W
+  shipment: S-001
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0001
+    date: '2026-01-08'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Bremen 026W: MBL HMLU260037, container HMLU9595553 (20GP), ETA Busan 2026-01-17.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0002
+    date: '2026-01-12'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-01-17, free time 10 days (expires 2026-01-27);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260001.pdf
+    decisions: []
+    tasks: []
+  - id: M-0003
+    date: '2026-01-12'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260001.pdf
+    decisions: []
+    tasks: []
+- id: TH-002
+  subject: Customs clearance [MFCIM260001 / HMLU260037] Canned Tuna - HML Bremen 026W
+  shipment: S-001
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0004
+    date: '2026-01-13'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 1604.14, please file on arrival; ETA 2026-01-17.'
+    attachments:
+    - Docs_MFCIM260001.zip
+    decisions: []
+    tasks: []
+  - id: M-0005
+    date: '2026-01-14'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 1604.14, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0006
+    date: '2026-01-19'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0007
+    date: '2026-01-19'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU9595553; telex release confirmed on 2026-01-15 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0008
+    date: '2026-01-19'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260037.pdf
+    decisions: []
+    tasks: []
+- id: TH-003
+  subject: Trucking & delivery [MFCIM260001 / HMLU260037] Canned Tuna - HML Bremen 026W
+  shipment: S-001
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0009
+    date: '2026-01-19'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container HMLU9595553 from Busan New Port to consignee, pick-up 2026-01-20, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0010
+    date: '2026-01-21'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0011
+    date: '2026-01-22'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260001 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260001.pdf
+    - CostSheet_MFCIM260001.xlsx
+    decisions: []
+    tasks: []
+- id: TH-004
+  subject: Arrival Notice [MFCIM260002 / OCLU260074] Surgical Gloves - OCL Ningbo Star 2602E
+  shipment: S-002
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0012
+    date: '2026-01-14'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Ningbo Star 2602E: MBL OCLU260074, container OCLU4169487 (20GP), ETA Busan 2026-01-23.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0013
+    date: '2026-01-16'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-01-23, free time 7 days (expires 2026-01-30);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260002.pdf
+    decisions: []
+    tasks: []
+  - id: M-0014
+    date: '2026-01-19'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260002.pdf
+    decisions: []
+    tasks: []
+- id: TH-005
+  subject: Customs clearance [MFCIM260002 / OCLU260074] Surgical Gloves - OCL Ningbo Star 2602E
+  shipment: S-002
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0015
+    date: '2026-01-19'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 4015.12, please file on arrival; ETA 2026-01-23.'
+    attachments:
+    - Docs_MFCIM260002.zip
+    decisions: []
+    tasks: []
+  - id: M-0016
+    date: '2026-01-20'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 4015.12, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0017
+    date: '2026-01-26'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0018
+    date: '2026-01-26'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU4169487; telex release confirmed on 2026-01-21 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0019
+    date: '2026-01-26'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260074.pdf
+    decisions: []
+    tasks: []
+- id: TH-006
+  subject: Trucking & delivery [MFCIM260002 / OCLU260074] Surgical Gloves - OCL Ningbo Star 2602E
+  shipment: S-002
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0020
+    date: '2026-01-26'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container OCLU4169487 from Busan New Port to consignee, pick-up 2026-01-26, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0021
+    date: '2026-01-27'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0022
+    date: '2026-01-28'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260002 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260002.pdf
+    - CostSheet_MFCIM260002.xlsx
+    decisions: []
+    tasks: []
+- id: TH-007
+  subject: Arrival Notice [MFCIM260003 / PSSU260111] Industrial Sensors - Pacific Meridian 019N
+  shipment: S-003
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0023
+    date: '2026-01-19'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Meridian 019N: MBL PSSU260111, container PSSU5173790 (40HC), ETA Busan 2026-01-28.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0024
+    date: '2026-01-21'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-01-28, free time 7 days (expires 2026-02-04);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260003.pdf
+    decisions: []
+    tasks: []
+  - id: M-0025
+    date: '2026-01-23'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260003.pdf
+    decisions: []
+    tasks: []
+- id: TH-008
+  subject: Customs clearance [MFCIM260003 / PSSU260111] Industrial Sensors - Pacific Meridian 019N
+  shipment: S-003
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0026
+    date: '2026-01-26'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9031.80, please file on arrival; ETA 2026-01-28.'
+    attachments:
+    - Docs_MFCIM260003.zip
+    decisions: []
+    tasks: []
+  - id: M-0027
+    date: '2026-01-26'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9031.80, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-009
+  subject: Arrival Notice [MFCIM260004 / HMLU260148] Cnc Machine Spare Parts - HML Lubeck 031W
+  shipment: S-004
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0028
+    date: '2026-01-26'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Lubeck 031W: MBL HMLU260148, container HMLU9536390 (20GP), ETA Busan 2026-02-03.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0029
+    date: '2026-01-27'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-02-03, free time 7 days (expires 2026-02-10);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260004.pdf
+    decisions: []
+    tasks: []
+  - id: M-0030
+    date: '2026-01-29'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260004.pdf
+    decisions: []
+    tasks: []
+- id: TH-010
+  subject: Customs clearance [MFCIM260004 / HMLU260148] Cnc Machine Spare Parts - HML Lubeck 031W
+  shipment: S-004
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0031
+    date: '2026-01-30'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 8466.93, please file on arrival; ETA 2026-02-03.'
+    attachments:
+    - Docs_MFCIM260004.zip
+    decisions: []
+    tasks: []
+  - id: M-0032
+    date: '2026-02-02'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 8466.93, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0033
+    date: '2026-02-04'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0034
+    date: '2026-02-04'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU9536390; telex release confirmed on 2026-02-01 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0035
+    date: '2026-02-05'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260148.pdf
+    decisions: []
+    tasks: []
+- id: TH-011
+  subject: Trucking & delivery [MFCIM260004 / HMLU260148] Cnc Machine Spare Parts - HML Lubeck 031W
+  shipment: S-004
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0036
+    date: '2026-02-05'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-024
+    intent: Book trucking for container HMLU9536390 from Busan New Port to consignee, pick-up 2026-02-06, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0037
+    date: '2026-02-09'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0038
+    date: '2026-02-09'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260004 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260004.pdf
+    - CostSheet_MFCIM260004.xlsx
+    decisions: []
+    tasks: []
+- id: TH-012
+  subject: Arrival Notice [MFCIM260005 / OCLU260185] Canned Tuna - OCL Qingdao Star 2609E
+  shipment: S-005
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0039
+    date: '2026-02-02'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Qingdao Star 2609E: MBL OCLU260185, container OCLU2232702 (20GP), ETA Busan 2026-02-10.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0040
+    date: '2026-02-03'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-02-10, free time 10 days (expires 2026-02-20);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260005.pdf
+    decisions: []
+    tasks: []
+  - id: M-0041
+    date: '2026-02-05'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260005.pdf
+    decisions: []
+    tasks: []
+- id: TH-013
+  subject: Customs clearance [MFCIM260005 / OCLU260185] Canned Tuna - OCL Qingdao Star 2609E
+  shipment: S-005
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0042
+    date: '2026-02-06'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 1604.14, please file on arrival; ETA 2026-02-10.'
+    attachments:
+    - Docs_MFCIM260005.zip
+    decisions: []
+    tasks: []
+  - id: M-0043
+    date: '2026-02-09'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 1604.14, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0044
+    date: '2026-02-11'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0045
+    date: '2026-02-11'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU2232702; telex release confirmed on 2026-02-08 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0046
+    date: '2026-02-12'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260185.pdf
+    decisions: []
+    tasks: []
+- id: TH-014
+  subject: Trucking & delivery [MFCIM260005 / OCLU260185] Canned Tuna - OCL Qingdao Star 2609E
+  shipment: S-005
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0047
+    date: '2026-02-12'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container OCLU2232702 from Busan New Port to consignee, pick-up 2026-02-13, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0048
+    date: '2026-02-16'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0049
+    date: '2026-02-16'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260005 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260005.pdf
+    - CostSheet_MFCIM260005.xlsx
+    decisions: []
+    tasks: []
+- id: TH-015
+  subject: Arrival Notice [MFCIM260006 / PSSU260222] Frozen Shrimp - Pacific Borealis 023N
+  shipment: S-006
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0050
+    date: '2026-02-06'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Borealis 023N: MBL PSSU260222, container PSSU1961220 (40RF), ETA Busan 2026-02-15.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0051
+    date: '2026-02-09'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-02-15, free time 10 days (expires 2026-02-25);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260006.pdf
+    decisions: []
+    tasks: []
+  - id: M-0052
+    date: '2026-02-10'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260006.pdf
+    decisions: []
+    tasks: []
+- id: TH-016
+  subject: Customs clearance [MFCIM260006 / PSSU260222] Frozen Shrimp - Pacific Borealis 023N
+  shipment: S-006
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0053
+    date: '2026-02-11'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 0306.17, please file on arrival; ETA 2026-02-15.'
+    attachments:
+    - Docs_MFCIM260006.zip
+    decisions: []
+    tasks: []
+  - id: M-0054
+    date: '2026-02-12'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 0306.17, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-017
+  subject: Arrival Notice [MFCIM260007 / HMLU260259] Infusion Pumps - HML Kiel 035W
+  shipment: S-007
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0055
+    date: '2026-02-13'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Kiel 035W: MBL HMLU260259, container HMLU3394415 (40HC), ETA Busan 2026-02-22.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0056
+    date: '2026-02-16'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-02-22, free time 7 days (expires 2026-03-01);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260007.pdf
+    decisions: []
+    tasks: []
+  - id: M-0057
+    date: '2026-02-17'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260007.pdf
+    decisions: []
+    tasks: []
+- id: TH-018
+  subject: Customs clearance [MFCIM260007 / HMLU260259] Infusion Pumps - HML Kiel 035W
+  shipment: S-007
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0058
+    date: '2026-02-18'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9018.90, please file on arrival; ETA 2026-02-22.'
+    attachments:
+    - Docs_MFCIM260007.zip
+    decisions: []
+    tasks: []
+  - id: M-0059
+    date: '2026-02-19'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9018.90, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0060
+    date: '2026-02-23'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0061
+    date: '2026-02-23'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU3394415; telex release confirmed on 2026-02-20 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0062
+    date: '2026-02-24'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260259.pdf
+    decisions: []
+    tasks: []
+- id: TH-019
+  subject: Trucking & delivery [MFCIM260007 / HMLU260259] Infusion Pumps - HML Kiel 035W
+  shipment: S-007
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0063
+    date: '2026-02-24'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container HMLU3394415 from Busan New Port to consignee, pick-up 2026-02-25, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0064
+    date: '2026-02-26'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0065
+    date: '2026-02-27'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260007 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260007.pdf
+    - CostSheet_MFCIM260007.xlsx
+    decisions: []
+    tasks: []
+- id: TH-020
+  subject: Arrival Notice [MFCIM260008 / OCLU260296] Cnc Machine Spare Parts - OCL Dalian Star 2615E
+  shipment: S-008
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0066
+    date: '2026-02-19'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Dalian Star 2615E: MBL OCLU260296, container OCLU2125860 (40HC), ETA Busan 2026-02-28.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0067
+    date: '2026-02-23'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-02-28, free time 7 days (expires 2026-03-07);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260008.pdf
+    decisions: []
+    tasks: []
+  - id: M-0068
+    date: '2026-02-23'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260008.pdf
+    decisions: []
+    tasks: []
+- id: TH-021
+  subject: Customs clearance [MFCIM260008 / OCLU260296] Cnc Machine Spare Parts - OCL Dalian Star 2615E
+  shipment: S-008
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0069
+    date: '2026-02-24'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 8466.93, please file on arrival; ETA 2026-02-28.'
+    attachments:
+    - Docs_MFCIM260008.zip
+    decisions: []
+    tasks: []
+  - id: M-0070
+    date: '2026-02-25'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 8466.93, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0071
+    date: '2026-03-02'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0072
+    date: '2026-03-02'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU2125860; telex release confirmed on 2026-02-26 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0073
+    date: '2026-03-02'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260296.pdf
+    decisions: []
+    tasks: []
+- id: TH-022
+  subject: Trucking & delivery [MFCIM260008 / OCLU260296] Cnc Machine Spare Parts - OCL Dalian Star 2615E
+  shipment: S-008
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0074
+    date: '2026-03-02'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-024
+    intent: Book trucking for container OCLU2125860 from Busan New Port to consignee, pick-up 2026-03-03, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0075
+    date: '2026-03-04'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0076
+    date: '2026-03-05'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260008 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260008.pdf
+    - CostSheet_MFCIM260008.xlsx
+    decisions: []
+    tasks: []
+- id: TH-023
+  subject: Arrival Notice [MFCIM260009 / PSSU260333] Frozen Salmon Fillets - Pacific Aurora 014N
+  shipment: S-009
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0077
+    date: '2026-02-25'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Aurora 014N: MBL PSSU260333, container PSSU4527862 (40RF), ETA Busan 2026-03-06.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0078
+    date: '2026-02-27'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-03-06, free time 10 days (expires 2026-03-16);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260009.pdf
+    decisions: []
+    tasks: []
+  - id: M-0079
+    date: '2026-03-02'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260009.pdf
+    decisions: []
+    tasks: []
+- id: TH-024
+  subject: Customs clearance [MFCIM260009 / PSSU260333] Frozen Salmon Fillets - Pacific Aurora 014N
+  shipment: S-009
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0080
+    date: '2026-03-02'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 0304.81, please file on arrival; ETA 2026-03-06.'
+    attachments:
+    - Docs_MFCIM260009.zip
+    decisions: []
+    tasks: []
+  - id: M-0081
+    date: '2026-03-03'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 0304.81, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0082
+    date: '2026-03-09'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0083
+    date: '2026-03-09'
+    from: P-001
+    to:
+    - P-017
+    cc: []
+    intent: Request D/O for container PSSU4527862; telex release confirmed on 2026-03-04 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0084
+    date: '2026-03-09'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_PSSU260333.pdf
+    decisions: []
+    tasks: []
+- id: TH-025
+  subject: Trucking & delivery [MFCIM260009 / PSSU260333] Frozen Salmon Fillets - Pacific Aurora 014N
+  shipment: S-009
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0085
+    date: '2026-03-09'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container PSSU4527862 from Busan New Port to consignee, pick-up 2026-03-09, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0086
+    date: '2026-03-10'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0087
+    date: '2026-03-11'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260009 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260009.pdf
+    - CostSheet_MFCIM260009.xlsx
+    decisions: []
+    tasks: []
+- id: TH-026
+  subject: Arrival Notice [MFCIM260010 / HMLU260370] Olive Oil - HML Bremen 026W
+  shipment: S-010
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0088
+    date: '2026-03-02'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Bremen 026W: MBL HMLU260370, container HMLU9996621 (40HC), ETA Busan 2026-03-11.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0089
+    date: '2026-03-04'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-03-11, free time 10 days (expires 2026-03-21);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260010.pdf
+    decisions: []
+    tasks: []
+  - id: M-0090
+    date: '2026-03-06'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260010.pdf
+    decisions: []
+    tasks: []
+- id: TH-027
+  subject: Customs clearance [MFCIM260010 / HMLU260370] Olive Oil - HML Bremen 026W
+  shipment: S-010
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0091
+    date: '2026-03-09'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 1509.10, please file on arrival; ETA 2026-03-11.'
+    attachments:
+    - Docs_MFCIM260010.zip
+    decisions: []
+    tasks: []
+  - id: M-0092
+    date: '2026-03-09'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 1509.10, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0093
+    date: '2026-03-12'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0094
+    date: '2026-03-12'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU9996621; telex release confirmed on 2026-03-09 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0095
+    date: '2026-03-13'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260370.pdf
+    decisions: []
+    tasks: []
+- id: TH-028
+  subject: Trucking & delivery [MFCIM260010 / HMLU260370] Olive Oil - HML Bremen 026W
+  shipment: S-010
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0096
+    date: '2026-03-13'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container HMLU9996621 from Busan New Port to consignee, pick-up 2026-03-14, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0097
+    date: '2026-03-16'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0098
+    date: '2026-03-16'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260010 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260010.pdf
+    - CostSheet_MFCIM260010.xlsx
+    decisions: []
+    tasks: []
+- id: TH-029
+  subject: Arrival Notice [MFCIM260011 / OCLU260407] Infusion Pumps - OCL Ningbo Star 2602E
+  shipment: S-011
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0099
+    date: '2026-03-09'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Ningbo Star 2602E: MBL OCLU260407, container OCLU3488652 (40HC), ETA Busan 2026-03-18.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0100
+    date: '2026-03-11'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-03-18, free time 7 days (expires 2026-03-25);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260011.pdf
+    decisions: []
+    tasks: []
+  - id: M-0101
+    date: '2026-03-13'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260011.pdf
+    decisions: []
+    tasks: []
+- id: TH-030
+  subject: Customs clearance [MFCIM260011 / OCLU260407] Infusion Pumps - OCL Ningbo Star 2602E
+  shipment: S-011
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0102
+    date: '2026-03-16'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9018.90, please file on arrival; ETA 2026-03-18.'
+    attachments:
+    - Docs_MFCIM260011.zip
+    decisions: []
+    tasks: []
+  - id: M-0103
+    date: '2026-03-16'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9018.90, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-031
+  subject: Arrival Notice [MFCIM260012 / PSSU260444] Disposable Syringes - Pacific Meridian 019N
+  shipment: S-012
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0104
+    date: '2026-03-16'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Meridian 019N: MBL PSSU260444, container PSSU5689097 (20GP), ETA Busan 2026-03-23.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0105
+    date: '2026-03-16'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-03-23, free time 7 days (expires 2026-03-30);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260012.pdf
+    decisions: []
+    tasks: []
+  - id: M-0106
+    date: '2026-03-18'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260012.pdf
+    decisions: []
+    tasks: []
+- id: TH-032
+  subject: Customs clearance [MFCIM260012 / PSSU260444] Disposable Syringes - Pacific Meridian 019N
+  shipment: S-012
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0107
+    date: '2026-03-19'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9018.31, please file on arrival; ETA 2026-03-23.'
+    attachments:
+    - Docs_MFCIM260012.zip
+    decisions: []
+    tasks: []
+  - id: M-0108
+    date: '2026-03-20'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9018.31, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0109
+    date: '2026-03-24'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0110
+    date: '2026-03-24'
+    from: P-001
+    to:
+    - P-017
+    cc: []
+    intent: Request D/O for container PSSU5689097; telex release confirmed on 2026-03-21 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0111
+    date: '2026-03-25'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_PSSU260444.pdf
+    decisions: []
+    tasks: []
+- id: TH-033
+  subject: Trucking & delivery [MFCIM260012 / PSSU260444] Disposable Syringes - Pacific Meridian 019N
+  shipment: S-012
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0112
+    date: '2026-03-25'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container PSSU5689097 from Busan New Port to consignee, pick-up 2026-03-26, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0113
+    date: '2026-03-27'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0114
+    date: '2026-03-30'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260012 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260012.pdf
+    - CostSheet_MFCIM260012.xlsx
+    decisions: []
+    tasks: []
+- id: TH-034
+  subject: Arrival Notice [MFCIM260013 / HMLU260481] Precision Bearings - HML Lubeck 031W
+  shipment: S-013
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0115
+    date: '2026-03-20'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Lubeck 031W: MBL HMLU260481, container HMLU6383102 (40HC), ETA Busan 2026-03-29.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0116
+    date: '2026-03-23'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-03-29, free time 7 days (expires 2026-04-05);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260013.pdf
+    decisions: []
+    tasks: []
+  - id: M-0117
+    date: '2026-03-24'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260013.pdf
+    decisions: []
+    tasks: []
+- id: TH-035
+  subject: Customs clearance [MFCIM260013 / HMLU260481] Precision Bearings - HML Lubeck 031W
+  shipment: S-013
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0118
+    date: '2026-03-25'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 8482.10, please file on arrival; ETA 2026-03-29.'
+    attachments:
+    - Docs_MFCIM260013.zip
+    decisions: []
+    tasks: []
+  - id: M-0119
+    date: '2026-03-26'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 8482.10, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-036
+  subject: Arrival Notice [MFCIM260014 / OCLU260518] Olive Oil - OCL Qingdao Star 2609E
+  shipment: S-014
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0120
+    date: '2026-03-27'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Qingdao Star 2609E: MBL OCLU260518, container OCLU9895775 (20GP), ETA Busan 2026-04-05.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0121
+    date: '2026-03-30'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-04-05, free time 10 days (expires 2026-04-15);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260014.pdf
+    decisions: []
+    tasks: []
+  - id: M-0122
+    date: '2026-03-31'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260014.pdf
+    decisions: []
+    tasks: []
+- id: TH-037
+  subject: Customs clearance [MFCIM260014 / OCLU260518] Olive Oil - OCL Qingdao Star 2609E
+  shipment: S-014
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0123
+    date: '2026-04-01'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 1509.10, please file on arrival; ETA 2026-04-05.'
+    attachments:
+    - Docs_MFCIM260014.zip
+    decisions: []
+    tasks: []
+  - id: M-0124
+    date: '2026-04-02'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 1509.10, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0125
+    date: '2026-04-06'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0126
+    date: '2026-04-06'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU9895775; telex release confirmed on 2026-04-03 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0127
+    date: '2026-04-07'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260518.pdf
+    decisions: []
+    tasks: []
+- id: TH-038
+  subject: Trucking & delivery [MFCIM260014 / OCLU260518] Olive Oil - OCL Qingdao Star 2609E
+  shipment: S-014
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0128
+    date: '2026-04-07'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container OCLU9895775 from Busan New Port to consignee, pick-up 2026-04-08, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0129
+    date: '2026-04-09'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0130
+    date: '2026-04-10'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260014 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260014.pdf
+    - CostSheet_MFCIM260014.xlsx
+    decisions: []
+    tasks: []
+- id: TH-039
+  subject: Arrival Notice [MFCIM260015 / PSSU260555] Industrial Sensors - Pacific Borealis 023N
+  shipment: S-015
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0131
+    date: '2026-04-02'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Borealis 023N: MBL PSSU260555, container PSSU2398736 (40HC), ETA Busan 2026-04-11.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0132
+    date: '2026-04-06'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-04-11, free time 7 days (expires 2026-04-18);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260015.pdf
+    decisions: []
+    tasks: []
+  - id: M-0133
+    date: '2026-04-06'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260015.pdf
+    decisions: []
+    tasks: []
+- id: TH-040
+  subject: Customs clearance [MFCIM260015 / PSSU260555] Industrial Sensors - Pacific Borealis 023N
+  shipment: S-015
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0134
+    date: '2026-04-07'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9031.80, please file on arrival; ETA 2026-04-11.'
+    attachments:
+    - Docs_MFCIM260015.zip
+    decisions: []
+    tasks: []
+  - id: M-0135
+    date: '2026-04-08'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9031.80, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-041
+  subject: Arrival Notice [MFCIM260016 / HMLU260592] Disposable Syringes - HML Kiel 035W
+  shipment: S-016
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0136
+    date: '2026-04-08'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Kiel 035W: MBL HMLU260592, container HMLU6066254 (40HC), ETA Busan 2026-04-17.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0137
+    date: '2026-04-10'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-04-17, free time 7 days (expires 2026-04-24);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260016.pdf
+    decisions: []
+    tasks: []
+  - id: M-0138
+    date: '2026-04-13'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260016.pdf
+    decisions: []
+    tasks: []
+- id: TH-042
+  subject: Customs clearance [MFCIM260016 / HMLU260592] Disposable Syringes - HML Kiel 035W
+  shipment: S-016
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0139
+    date: '2026-04-13'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9018.31, please file on arrival; ETA 2026-04-17.'
+    attachments:
+    - Docs_MFCIM260016.zip
+    decisions: []
+    tasks: []
+  - id: M-0140
+    date: '2026-04-14'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9018.31, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0141
+    date: '2026-04-20'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0142
+    date: '2026-04-20'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU6066254; telex release confirmed on 2026-04-15 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0143
+    date: '2026-04-20'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260592.pdf
+    decisions: []
+    tasks: []
+- id: TH-043
+  subject: Trucking & delivery [MFCIM260016 / HMLU260592] Disposable Syringes - HML Kiel 035W
+  shipment: S-016
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0144
+    date: '2026-04-20'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container HMLU6066254 from Busan New Port to consignee, pick-up 2026-04-20, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0145
+    date: '2026-04-21'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0146
+    date: '2026-04-22'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260016 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260016.pdf
+    - CostSheet_MFCIM260016.xlsx
+    decisions: []
+    tasks: []
+- id: TH-044
+  subject: Arrival Notice [MFCIM260017 / OCLU260629] Diagnostic Reagent Kits - OCL Dalian Star 2615E
+  shipment: S-017
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0147
+    date: '2026-04-14'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Dalian Star 2615E: MBL OCLU260629, container OCLU6145131 (40HC), ETA Busan 2026-04-23.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0148
+    date: '2026-04-16'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-04-23, free time 7 days (expires 2026-04-30);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260017.pdf
+    decisions: []
+    tasks: []
+  - id: M-0149
+    date: '2026-04-20'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260017.pdf
+    decisions: []
+    tasks: []
+- id: TH-045
+  subject: Customs clearance [MFCIM260017 / OCLU260629] Diagnostic Reagent Kits - OCL Dalian Star 2615E
+  shipment: S-017
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0150
+    date: '2026-04-20'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 3822.00, please file on arrival; ETA 2026-04-23.'
+    attachments:
+    - Docs_MFCIM260017.zip
+    decisions: []
+    tasks: []
+  - id: M-0151
+    date: '2026-04-20'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 3822.00, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0152
+    date: '2026-04-24'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0153
+    date: '2026-04-24'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU6145131; telex release confirmed on 2026-04-21 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0154
+    date: '2026-04-27'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260629.pdf
+    decisions: []
+    tasks: []
+- id: TH-046
+  subject: Trucking & delivery [MFCIM260017 / OCLU260629] Diagnostic Reagent Kits - OCL Dalian Star 2615E
+  shipment: S-017
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0155
+    date: '2026-04-27'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container OCLU6145131 from Busan New Port to consignee, pick-up 2026-04-26, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-047
+  subject: Arrival Notice [MFCIM260018 / PSSU260666] Hydraulic Press Components - Pacific Aurora 014N
+  shipment: S-018
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0156
+    date: '2026-04-20'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Aurora 014N: MBL PSSU260666, container PSSU6094602 (40HC), ETA Busan 2026-04-28.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0157
+    date: '2026-04-21'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-04-28, free time 7 days (expires 2026-05-05);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260018.pdf
+    decisions: []
+    tasks: []
+  - id: M-0158
+    date: '2026-04-23'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260018.pdf
+    decisions: []
+    tasks: []
+- id: TH-048
+  subject: Customs clearance [MFCIM260018 / PSSU260666] Hydraulic Press Components - Pacific Aurora 014N
+  shipment: S-018
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0159
+    date: '2026-04-24'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 8462.29, please file on arrival; ETA 2026-04-28.'
+    attachments:
+    - Docs_MFCIM260018.zip
+    decisions: []
+    tasks: []
+  - id: M-0160
+    date: '2026-04-27'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 8462.29, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0161
+    date: '2026-04-29'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0162
+    date: '2026-04-29'
+    from: P-001
+    to:
+    - P-017
+    cc: []
+    intent: Request D/O for container PSSU6094602; telex release confirmed on 2026-04-26 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0163
+    date: '2026-04-30'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_PSSU260666.pdf
+    decisions: []
+    tasks: []
+- id: TH-049
+  subject: Trucking & delivery [MFCIM260018 / PSSU260666] Hydraulic Press Components - Pacific Aurora 014N
+  shipment: S-018
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0164
+    date: '2026-04-30'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-024
+    intent: Book trucking for container PSSU6094602 from Busan New Port to consignee, pick-up 2026-05-01, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0165
+    date: '2026-05-04'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0166
+    date: '2026-05-04'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260018 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260018.pdf
+    - CostSheet_MFCIM260018.xlsx
+    decisions: []
+    tasks: []
+- id: TH-050
+  subject: Arrival Notice [MFCIM260019 / HMLU260703] Industrial Sensors - HML Bremen 026W
+  shipment: S-019
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0167
+    date: '2026-04-27'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Bremen 026W: MBL HMLU260703, container HMLU6425478 (20GP), ETA Busan 2026-05-05.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0168
+    date: '2026-04-28'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-05-05, free time 7 days (expires 2026-05-12);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260019.pdf
+    decisions: []
+    tasks: []
+  - id: M-0169
+    date: '2026-04-30'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260019.pdf
+    decisions: []
+    tasks: []
+- id: TH-051
+  subject: Customs clearance [MFCIM260019 / HMLU260703] Industrial Sensors - HML Bremen 026W
+  shipment: S-019
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0170
+    date: '2026-05-01'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9031.80, please file on arrival; ETA 2026-05-05.'
+    attachments:
+    - Docs_MFCIM260019.zip
+    decisions: []
+    tasks: []
+  - id: M-0171
+    date: '2026-05-04'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9031.80, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-052
+  subject: Arrival Notice [MFCIM260020 / OCLU260740] Disposable Syringes - OCL Ningbo Star 2602E
+  shipment: S-020
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0172
+    date: '2026-05-01'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Ningbo Star 2602E: MBL OCLU260740, container OCLU3345935 (20GP), ETA Busan 2026-05-10.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0173
+    date: '2026-05-04'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-05-10, free time 7 days (expires 2026-05-17);
+      request commercial invoice, packing list, import licence copy.'
+    attachments:
+    - ArrivalNotice_MFCIM260020.pdf
+    decisions: []
+    tasks: []
+  - id: M-0174
+    date: '2026-05-05'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260020.pdf
+    decisions: []
+    tasks: []
+- id: TH-053
+  subject: Customs clearance [MFCIM260020 / OCLU260740] Disposable Syringes - OCL Ningbo Star 2602E
+  shipment: S-020
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0175
+    date: '2026-05-06'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 9018.31, please file on arrival; ETA 2026-05-10.'
+    attachments:
+    - Docs_MFCIM260020.zip
+    decisions: []
+    tasks: []
+  - id: M-0176
+    date: '2026-05-07'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 9018.31, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0177
+    date: '2026-05-11'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0178
+    date: '2026-05-11'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU3345935; telex release confirmed on 2026-05-08 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0179
+    date: '2026-05-12'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260740.pdf
+    decisions: []
+    tasks: []
+- id: TH-054
+  subject: Trucking & delivery [MFCIM260020 / OCLU260740] Disposable Syringes - OCL Ningbo Star 2602E
+  shipment: S-020
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0180
+    date: '2026-05-12'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-025
+    intent: Book trucking for container OCLU3345935 from Busan New Port to consignee, pick-up 2026-05-13, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0181
+    date: '2026-05-14'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0182
+    date: '2026-05-15'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260020 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260020.pdf
+    - CostSheet_MFCIM260020.xlsx
+    decisions: []
+    tasks: []
+- id: TH-055
+  subject: Arrival Notice [MFCIM260021 / PSSU260777] Canned Tuna - Pacific Meridian 019N
+  shipment: S-021
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0183
+    date: '2026-05-07'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Meridian 019N: MBL PSSU260777, container PSSU2430001 (40HC), ETA Busan 2026-05-16.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0184
+    date: '2026-05-11'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-05-16, free time 10 days (expires 2026-05-26);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260021.pdf
+    decisions: []
+    tasks: []
+  - id: M-0185
+    date: '2026-05-11'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260021.pdf
+    decisions: []
+    tasks: []
+- id: TH-056
+  subject: Customs clearance [MFCIM260021 / PSSU260777] Canned Tuna - Pacific Meridian 019N
+  shipment: S-021
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0186
+    date: '2026-05-12'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 1604.14, please file on arrival; ETA 2026-05-16.'
+    attachments:
+    - Docs_MFCIM260021.zip
+    decisions: []
+    tasks: []
+  - id: M-0187
+    date: '2026-05-13'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 1604.14, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-057
+  subject: Arrival Notice [MFCIM260022 / HMLU260814] Hydraulic Press Components - HML Lubeck 031W
+  shipment: S-022
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0188
+    date: '2026-05-13'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Lubeck 031W: MBL HMLU260814, container HMLU7660532 (20GP), ETA Busan 2026-05-22.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0189
+    date: '2026-05-15'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-019
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-05-22, free time 7 days (expires 2026-05-29);
+      request commercial invoice, packing list.'
+    attachments:
+    - ArrivalNotice_MFCIM260022.pdf
+    decisions: []
+    tasks: []
+  - id: M-0190
+    date: '2026-05-18'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260022.pdf
+    decisions: []
+    tasks: []
+- id: TH-058
+  subject: Customs clearance [MFCIM260022 / HMLU260814] Hydraulic Press Components - HML Lubeck 031W
+  shipment: S-022
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0191
+    date: '2026-05-18'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-020
+    intent: 'Instruct broker: full document set attached, proposed HS code 8462.29, please file on arrival; ETA 2026-05-22.'
+    attachments:
+    - Docs_MFCIM260022.zip
+    decisions: []
+    tasks: []
+  - id: M-0192
+    date: '2026-05-19'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 8462.29, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0193
+    date: '2026-05-25'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0194
+    date: '2026-05-25'
+    from: P-001
+    to:
+    - P-013
+    cc: []
+    intent: Request D/O for container HMLU7660532; telex release confirmed on 2026-05-20 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0195
+    date: '2026-05-25'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_HMLU260814.pdf
+    decisions: []
+    tasks: []
+- id: TH-059
+  subject: Trucking & delivery [MFCIM260022 / HMLU260814] Hydraulic Press Components - HML Lubeck 031W
+  shipment: S-022
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0196
+    date: '2026-05-25'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-024
+    intent: Book trucking for container HMLU7660532 from Busan New Port to consignee, pick-up 2026-05-25, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0197
+    date: '2026-05-26'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0198
+    date: '2026-05-27'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260022 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260022.pdf
+    - CostSheet_MFCIM260022.xlsx
+    decisions: []
+    tasks: []
+- id: TH-060
+  subject: Arrival Notice [MFCIM260023 / OCLU260851] Frozen Salmon Fillets - OCL Qingdao Star 2609E
+  shipment: S-023
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0199
+    date: '2026-05-20'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for OCL Qingdao Star 2609E: MBL OCLU260851, container OCLU5648055 (40RF), ETA Busan 2026-05-29.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0200
+    date: '2026-05-22'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-05-29, free time 10 days (expires 2026-06-08);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260023.pdf
+    decisions: []
+    tasks: []
+  - id: M-0201
+    date: '2026-05-25'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260023.pdf
+    decisions: []
+    tasks: []
+- id: TH-061
+  subject: Customs clearance [MFCIM260023 / OCLU260851] Frozen Salmon Fillets - OCL Qingdao Star 2609E
+  shipment: S-023
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0202
+    date: '2026-05-25'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 0304.81, please file on arrival; ETA 2026-05-29.'
+    attachments:
+    - Docs_MFCIM260023.zip
+    decisions: []
+    tasks: []
+  - id: M-0203
+    date: '2026-05-26'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 0304.81, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0204
+    date: '2026-06-01'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0205
+    date: '2026-06-01'
+    from: P-001
+    to:
+    - P-015
+    cc: []
+    intent: Request D/O for container OCLU5648055; telex release confirmed on 2026-05-27 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0206
+    date: '2026-06-01'
+    from: P-015
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_OCLU260851.pdf
+    decisions: []
+    tasks: []
+- id: TH-062
+  subject: Trucking & delivery [MFCIM260023 / OCLU260851] Frozen Salmon Fillets - OCL Qingdao Star 2609E
+  shipment: S-023
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0207
+    date: '2026-06-01'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container OCLU5648055 from Busan New Port to consignee, pick-up 2026-06-01, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0208
+    date: '2026-06-02'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee confirms cargo received in good order.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0209
+    date: '2026-06-03'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-011
+    intent: Cost sheet for MFCIM260023 attached for invoicing; signed POD attached.
+    attachments:
+    - POD_MFCIM260023.pdf
+    - CostSheet_MFCIM260023.xlsx
+    decisions: []
+    tasks: []
+- id: TH-063
+  subject: Arrival Notice [MFCIM260024 / PSSU260888] Frozen Shrimp - Pacific Borealis 023N
+  shipment: S-024
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0210
+    date: '2026-05-25'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for Pacific Borealis 023N: MBL PSSU260888, container PSSU4898494 (40RF), ETA Busan 2026-06-03.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0211
+    date: '2026-05-27'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-021
+    intent: 'Arrival Notice: quote MBL, HBL, container, vessel/voyage, ETA 2026-06-03, free time 10 days (expires 2026-06-13);
+      request commercial invoice, packing list, health certificate.'
+    attachments:
+    - ArrivalNotice_MFCIM260024.pdf
+    decisions: []
+    tasks: []
+  - id: M-0212
+    date: '2026-05-29'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the requested documents and asks for the expected clearance date.
+    attachments:
+    - CI_PL_MFCIM260024.pdf
+    decisions: []
+    tasks: []
+- id: TH-064
+  subject: Customs clearance [MFCIM260024 / PSSU260888] Frozen Shrimp - Pacific Borealis 023N
+  shipment: S-024
+  kind: clearance
+  incident: null
+  beats:
+  - id: M-0213
+    date: '2026-06-01'
+    from: P-001
+    to:
+    - P-021
+    cc:
+    - P-022
+    intent: 'Instruct broker: full document set attached, proposed HS code 0306.17, please file on arrival; ETA 2026-06-03.'
+    attachments:
+    - Docs_MFCIM260024.zip
+    decisions: []
+    tasks: []
+  - id: M-0214
+    date: '2026-06-01'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker confirms receipt, agrees HS code 0306.17, estimates duty and VAT.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0215
+    date: '2026-06-04'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Broker reports customs release obtained; declaration number quoted.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0216
+    date: '2026-06-04'
+    from: P-001
+    to:
+    - P-017
+    cc: []
+    intent: Request D/O for container PSSU4898494; telex release confirmed on 2026-06-01 and filed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0217
+    date: '2026-06-05'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: Carrier issues D/O; reminds of free-time expiry date.
+    attachments:
+    - DO_PSSU260888.pdf
+    decisions: []
+    tasks: []
+- id: TH-065
+  subject: Trucking & delivery [MFCIM260024 / PSSU260888] Frozen Shrimp - Pacific Borealis 023N
+  shipment: S-024
+  kind: delivery
+  incident: null
+  beats:
+  - id: M-0218
+    date: '2026-06-05'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-026
+    intent: Book trucking for container PSSU4898494 from Busan New Port to consignee, pick-up 2026-06-06, delivery slot next
+      morning.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0219
+    date: '2026-06-05'
+    from: P-029
+    to:
+    - P-001
+    cc: []
+    intent: Dispatcher confirms truck and driver; asks for D/O copy.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-066
+  subject: Arrival Notice [MFCIM260025 / HMLU260925] Diagnostic Reagent Kits - HML Kiel 035W
+  shipment: S-025
+  kind: arrival_notice
+  incident: null
+  beats:
+  - id: M-0220
+    date: '2026-06-22'
+    from: P-013
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier pre-alert for HML Kiel 035W: MBL HMLU260925, container HMLU6274990 (20GP), ETA Busan 2026-06-29.'
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-067
+  subject: Vessel delay 6 days - [MFCIM260003 / PSSU260111] Industrial Sensors
+  shipment: S-003
+  kind: incident
+  incident: I-01
+  beats:
+  - id: M-0221
+    date: '2026-01-22'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: Carrier advises vessel delayed 6 days due to port congestion at Shanghai; revised ETA.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0222
+    date: '2026-01-22'
+    from: P-001
+    to:
+    - P-024
+    cc:
+    - P-002
+    intent: Inform consignee of the 6-day delay the same day; revised ETA; offer daily updates.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0223
+    date: '2026-01-22'
+    from: P-001
+    to:
+    - P-002
+    cc: []
+    intent: Escalate as Severity 1 (delivery delay > 5 days, consignee production risk).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0224
+    date: '2026-01-23'
+    from: P-002
+    to:
+    - P-001
+    cc:
+    - P-009
+    intent: 'Decision D-01: accept the delay, no re-routing; daily ETA update to consignee.'
+    attachments: []
+    decisions:
+    - D-01
+    tasks: []
+  - id: M-0225
+    date: '2026-01-26'
+    from: P-023
+    to:
+    - P-001
+    cc: []
+    intent: Consignee manager thanks for transparency, asks for priority clearance on arrival.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0226
+    date: '2026-02-04'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Release obtained the day after the delayed arrival; D/O and trucking arranged as usual.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-068
+  subject: Health certificate missing - [MFCIM260006 / PSSU260222] Frozen Shrimp
+  shipment: S-006
+  kind: incident
+  incident: I-02
+  beats:
+  - id: M-0227
+    date: '2026-02-12'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: 'Broker cannot file: health certificate for frozen shrimp missing from the document set.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0228
+    date: '2026-02-12'
+    from: P-001
+    to:
+    - P-026
+    cc: []
+    intent: Chase the health certificate in writing; warn that free time expires on 2026-02-25.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0229
+    date: '2026-02-23'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-002
+    intent: Formal written reminder 3 working days before free-time expiry (SOP-03 3.2).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0230
+    date: '2026-02-23'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee sends the health certificate.
+    attachments:
+    - HealthCert_MFCIM260006.pdf
+    decisions: []
+    tasks: []
+  - id: M-0231
+    date: '2026-02-23'
+    from: P-001
+    to:
+    - P-021
+    cc: []
+    intent: 'Decision D-02: file today using the priority slot; certificate attached.'
+    attachments:
+    - HealthCert_MFCIM260006.pdf
+    decisions:
+    - D-02
+    tasks: []
+  - id: M-0232
+    date: '2026-02-24'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Release obtained within free time; D/O requested.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-069
+  subject: Pick-up hold request / free time - [MFCIM260009 / PSSU260333] Frozen Salmon Fillets
+  shipment: S-009
+  kind: incident
+  incident: I-03
+  beats:
+  - id: M-0233
+    date: '2026-03-09'
+    from: P-026
+    to:
+    - P-001
+    cc: []
+    intent: Consignee asks to hold pick-up about a week because their warehouse is full.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0234
+    date: '2026-03-09'
+    from: P-001
+    to:
+    - P-026
+    cc: []
+    intent: Acknowledge; note free time expires 2026-03-16; will try for an extension.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0235
+    date: '2026-03-16'
+    from: P-001
+    to:
+    - P-018
+    cc: []
+    intent: Request a 5-day free-time extension (sent on the expiry day itself).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0236
+    date: '2026-03-17'
+    from: P-018
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier declines: extension requests must be received before expiry; demurrage accrues from today.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0237
+    date: '2026-03-17'
+    from: P-001
+    to:
+    - P-026
+    cc: []
+    intent: Inform consignee that demurrage is now accruing; push for pick-up.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0238
+    date: '2026-03-23'
+    from: P-018
+    to:
+    - P-001
+    cc: []
+    intent: 'Demurrage invoice: 4 days, USD 1,120.'
+    attachments:
+    - DND_Invoice_PSSU260333.pdf
+    decisions: []
+    tasks: []
+  - id: M-0239
+    date: '2026-03-23'
+    from: P-001
+    to:
+    - P-002
+    cc: []
+    intent: Escalate the demurrage to Team Lead (5 days after the carrier's refusal).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0240
+    date: '2026-03-24'
+    from: P-002
+    to:
+    - P-001
+    cc:
+    - P-009
+    - P-007
+    intent: 'Decision D-03: Meridian absorbs 50% (USD 560), consignee billed the rest; reason: late extension request.'
+    attachments: []
+    decisions:
+    - D-03
+    tasks: []
+  - id: M-0241
+    date: '2026-03-26'
+    from: P-001
+    to:
+    - P-026
+    cc:
+    - P-002
+    intent: 'Settlement letter: 50/50 split of demurrage (task T-09 done).'
+    attachments:
+    - Settlement_MFCIM260009.pdf
+    decisions: []
+    tasks:
+    - T-09
+- id: TH-070
+  subject: Customs physical inspection - [MFCIM260011 / OCLU260407] Infusion Pumps
+  shipment: S-011
+  kind: incident
+  incident: I-04
+  beats:
+  - id: M-0242
+    date: '2026-03-19'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Customs selected the container for physical inspection; import licence number queried.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0243
+    date: '2026-03-19'
+    from: P-001
+    to:
+    - P-025
+    cc:
+    - P-002
+    intent: Inform consignee the same day; ask for the import licence copy.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0244
+    date: '2026-03-23'
+    from: P-001
+    to:
+    - P-019
+    - P-025
+    cc: []
+    intent: 'Decision D-04: operator attends the inspection with the broker; consignee sends the licence directly to customs.'
+    attachments: []
+    decisions:
+    - D-04
+    tasks: []
+  - id: M-0245
+    date: '2026-03-24'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Inspection passed, release obtained; D/O requested.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-071
+  subject: HS code filed differs from history - [MFCIM260013 / HMLU260481] Precision Bearings
+  shipment: S-013
+  kind: incident
+  incident: I-05
+  beats:
+  - id: M-0246
+    date: '2026-03-30'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Release obtained; declaration filed under HS 8482.99 (reclassified).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0247
+    date: '2026-04-01'
+    from: P-024
+    to:
+    - P-001
+    cc: []
+    intent: Consignee notices the declaration used HS 8482.99 instead of their usual 8482.10; duty differs by about USD 380;
+      asks why nobody confirmed.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0248
+    date: '2026-04-01'
+    from: P-001
+    to:
+    - P-019
+    cc:
+    - P-002
+    intent: Ask broker why the HS code was changed without written confirmation.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0249
+    date: '2026-04-02'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Broker explains the classification ruling and apologises for not confirming first.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0250
+    date: '2026-04-06'
+    from: P-002
+    to:
+    - P-001
+    - P-019
+    cc:
+    - P-009
+    intent: 'Decision D-05: keep the filed code; record a non-conformance against the broker for filing without written confirmation.'
+    attachments: []
+    decisions:
+    - D-05
+    tasks: []
+- id: TH-072
+  subject: D/O refused - telex release not confirmed - [MFCIM260015 / PSSU260555] Industrial Sensors
+  shipment: S-015
+  kind: incident
+  incident: I-06
+  beats:
+  - id: M-0251
+    date: '2026-04-10'
+    from: P-001
+    to:
+    - P-017
+    cc: []
+    intent: Request D/O for arrival tomorrow (telex release not yet confirmed in the file).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0252
+    date: '2026-04-13'
+    from: P-017
+    to:
+    - P-001
+    cc: []
+    intent: 'Carrier refuses D/O: no telex release received from origin yet.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0253
+    date: '2026-04-13'
+    from: P-001
+    to:
+    - P-027
+    cc:
+    - P-024
+    intent: Ask shipper to arrange telex release urgently.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0254
+    date: '2026-04-13'
+    from: P-001
+    to:
+    - P-024
+    cc: []
+    intent: Inform consignee of the expected 2-day release delay.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0255
+    date: '2026-04-13'
+    from: P-027
+    to:
+    - P-001
+    cc: []
+    intent: Shipper confirms telex release instructed to carrier; carrier will confirm in 1-2 days.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0256
+    date: '2026-04-13'
+    from: P-001
+    to:
+    - P-002
+    cc: []
+    intent: 'Escalate: 2 days demurrage (USD 560) caused by the premature D/O request.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0257
+    date: '2026-04-14'
+    from: P-002
+    to:
+    - P-001
+    cc:
+    - P-009
+    intent: 'Decision D-06: absorb USD 560 as Meridian error; re-train the team on SOP-02 2.4.'
+    attachments: []
+    decisions:
+    - D-06
+    tasks: []
+  - id: M-0258
+    date: '2026-04-20'
+    from: P-001
+    to:
+    - P-002
+    - P-003
+    - P-011
+    cc: []
+    intent: SOP-02 2.4 reminder circulated to the team (task T-10 done).
+    attachments: []
+    decisions: []
+    tasks:
+    - T-10
+- id: TH-073
+  subject: Wet damage at delivery - claim - [MFCIM260017 / OCLU260629] Diagnostic Reagent Kits
+  shipment: S-017
+  kind: incident
+  incident: I-07
+  beats:
+  - id: M-0259
+    date: '2026-04-27'
+    from: P-025
+    to:
+    - P-001
+    cc: []
+    intent: Consignee reports wet damage on 14 cartons at delivery; photos attached; delivery receipt annotated.
+    attachments:
+    - Damage_photos.zip
+    decisions: []
+    tasks: []
+  - id: M-0260
+    date: '2026-04-27'
+    from: P-001
+    to:
+    - P-002
+    cc:
+    - P-009
+    intent: 'Escalate Severity 1: claim likely over USD 10,000.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0261
+    date: '2026-04-28'
+    from: P-001
+    to:
+    - P-015
+    cc:
+    - P-002
+    intent: Formal claim notice to carrier within 3 days of delivery; reserve all rights.
+    attachments:
+    - ClaimNotice_MFCIM260017.pdf
+    decisions: []
+    tasks: []
+  - id: M-0262
+    date: '2026-05-01'
+    from: P-009
+    to:
+    - P-001
+    - P-002
+    cc: []
+    intent: 'Decision D-07: appoint an independent surveyor; pursue the claim against the carrier; weekly update to consignee.'
+    attachments: []
+    decisions:
+    - D-07
+    tasks: []
+  - id: M-0263
+    date: '2026-05-08'
+    from: P-001
+    to:
+    - P-025
+    cc: []
+    intent: 'Weekly claim update: surveyor appointed, inspection scheduled.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0264
+    date: '2026-06-22'
+    from: P-001
+    to:
+    - P-003
+    cc:
+    - P-002
+    intent: 'Handover of the claim file: survey done, report pending - task T-01 assigned to Daniel.'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-01
+- id: TH-074
+  subject: URGENT same-day clearance - line stop - [MFCIM260019 / HMLU260703] Industrial Sensors
+  shipment: S-019
+  kind: incident
+  incident: I-08
+  beats:
+  - id: M-0265
+    date: '2026-05-06'
+    from: P-023
+    to:
+    - P-001
+    cc:
+    - P-005
+    intent: Consignee's production line will stop tomorrow; needs the cargo today.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0266
+    date: '2026-05-06'
+    from: P-001
+    to:
+    - P-019
+    cc: []
+    intent: Ask broker to expedite today; accept expedite fee USD 150 verbally (Decision D-08).
+    attachments: []
+    decisions:
+    - D-08
+    tasks: []
+  - id: M-0267
+    date: '2026-05-06'
+    from: P-001
+    to:
+    - P-028
+    cc:
+    - P-024
+    intent: Book same-day pick-up with Rapid Haul.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0268
+    date: '2026-05-06'
+    from: P-019
+    to:
+    - P-001
+    cc: []
+    intent: Release obtained 15:40; D/O to follow; expedite fee USD 150 will be invoiced.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0269
+    date: '2026-05-07'
+    from: P-005
+    to:
+    - P-001
+    cc:
+    - P-002
+    intent: Sales manager thanks the team; asks that the expedite fee be covered by Meridian as goodwill.
+    attachments: []
+    decisions: []
+    tasks: []
+- id: TH-075
+  subject: Manifest shows 18 pallets vs B/L 20 - [MFCIM260021 / PSSU260777] Canned Tuna
+  shipment: S-021
+  kind: incident
+  incident: I-09
+  beats:
+  - id: M-0270
+    date: '2026-05-18'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Customs system shows manifest quantity 18 pallets vs 20 on the B/L; filing blocked.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0271
+    date: '2026-05-18'
+    from: P-001
+    to:
+    - P-017
+    cc:
+    - P-002
+    intent: Request manifest correction to 20 pallets (vessel already arrived).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0272
+    date: '2026-05-18'
+    from: P-001
+    to:
+    - P-026
+    cc: []
+    intent: Inform consignee of the discrepancy and likely 1-2 day delay.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0273
+    date: '2026-05-18'
+    from: P-001
+    to:
+    - P-002
+    cc: []
+    intent: Escalate late manifest correction per SOP-02 3.2.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0274
+    date: '2026-05-18'
+    from: P-002
+    to:
+    - P-001
+    cc: []
+    intent: 'Decision D-09: file the correction at Meridian''s cost USD 90; ask carrier for written confirmation.'
+    attachments: []
+    decisions:
+    - D-09
+    tasks: []
+  - id: M-0275
+    date: '2026-05-19'
+    from: P-021
+    to:
+    - P-001
+    cc: []
+    intent: Correction accepted, release obtained.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0276
+    date: '2026-06-22'
+    from: P-001
+    to:
+    - P-011
+    cc: []
+    intent: 'Task T-08: file the carrier''s written confirmation in the register once received.'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-08
+- id: TH-076
+  subject: Detention invoice - late empty return - [MFCIM260016 / HMLU260592] Disposable Syringes
+  shipment: S-016
+  kind: incident
+  incident: I-10
+  beats:
+  - id: M-0277
+    date: '2026-05-08'
+    from: P-014
+    to:
+    - P-001
+    cc: []
+    intent: 'Detention invoice: empty returned 6 days after free time, USD 900.'
+    attachments:
+    - Detention_HMLU260592.pdf
+    decisions: []
+    tasks: []
+  - id: M-0278
+    date: '2026-05-08'
+    from: P-001
+    to:
+    - P-028
+    cc: []
+    intent: Ask trucker why the empty was returned late; no return date was ever confirmed in writing.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0279
+    date: '2026-05-11'
+    from: P-028
+    to:
+    - P-001
+    cc: []
+    intent: 'Trucker: the terminal was closed 2 days for a typhoon; the other days were a dispatch backlog.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0280
+    date: '2026-05-11'
+    from: P-001
+    to:
+    - P-025
+    cc: []
+    intent: Inform consignee of the detention charge (2 days after detection).
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0281
+    date: '2026-05-15'
+    from: P-002
+    to:
+    - P-001
+    cc:
+    - P-009
+    - P-008
+    intent: 'Decision D-10 (Team Lead found out from the May KPI): dispute 2 days with carrier (terminal closure), bill Rapid
+      Haul the other 4 days. Notes the issue was never escalated within 48h.'
+    attachments: []
+    decisions:
+    - D-10
+    tasks: []
+  - id: M-0282
+    date: '2026-06-23'
+    from: P-001
+    to:
+    - P-003
+    cc:
+    - P-002
+    intent: 'Handover: task T-02 (carrier dispute) to Daniel.'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-02
+  - id: M-0283
+    date: '2026-06-23'
+    from: P-001
+    to:
+    - P-008
+    cc:
+    - P-002
+    intent: 'Handover: task T-03 (debit note to Rapid Haul for 4 days) to Junho.'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-03
+- id: TH-077
+  subject: Reefer imports for Blue Harbor Foods - broker routing from Q2
+  shipment: null
+  kind: policy
+  incident: null
+  beats:
+  - id: M-0284
+    date: '2026-04-27'
+    from: P-009
+    to:
+    - P-002
+    - P-001
+    - P-003
+    cc:
+    - P-021
+    intent: 'Proposal: route all Blue Harbor reefer imports via Kim & Park''s Busan office only.'
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0285
+    date: '2026-04-28'
+    from: P-009
+    to:
+    - P-002
+    - P-001
+    - P-003
+    - P-021
+    cc: []
+    intent: 'Decision D-11 confirmed: effective Q2 2026.'
+    attachments: []
+    decisions:
+    - D-11
+    tasks: []
+- id: TH-078
+  subject: Pacific Star - reefer free time change from July 2026
+  shipment: null
+  kind: vendor
+  incident: null
+  beats:
+  - id: M-0286
+    date: '2026-06-16'
+    from: P-018
+    to:
+    - P-001
+    cc: []
+    intent: Pacific Star announces reefer free time changes to 5 days from 1 July 2026.
+    attachments: []
+    decisions: []
+    tasks: []
+  - id: M-0287
+    date: '2026-06-17'
+    from: P-001
+    to:
+    - P-003
+    cc:
+    - P-002
+    intent: 'Task T-07: update the SOP-03 free-time table after the change.'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-07
+- id: TH-079
+  subject: Monthly import KPI - May 2026
+  shipment: null
+  kind: report
+  incident: null
+  beats:
+  - id: M-0288
+    date: '2026-06-03'
+    from: P-001
+    to:
+    - P-002
+    - P-009
+    cc: []
+    intent: 'May KPI: files closed, demurrage/detention incidents (S-009, S-015 settled; S-016 detention invoice open), broker
+      lead times.'
+    attachments:
+    - Import_KPI_2026-05.xlsx
+    decisions: []
+    tasks: []
+- id: TH-080
+  subject: Q2 vendor review - Harbor Gate non-conformance
+  shipment: null
+  kind: vendor
+  incident: null
+  beats:
+  - id: M-0289
+    date: '2026-06-18'
+    from: P-009
+    to:
+    - P-002
+    - P-001
+    cc: []
+    intent: 'Q2 review agenda: discuss the recorded HS-code non-conformance (I-05) with Harbor Gate (task T-06).'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-06
+- id: TH-081
+  subject: Handover of import files - Jiwoo Han leaving 30 June
+  shipment: null
+  kind: handover
+  incident: null
+  beats:
+  - id: M-0290
+    date: '2026-06-19'
+    from: P-002
+    to:
+    - P-001
+    - P-003
+    - P-009
+    cc: []
+    intent: 'Decision D-12: Daniel Cho takes over all open Daehan Precision and Seoul Medica files from 1 July.'
+    attachments: []
+    decisions:
+    - D-12
+    tasks: []
+  - id: M-0291
+    date: '2026-06-24'
+    from: P-001
+    to:
+    - P-003
+    cc:
+    - P-002
+    intent: 'Handover summary: open tasks T-01..T-08, contacts per carrier/broker, watch-outs (telex release, free-time reminders,
+      written empty-return dates).'
+    attachments:
+    - Handover_Notes_JH.docx
+    decisions: []
+    tasks:
+    - T-04
+    - T-05
+  - id: M-0292
+    date: '2026-06-25'
+    from: P-001
+    to:
+    - P-003
+    cc: []
+    intent: 'S-025 pre-arrival: Arrival Notice still to be sent (task T-05); S-024 POD still outstanding (task T-04).'
+    attachments: []
+    decisions: []
+    tasks:
+    - T-04
+    - T-05

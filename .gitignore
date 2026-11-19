@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/mail/
+data/sop/*.pdf
+eval/results/
+.docling_cache/
