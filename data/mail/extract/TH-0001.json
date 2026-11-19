@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0001",
+ "usage": {
+  "input": 3882,
+  "output": 278
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-01-27",
+    "what": "Free time (10 days) expires for container HMLU9595553 under HBL MFCIM260001; clearance and pick-up must be completed by then.",
+    "shipment_id": "S-001",
+    "evidence": [
+     "M-0002"
+    ]
+   }
+  ]
+ }
+}

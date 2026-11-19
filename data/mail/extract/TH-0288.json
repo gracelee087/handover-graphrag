@@ -1,0 +1,47 @@
+{
+ "thread": "TH-0288",
+ "usage": {
+  "input": 3358,
+  "output": 580
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "The detention invoice for file S-016 has not yet been settled, so the demurrage/detention incident remains on the open list in the May 2026 KPI report.",
+    "kind": "detention",
+    "shipment_id": null,
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-06-03",
+    "sop_refs": [],
+    "evidence": [
+     "M-0288"
+    ]
+   }
+  ],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Follow up on the unsettled S-016 detention invoice and hand it over properly before Jiwoo Han leaves on 30 June.",
+    "owner": "Jiwoo Han",
+    "due": "2026-06-30",
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0288"
+    ]
+   }
+  ],
+  "deadlines": [
+   {
+    "date": "2026-06-30",
+    "what": "Handover of the open S-016 detention invoice follow-up before Jiwoo Han leaves.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0288"
+    ]
+   }
+  ]
+ }
+}

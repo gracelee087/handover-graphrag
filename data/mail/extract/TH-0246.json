@@ -1,0 +1,66 @@
+{
+ "thread": "TH-0246",
+ "usage": {
+  "input": 4612,
+  "output": 632
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Harbor Gate Customs Brokerage filed the import declaration for HBL MFCIM260013 / MBL HMLU260481 (container HMLU6383102) under HS 8482.99 instead of the historically used HS 8482.10 without prior written confirmation, causing a duty difference of about USD 380 disputed by Daehan Precision Co.",
+    "kind": "hs_code_dispute",
+    "shipment_id": "S-013",
+    "raised_by": "Soyeon Moon",
+    "detected_date": "2026-04-01",
+    "sop_refs": [],
+    "evidence": [
+     "M-0246",
+     "M-0247",
+     "M-0248",
+     "M-0249"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Keep the filed HS 8482.99 for HBL MFCIM260013 and not pursue an amendment of the declaration.",
+    "date": "2026-04-06",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-013",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0250"
+    ]
+   },
+   {
+    "key": "DEC2",
+    "summary": "Record a non-conformance against Harbor Gate Customs Brokerage for filing the HS code change without written confirmation, requiring any future classification change to be confirmed in writing before filing.",
+    "date": "2026-04-06",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-013",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0250"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Inform Soyeon Moon at Daehan Precision that HS 8482.99 is kept for HBL MFCIM260013 with no amendment and a non-conformance was recorded against the broker.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-013",
+    "evidence": [
+     "M-0250"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

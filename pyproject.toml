@@ -9,4 +9,5 @@ dependencies = [
     "neo4j-graphrag[anthropic,sentence-transformers]>=1.24.0",
     "python-dotenv>=1.2.4",
     "pyyaml>=6.0.3",
+    "relate-db>=1.1.0",
 ]

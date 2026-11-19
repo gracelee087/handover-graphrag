@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0202",
+ "usage": {
+  "input": 4514,
+  "output": 119
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-06-07",
+    "what": "Free time expiry for reefer container OCLU5648055 (MBL OCLU260851); pick-up required before then to avoid demurrage charges.",
+    "shipment_id": "S-023",
+    "evidence": [
+     "M-0206"
+    ]
+   }
+  ]
+ }
+}

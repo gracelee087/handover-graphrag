@@ -1,0 +1,13 @@
+{
+ "thread": "TH-0186",
+ "usage": {
+  "input": 3748,
+  "output": 144
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": []
+ }
+}

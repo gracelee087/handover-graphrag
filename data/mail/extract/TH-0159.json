@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0159",
+ "usage": {
+  "input": 4539,
+  "output": 117
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-05-04",
+    "what": "Free time expiry for container PSSU6094602 (7 days from arrival on 2026-04-28); pick-up and return required to avoid charges",
+    "shipment_id": "S-018",
+    "evidence": [
+     "M-0163"
+    ]
+   }
+  ]
+ }
+}

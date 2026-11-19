@@ -1,0 +1,588 @@
+{
+ "usage": {
+  "model": "claude-opus-5-5",
+  "items": 46,
+  "cites": 5,
+  "governed_by_explicit": 5,
+  "governed_by_inferred": 26,
+  "input_tokens": 38049,
+  "output_tokens": 10029,
+  "cost_usd_list_price": 0.353
+ },
+ "log": [
+  {
+   "id": "TH-0001-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-05-C1.2",
+    "SOP-05-C2.1",
+    "SOP-02-C2.1"
+   ],
+   "clauses": [],
+   "reason": "The issue is a missing health certificate in the customer's customs documents. None of the candidates covers document collection or what to do when a required certificate is missing. The clauses on free time, broker allocation, written instructions to brokers and truckers, and email subject lines are all unrelated."
+  },
+  {
+   "id": "TH-0221-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C3.2",
+    "SOP-04-C4.1",
+    "SOP-03-C2.1",
+    "SOP-01-C4.1"
+   ],
+   "clauses": [],
+   "reason": "The issue is a 6-day vessel delay from port congestion, escalated as Severity 1. None of the candidates covers delay notification or escalation. SOP-01-C3.2 and SOP-01-C4.1 set pre-ETA deadlines for the arrival notice and broker documents but impose no duty triggered by an ETA change. SOP-04-C4.1 covers damage or shortage claims. SOP-03-C2.1 covers free-time application."
+  },
+  {
+   "id": "TH-0221-ISS2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C5.2",
+    "SOP-01-C6.1",
+    "SOP-01-C3.2",
+    "SOP-01-C3.3"
+   ],
+   "clauses": [],
+   "reason": "The issue is the consignee's request for priority customs clearance and the release being obtained. None of the candidates governs that. C5.2 sets when a D/O may be requested, C6.1 covers POD collection, C3.2 the Arrival Notice and C3.3 document collection. None of them sets an obligation about expediting or prioritising customs clearance."
+  },
+  {
+   "id": "TH-0221-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C3.2",
+    "SOP-04-C4.1",
+    "SOP-01-C6.1",
+    "SOP-03-C5.1"
+   ],
+   "clauses": [],
+   "reason": "The decision is about handling a 6-day transit delay: not re-routing and sending the customer daily ETA updates. None of the candidates covers delay management or ETA update communication. SOP-01-C3.2 sets the timing and content of the Arrival Notice, not progress updates during a delay. The other clauses cover damage claims, proof of delivery and empty container return, which are unrelated."
+  },
+  {
+   "id": "TH-0227-ISS1",
+   "mode": "explicit",
+   "clauses": [
+    "SOP-03-C3.2"
+   ]
+  },
+  {
+   "id": "TH-0227-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C3.1",
+    "SOP-01-C3.2",
+    "SOP-05-C2.1",
+    "SOP-03-C2.2"
+   ],
+   "clauses": [],
+   "reason": "The decision is to file the import declaration early through the priority slot so it lands before free time expires. None of the candidates sets a rule for filing timing or priority-slot use. Pre-alert review (SOP-01-C3.1), Arrival Notice (SOP-01-C3.2), written instructions to brokers and truckers (SOP-05-C2.1) and recording the free-time date (SOP-03-C2.2) each cover a different step."
+  },
+  {
+   "id": "TH-0227-DEC2",
+   "mode": "explicit",
+   "clauses": [
+    "SOP-03-C3.2"
+   ]
+  },
+  {
+   "id": "TH-0233-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-03-C4.4",
+    "SOP-03-C4.2",
+    "SOP-03-C4.1"
+   ],
+   "clauses": [
+    "SOP-03-C4.2"
+   ],
+   "reason": "Demurrage arose because the carrier declined an extension request that was made too late. SOP-03-C4.2 requires extension requests at least 2 working days before free time expires, so it governs. C4.1 covers making a written request, and a request was in fact made, so it is not the issue. The free-time table (C2.1) and the dispute rule (C4.4) are not engaged, because nothing suggests the invoice contradicts the recorded free time."
+  },
+  {
+   "id": "TH-0233-ISS2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-05-C1.2",
+    "SOP-01-C6.1",
+    "SOP-01-C3.2"
+   ],
+   "clauses": [
+    "SOP-03-C2.1"
+   ],
+   "reason": "A week-long pick-up hold makes the container's free time the deciding factor for demurrage exposure. SOP-03 2.1 governs the free time applied, including the extra days under the Blue Harbor Foods contract and reefer free time. The broker allocation, POD and arrival notice clauses do not address a pick-up hold."
+  },
+  {
+   "id": "TH-0233-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-03-C4.2",
+    "SOP-03-C4.1",
+    "SOP-04-C4.1"
+   ],
+   "clauses": [
+    "SOP-03-C4.2"
+   ],
+   "reason": "The refusal turned on the request being sent too late. SOP-03-C4.2 requires extension requests to go out at least 2 working days before free time expires, and a request sent on the expiry day misses that deadline. SOP-03-C4.1 is about making the request in writing and keeping it on file, the free-time table sets the free-time allowances, and SOP-04-C4.1 covers cargo damage claims, so none of these applies to the timing issue."
+  },
+  {
+   "id": "TH-0233-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-05-C1.2",
+    "SOP-01-C1.2",
+    "SOP-03-C4.3"
+   ],
+   "clauses": [
+    "SOP-03-C4.3"
+   ],
+   "reason": "The decision splits demurrage charges, with Meridian absorbing part and billing the rest to the consignee. SOP-03 4.3 directly governs how demurrage is allocated, when Meridian may absorb it (with Team Lead approval) and how the absorption must be recorded. The free-time table, broker allocation and scope clauses do not govern this charge-allocation decision."
+  },
+  {
+   "id": "TH-0242-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C5.2",
+    "SOP-05-C2.1",
+    "SOP-01-C3.2",
+    "SOP-02-C2.4"
+   ],
+   "clauses": [],
+   "reason": "The issue is a customs physical inspection that passed, followed by release. None of the candidates sets an obligation about customs inspection or release itself. SOP-01-C5.2 and SOP-02-C2.4 govern D/O requests, SOP-05-C2.1 governs written instructions to brokers and truckers, and SOP-01-C3.2 governs Arrival Notices. None of these actions is the subject of this issue."
+  },
+  {
+   "id": "TH-0242-ISS2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-05-C2.1",
+    "SOP-01-C3.1",
+    "SOP-01-C4.2",
+    "SOP-01-C2.1"
+   ],
+   "clauses": [],
+   "reason": "The issue is a customs query requiring confirmation of the import licence number. None of the candidates sets an obligation about import licences or answering customs queries. C4.2 covers HS code verification only, and C3.1 covers HBL/MBL data matching in the pre-alert review. C2.1 (SOP-05) covers the format of written instructions to brokers and truckers, and C2.1 (SOP-01) is a general file-ownership role. None of these is directly about this situation."
+  },
+  {
+   "id": "TH-0242-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C5.2",
+    "SOP-01-C5.1",
+    "SOP-01-C3.3",
+    "SOP-01-C6.1"
+   ],
+   "clauses": [],
+   "reason": "The decision is about which staff will attend the physical inspection. SOP-01-C5.1 covers physical inspection, but its obligations are to notify the consignee within 1 working day and record the inspection in the file. It says nothing about who attends. The other clauses cover D/O requests, document collection and POD, which are unrelated."
+  },
+  {
+   "id": "TH-0242-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C4.3",
+    "SOP-01-C2.1",
+    "SOP-01-C3.2",
+    "SOP-01-C5.1"
+   ],
+   "clauses": [
+    "SOP-01-C2.1"
+   ],
+   "reason": "The decision has the consignee contacting customs directly to resolve the licence query. That bypasses the Import Operator, whom SOP-01-C2.1 requires to act as the single point of contact with the consignee and customs parties for the life of the file. The other clauses cover duty payment, arrival notices and inspection notices, none of which apply to this licence query."
+  },
+  {
+   "id": "TH-0246-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-05-C2.1",
+    "SOP-02-C2.1",
+    "SOP-01-C3.1",
+    "SOP-01-C4.2"
+   ],
+   "clauses": [
+    "SOP-01-C4.2"
+   ],
+   "reason": "The broker changed the HS code from the historically used 8482.10 to 8482.99 without written confirmation from the consignee before filing. SOP-01-C4.2 directly governs this: the operator must cross-check the broker's proposed HS code against the import history and confirm any change in writing before the declaration is filed. The other clauses cover e-mail instruction format, subject-line references and pre-alert data matching, none of which is the issue here."
+  },
+  {
+   "id": "TH-0246-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-02-C3.1",
+    "SOP-02-C2.1",
+    "SOP-01-C3.1",
+    "SOP-01-C4.2"
+   ],
+   "clauses": [
+    "SOP-01-C4.2"
+   ],
+   "reason": "The decision concerns the HS code on the customs declaration. SOP-01-C4.2 is the only candidate about HS code verification and changes: it requires cross-checking against the consignee's import history and written consignee confirmation of any change. It only partly fits, because its wording covers changes before filing, not amending a declaration already filed. SOP-02-C3.1 covers B/L amendments, not customs declarations. SOP-02-C2.1 covers email subject lines and SOP-01-C3.1 covers pre-alert review, so neither applies."
+  },
+  {
+   "id": "TH-0246-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C4.2",
+    "SOP-05-C2.1",
+    "SOP-05-C3.2",
+    "SOP-02-C3.2"
+   ],
+   "clauses": [
+    "SOP-01-C4.2",
+    "SOP-05-C3.2"
+   ],
+   "reason": "SOP-01-C4.2 sets the rule that was breached: an HS code change must be confirmed in writing before the declaration is filed. SOP-05-C3.2 governs recording a non-conformance against a vendor. SOP-05-C2.1 covers how instructions are sent to brokers, not classification confirmation. SOP-02-C3.2 covers manifest corrections, which are not at issue."
+  },
+  {
+   "id": "TH-0251-ISS1",
+   "mode": "explicit",
+   "clauses": [
+    "SOP-02-C2.4"
+   ]
+  },
+  {
+   "id": "TH-0251-ISS2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-02-C2.4",
+    "SOP-03-C4.4",
+    "SOP-03-C4.1",
+    "SOP-01-C5.2"
+   ],
+   "clauses": [
+    "SOP-02-C2.4",
+    "SOP-01-C5.2"
+   ],
+   "reason": "The D/O was requested before telex release was confirmed. Both SOP-02 2.4 and SOP-01 5.2 forbid requesting a D/O until O/BL surrender or telex release is confirmed. The dispute and extension clauses deal with handling D&D charges and foreseeable delays, not with the premature D/O request that caused the demurrage."
+  },
+  {
+   "id": "TH-0251-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C4.3",
+    "SOP-02-C2.1",
+    "SOP-01-C1.2",
+    "SOP-04-C4.1"
+   ],
+   "clauses": [
+    "SOP-03-C4.3"
+   ],
+   "reason": "The decision is that Meridian absorbs demurrage caused by its own error instead of billing the consignee. SOP-03 4.3 governs this directly: such absorption needs Import Team Lead approval and must be recorded as a cost-absorption decision. The other clauses cover email subject lines, procedure scope and damage claim notices, none of which apply here."
+  },
+  {
+   "id": "TH-0251-DEC2",
+   "mode": "explicit",
+   "clauses": [
+    "SOP-02-C2.4"
+   ]
+  },
+  {
+   "id": "TH-0284-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-05-C1.2",
+    "SOP-01-C4.1",
+    "SOP-01-C5.2",
+    "SOP-05-C2.1"
+   ],
+   "clauses": [
+    "SOP-05-C1.2"
+   ],
+   "reason": "The decision assigns a specific customs broker (Kim & Park, Busan office) to a specific customer (Blue Harbor Foods). SOP-05-C1.2 governs which broker is allocated to which customer, so it is the rule this decision changes. The other clauses deal with document timing, D/O requests and the form of instructions, none of which concern broker allocation."
+  },
+  {
+   "id": "TH-0259-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-04-C4.1",
+    "SOP-04-C4.2",
+    "SOP-04-C1.2",
+    "SOP-04-C1.1"
+   ],
+   "clauses": [
+    "SOP-04-C4.1",
+    "SOP-04-C4.2",
+    "SOP-04-C1.2"
+   ],
+   "reason": "Damage was noted at delivery, so the Import Operator must give the carrier written claim notice within 3 days (4.1). Because the expected claim exceeds USD 10,000, photos, delivery receipt remarks and a survey report are needed before any settlement discussion (4.2). The Severity 1 escalation applies the severity rule for potential cost over USD 500 (1.2). The general category clause (1.1) is excluded: its table is truncated, the visible rows do not show cargo damage, and its classification duty is only background to this decision."
+  },
+  {
+   "id": "TH-0259-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-04-C4.2",
+    "SOP-04-C4.1",
+    "SOP-04-C1.1",
+    "SOP-04-C2.2"
+   ],
+   "clauses": [
+    "SOP-04-C4.2"
+   ],
+   "reason": "Appointing a surveyor to establish cause and extent of damage is about gathering evidence, which C4.2 covers: a survey report is required before settlement where the value exceeds USD 10,000. C4.1 is about written notice to the carrier, not inspection. C1.1 (classification) and C2.2 (logging) are general exception-handling duties and do not address the survey."
+  },
+  {
+   "id": "TH-0259-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-02-C2.1",
+    "SOP-04-C4.1",
+    "SOP-05-C2.1",
+    "SOP-01-C3.1"
+   ],
+   "clauses": [
+    "SOP-04-C4.1"
+   ],
+   "reason": "The decision is to pursue a wet damage claim against the carrier. SOP-04-C4.1 governs this directly: written notice to the carrier within 3 days of delivery is what preserves recourse. The other clauses cover email subject lines, broker and trucker instructions, and pre-alert review, none of which is about a damage claim."
+  },
+  {
+   "id": "TH-0259-DEC3",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-04-C4.1",
+    "SOP-03-C5.1",
+    "SOP-03-C3.2",
+    "SOP-05-C1.2"
+   ],
+   "clauses": [],
+   "reason": "The decision is to send the customer a weekly update on the claim status. SOP-04-C4.1 covers written notice to the carrier within 3 days of delivery, not ongoing status updates to the customer. The other candidates deal with empty return confirmation, free-time reminders and broker allocation, so none of them sets an obligation about claim status updates to the customer."
+  },
+  {
+   "id": "TH-0259-DEC4",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.2",
+    "SOP-02-C2.1",
+    "SOP-03-C3.2",
+    "SOP-01-C5.2"
+   ],
+   "clauses": [],
+   "reason": "The case is a staff handover of a claim file. None of the candidates deals with file handover or staff transitions. The clauses cover recording free-time dates, putting MBL/HBL numbers in email subjects, consignee reminders and D/O requests."
+  },
+  {
+   "id": "TH-0265-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C5.2",
+    "SOP-01-C3.2",
+    "SOP-01-C3.1",
+    "SOP-05-C2.1"
+   ],
+   "clauses": [
+    "SOP-05-C2.1",
+    "SOP-01-C5.2"
+   ],
+   "reason": "Same-day clearance and delivery requires the operator to instruct the customs broker and the trucker. SOP-05-C2.1 requires those instructions by e-mail with the HBL in the subject line, and any verbal instruction confirmed in writing the same day. Releasing the container for delivery also requires a D/O. SOP-01-C5.2 allows the D/O to be requested only after customs release and O/BL surrender or telex release are confirmed, even under time pressure. The pre-alert review and arrival notice clauses cover earlier stages and do not govern this urgent clearance and delivery."
+  },
+  {
+   "id": "TH-0265-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-01-C3.2",
+    "SOP-02-C2.1",
+    "SOP-01-C4.3"
+   ],
+   "clauses": [],
+   "reason": "The decision is about accepting a broker's expedite fee for same-day clearance, billed to Meridian. None of the candidates governs it. The free time table, the Arrival Notice timing and content, and the MBL/HBL subject-line rule do not cover extra charges. The duty clause covers only duty disbursements paid on the consignee's behalf, not a broker's expedite fee."
+  },
+  {
+   "id": "TH-0277-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-03-C5.1",
+    "SOP-01-C3.2",
+    "SOP-01-C6.1"
+   ],
+   "clauses": [
+    "SOP-03-C2.1"
+   ],
+   "reason": "The detention charge depends on the contract free time for Hanseatic Marine Lines, which is 7 days dry for this 40HC. SOP-03-C2.1 sets the free time the Import Operator must apply, so it directly governs the detention calculation. SOP-03-C5.1 only covers recording the trucker's written return confirmation, not liability for the late return. The Arrival Notice and POD clauses are unrelated. None of the candidates addresses typhoon closures or trucker backlog."
+  },
+  {
+   "id": "TH-0277-ISS2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-04-C3.1",
+    "SOP-03-C4.4",
+    "SOP-03-C5.1",
+    "SOP-04-C4.2"
+   ],
+   "clauses": [
+    "SOP-04-C3.1"
+   ],
+   "reason": "The issue is a missed 48-hour written escalation of an exception to the Import Team Lead, which is exactly what SOP-04 3.1 requires. One caveat: the clause applies to Severity 1 exceptions, and the thread does not show the case's severity. The other clauses cover disputing D&D invoices, recording empty return dates, and collecting evidence before settlement, none of which is about escalation timing."
+  },
+  {
+   "id": "TH-0277-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-03-C4.4",
+    "SOP-03-C5.1",
+    "SOP-03-C3.2"
+   ],
+   "clauses": [
+    "SOP-03-C4.4"
+   ],
+   "reason": "The decision is to dispute part of a detention (D&D) charge with the carrier. SOP-03 4.4 is the clause that sets out how D&D charges are disputed: with the carrier, within 7 days of the invoice, referencing the recorded free-time expiry. It is a borderline fit, because the typhoon closure is not strictly an invoice contradicting recorded free time. The free-time table (2.1), the empty-return recording rule (5.1) and the consignee reminder rule (3.2) do not govern the dispute."
+  },
+  {
+   "id": "TH-0277-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C5.1",
+    "SOP-03-C4.4",
+    "SOP-04-C4.1",
+    "SOP-03-C2.1"
+   ],
+   "clauses": [],
+   "reason": "The decision passes detention costs on to the trucker because its dispatch backlog caused the delay. None of the candidate clauses governs recovering D&D costs from a subcontracted trucker. C5.1 covers the trucker confirming the empty return date. C4.4 covers disputing a carrier invoice that contradicts the recorded free time. C2.1 sets contract free time. SOP-04 C4.1 deals with cargo damage claims."
+  },
+  {
+   "id": "TH-0277-DEC3",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C4.4",
+    "SOP-01-C6.2",
+    "SOP-03-C1.2",
+    "SOP-05-C4.1"
+   ],
+   "clauses": [],
+   "reason": "The decision is to withhold payment of the disputed portion until the carrier responds, and none of the candidates sets that rule. SOP-03-C4.4 only requires raising the dispute within 7 days. SOP-05-C4.1 bars payment only until the operator's invoice check against instruction and rate sheet is done, not until a carrier dispute is resolved. SOP-01-C6.2 covers the cost-sheet handover, and SOP-03-C1.2 covers telling demurrage from detention."
+  },
+  {
+   "id": "TH-0277-DEC4",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-01-C5.2",
+    "SOP-05-C1.2",
+    "SOP-05-C2.1"
+   ],
+   "clauses": [],
+   "reason": "The decision is a handover of a carrier dispute between operators before one leaves. None of the candidate clauses deals with handover or with dispute ownership. The candidates cover contract free time (SOP-03-C2.1), D/O request conditions (SOP-01-C5.2), broker allocation (SOP-05-C1.2) and written instructions to brokers and truckers (SOP-05-C2.1), so none of them governs this case."
+  },
+  {
+   "id": "TH-0277-DEC5",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C4.4",
+    "SOP-03-C2.1",
+    "SOP-03-C3.2",
+    "SOP-03-C5.1"
+   ],
+   "clauses": [],
+   "reason": "The decision hands over the task of issuing a debit note to the trucker (Rapid Haul Logistics) for detention days. None of the candidates covers this. C4.4 is about disputing a carrier's D&D invoice, C2.1 about applying contract free time, C3.2 about reminding the consignee, and C5.1 about recording the trucker's confirmed return date. No clause sets an obligation on debit notes to truckers or on handing over that task."
+  },
+  {
+   "id": "TH-0270-ISS1",
+   "mode": "explicit",
+   "clauses": [
+    "SOP-02-C3.2"
+   ]
+  },
+  {
+   "id": "TH-0270-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-04-C4.1",
+    "SOP-02-C3.2",
+    "SOP-01-C6.1",
+    "SOP-02-C3.1"
+   ],
+   "clauses": [
+    "SOP-02-C3.2"
+   ],
+   "reason": "The decision is about filing a manifest correction after arrival, which falls under SOP-02-C3.2. That clause requires manifest corrections to be filed before ATA and escalated to the Import Team Lead if that cannot be done. The other clauses do not fit: SOP-04-C4.1 covers damage or shortage claims, SOP-01-C6.1 covers proof of delivery, and SOP-02-C3.1 covers B/L amendments, not manifest corrections."
+  },
+  {
+   "id": "TH-0270-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-02-C3.2",
+    "SOP-02-C2.4",
+    "SOP-02-C2.3",
+    "SOP-01-C5.2"
+   ],
+   "clauses": [],
+   "reason": "The decision is an internal handover of a pending follow-up (filing Pacific Star's written manifest-error confirmation in the register) ahead of a staff departure. None of the candidates covers task handover or registering a carrier's written confirmation. SOP-02-C3.2 deals with filing manifest corrections at destination before ATA, which is a different obligation. The other clauses concern release confirmation and D/O requests, which are unrelated."
+  },
+  {
+   "id": "TH-0288-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C5.1",
+    "SOP-03-C4.4",
+    "SOP-03-C2.2",
+    "SOP-03-C1.2"
+   ],
+   "clauses": [],
+   "reason": "The issue is only a reporting status: the S-016 detention invoice is unpaid, so the incident stays open in the KPI report. None of the candidates governs invoice settlement or KPI reporting. C5.1 covers recording the empty return date, and C2.2 covers recording the free-time expiry date. C1.2 covers telling demurrage apart from detention. C4.4 applies only when an invoice contradicts the recorded free time, and no such contradiction is stated."
+  },
+  {
+   "id": "TH-0286-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-03-C3.2",
+    "SOP-03-C3.1",
+    "SOP-01-C3.2"
+   ],
+   "clauses": [
+    "SOP-03-C2.1"
+   ],
+   "reason": "The decision changes Pacific Star Shipping's contractual reefer free time, which is a carrier free-time value maintained in the contract free time table in SOP-03 2.1. The other clauses only use free time (watch list, reminders, arrival notice) and do not set it."
+  },
+  {
+   "id": "TH-0286-DEC2",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-03-C2.1",
+    "SOP-05-C1.2",
+    "SOP-01-C5.2",
+    "SOP-03-C4.4"
+   ],
+   "clauses": [],
+   "reason": "The decision only reassigns who owns and maintains the SOP-03 free-time table, which is an internal staffing matter. SOP-03-C2.1 requires the Import Operator to apply the contract free time but says nothing about who owns or updates the table. The other candidates cover broker allocation, D/O requests and D&D disputes, which are unrelated. No candidate clause governs this handover."
+  },
+  {
+   "id": "TH-0289-ISS1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-05-C3.2",
+    "SOP-01-C4.2",
+    "SOP-05-C3.1",
+    "SOP-01-C3.1"
+   ],
+   "clauses": [
+    "SOP-05-C3.2"
+   ],
+   "reason": "The case is about a vendor non-conformance being recorded and discussed with Harbor Gate, including its explanation and corrective action. SOP-05-C3.2 directly requires recording vendor errors and discussing them with the vendor. SOP-05-C3.1 covers the quarterly performance metrics (clearance lead time and on-time rate), not non-conformance handling. SOP-01-C4.2 is the operator's HS-code check, not the vendor review. SOP-01-C3.1 is the pre-alert review and is unrelated."
+  },
+  {
+   "id": "TH-0289-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-05-C1.2",
+    "SOP-03-C2.1",
+    "SOP-01-C3.2",
+    "SOP-01-C5.2"
+   ],
+   "clauses": [],
+   "reason": "The decision is an internal handover of the Harbor Gate non-conformance follow-up to a new staff member. SOP-05-C1.2 mentions Harbor Gate, but it governs which broker is assigned to which customer, not who handles non-conformance follow-up. The free time, Arrival Notice and D/O clauses do not apply either."
+  },
+  {
+   "id": "TH-0290-DEC1",
+   "mode": "inferred",
+   "candidates": [
+    "SOP-01-C5.2",
+    "SOP-05-C1.2",
+    "SOP-01-C3.3",
+    "SOP-01-C3.1"
+   ],
+   "clauses": [],
+   "reason": "The decision reassigns customer files to a new operator as single point of contact after a staff departure. None of the candidates covers internal operator or customer handover. SOP-05-C1.2 allocates customs brokers to customers, not operators. The other clauses cover D/O requests, document collection and pre-alert review."
+  }
+ ]
+}

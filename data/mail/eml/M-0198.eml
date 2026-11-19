@@ -1,0 +1,53 @@
+Message-ID: <M-0198@meridianfreight.example>
+Date: Wed, 27 May 2026 12:22:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Junho Oh <junho.oh@meridianfreight.example>
+Cc: Hoon Jang <hoon.jang@meridianfreight.example>
+Subject: Re: Trucking & delivery [MFCIM260022 / HMLU260814] Hydraulic Press
+ Components - HML Lubeck 031W
+In-Reply-To: <M-0197@meridianfreight.example>
+References: <M-0196@meridianfreight.example> <M-0197@meridianfreight.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============5587429680936500646=="
+
+--===============5587429680936500646==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Junho,
+
+Shipment MFCIM260022 (MBL HMLU260814, container HMLU7660532) has been deliver=
+ed to Daehan Precision Co., and the consignee has confirmed the cargo was rec=
+eived in good order.
+
+Attached for invoicing:
+- CostSheet_MFCIM260022.xlsx - cost sheet for this shipment
+- POD_MFCIM260022.pdf - signed proof of delivery
+
+Hoon, copying you so the POD can be filed with the shipment documents.
+
+Please let me know if you need anything else to process this.
+
+Thanks,
+
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============5587429680936500646==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="POD_MFCIM260022.pdf"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMjIucGRmXQ==
+
+--===============5587429680936500646==
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="CostSheet_MFCIM260022.xlsx"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMjIueGxzeF0=
+
+--===============5587429680936500646==--

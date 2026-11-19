@@ -1,0 +1,112 @@
+{
+ "thread": "TH-0233",
+ "usage": {
+  "input": 5669,
+  "output": 958
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Container PSSU4527862 (HBL MFCIM260009) incurred demurrage from 17 March 2026 after Pacific Star declined a late free-time extension request, invoiced at 4 days totalling USD 1,120.",
+    "kind": "demurrage",
+    "shipment_id": "S-009",
+    "raised_by": "Aiko Mori",
+    "detected_date": "2026-03-17",
+    "sop_refs": [],
+    "evidence": [
+     "M-0236",
+     "M-0237",
+     "M-0238",
+     "M-0239"
+    ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "Blue Harbor Foods requested a pick-up hold of about a week for PSSU4527862 because their cold storage warehouse was full.",
+    "kind": "other",
+    "shipment_id": "S-009",
+    "raised_by": "Bora Jung",
+    "detected_date": "2026-03-09",
+    "sop_refs": [],
+    "evidence": [
+     "M-0233"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Pacific Star Shipping declined the 5-day free-time extension for PSSU4527862 because the request arrived on the expiry day rather than before it.",
+    "date": "2026-03-17",
+    "decided_by": "Aiko Mori",
+    "shipment_id": "S-009",
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0236"
+    ]
+   },
+   {
+    "key": "DEC2",
+    "summary": "Meridian absorbs 50% (USD 560) of the USD 1,120 demurrage on PSSU4527862 and bills the remaining USD 560 to Blue Harbor Foods.",
+    "date": "2026-03-24",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-009",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0240",
+     "M-0241"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Send Bora Jung a settlement letter explaining the 50/50 split of the USD 1,120 demurrage.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-009",
+    "evidence": [
+     "M-0240",
+     "M-0241"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Book Meridian's USD 560 share of the demurrage for PSSU4527862.",
+    "owner": "Sora Baek",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-009",
+    "evidence": [
+     "M-0240"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Arrange pick-up of PSSU4527862 as soon as possible to stop demurrage accruing.",
+    "owner": "Bora Jung",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-009",
+    "evidence": [
+     "M-0237"
+    ]
+   }
+  ],
+  "deadlines": [
+   {
+    "date": "2026-03-16",
+    "what": "Pacific Star free time (10 days) for container PSSU4527862 expires.",
+    "shipment_id": "S-009",
+    "evidence": [
+     "M-0234",
+     "M-0235"
+    ]
+   }
+  ]
+ }
+}

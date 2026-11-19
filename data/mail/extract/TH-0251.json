@@ -1,0 +1,110 @@
+{
+ "thread": "TH-0251",
+ "usage": {
+  "input": 5483,
+  "output": 959
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Pacific Star Shipping refused to issue the D/O for MBL PSSU260555 / container PSSU2398736 because no telex release had been received from origin, delaying cargo release by about 2 days.",
+    "kind": "do_release_hold",
+    "shipment_id": "S-015",
+    "raised_by": "Ryan Tanaka",
+    "detected_date": "2026-04-13",
+    "sop_refs": [
+     "SOP-02 section 2.4"
+    ],
+    "evidence": [
+     "M-0251",
+     "M-0252",
+     "M-0253",
+     "M-0254",
+     "M-0256"
+    ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "Premature D/O request before telex release confirmation led to 2 days of demurrage costing USD 560 on container PSSU2398736 (HBL MFCIM260015).",
+    "kind": "demurrage",
+    "shipment_id": "S-015",
+    "raised_by": "Jiwoo Han",
+    "detected_date": "2026-04-13",
+    "sop_refs": [],
+    "evidence": [
+     "M-0256",
+     "M-0257",
+     "M-0258"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Meridian absorbs the USD 560 demurrage on HBL MFCIM260015 as a Meridian error and will not bill it to Daehan Precision.",
+    "date": "2026-04-14",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-015",
+    "resolves": "ISS2",
+    "sop_refs": [],
+    "evidence": [
+     "M-0257",
+     "M-0258"
+    ]
+   },
+   {
+    "key": "DEC2",
+    "summary": "The import team is to be re-trained on SOP-02 section 2.4 with a reminder circulated to all import handlers to prevent premature D/O requests.",
+    "date": "2026-04-14",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-015",
+    "resolves": null,
+    "sop_refs": [
+     "SOP-02 section 2.4"
+    ],
+    "evidence": [
+     "M-0257"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Instruct Pacific Star Shipping to telex release MBL PSSU260555 and forward the release confirmation to Jiwoo Han.",
+    "owner": "Klaus Richter",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-015",
+    "evidence": [
+     "M-0253",
+     "M-0255"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Re-train the team on SOP-02 section 2.4 and circulate a reminder to everyone handling imports.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-015",
+    "evidence": [
+     "M-0257",
+     "M-0258"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Inform Soyeon Moon once the carrier confirms the telex release and the D/O for container PSSU2398736 is in hand.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-015",
+    "evidence": [
+     "M-0254"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

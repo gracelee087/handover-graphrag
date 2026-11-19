@@ -2,7 +2,8 @@
 .venv/
 __pycache__/
 *.pyc
-data/mail/
-data/sop/*.pdf
-eval/results/
 .docling_cache/
+# LLM generation caches (the generated corpus itself IS committed so judges need no API key)
+data/mail/json/
+data/sop/json/
+eval/results/

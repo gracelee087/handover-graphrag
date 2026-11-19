@@ -1,0 +1,51 @@
+Message-ID: <M-0098@meridianfreight.example>
+Date: Mon, 16 Mar 2026 15:37:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Junho Oh <junho.oh@meridianfreight.example>
+Cc: Hoon Jang <hoon.jang@meridianfreight.example>
+Subject: Re: Trucking & delivery [MFCIM260010 / HMLU260370] Olive Oil - HML
+ Bremen 026W
+In-Reply-To: <M-0097@meridianfreight.example>
+References: <M-0096@meridianfreight.example> <M-0097@meridianfreight.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6052250079055398545=="
+
+--===============6052250079055398545==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Junho,
+
+Shipment MFCIM260010 (MBL HMLU260370, container HMLU9996621, HML Bremen 026W)=
+ is now delivered. Blue Harbor Foods confirmed that the cargo arrived in good=
+ order.
+
+I have attached the cost sheet for invoicing (CostSheet_MFCIM260010.xlsx). Th=
+e signed POD is also attached (POD_MFCIM260010.pdf).
+
+Hoon, please file both documents in the shipment folder.
+
+If you have any questions on the cost lines, let me know.
+
+Thanks,
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============6052250079055398545==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="POD_MFCIM260010.pdf"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMTAucGRmXQ==
+
+--===============6052250079055398545==
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="CostSheet_MFCIM260010.xlsx"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMTAueGxzeF0=
+
+--===============6052250079055398545==--

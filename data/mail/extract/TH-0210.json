@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0210",
+ "usage": {
+  "input": 3960,
+  "output": 299
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-06-13",
+    "what": "Free time (10 days) expires for reefer container PSSU4898494 under HBL MFCIM260024 / MBL PSSU260888.",
+    "shipment_id": "S-024",
+    "evidence": [
+     "M-0211"
+    ]
+   }
+  ]
+ }
+}

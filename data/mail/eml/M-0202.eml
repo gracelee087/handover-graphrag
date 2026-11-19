@@ -1,0 +1,49 @@
+Message-ID: <M-0202@meridianfreight.example>
+Date: Mon, 25 May 2026 11:06:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Dongwook Kim <dongwook.kim@kimpark-customs.example>
+Cc: Haneul Park <haneul.park@kimpark-customs.example>
+Subject: Customs clearance [MFCIM260023 / OCLU260851] Frozen Salmon Fillets -
+ OCL Qingdao Star 2609E
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6212339119305581033=="
+
+--===============6212339119305581033==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Mr. Kim,
+
+Please find attached the full document set for the shipment below (Docs_MFCIM=
+260023.zip):
+
+HBL: MFCIM260023
+MBL: OCLU260851
+Container: OCLU5648055 (40RF)
+Vessel: OCL Qingdao Star voy 2609E, Qingdao -> Busan
+ETA Busan: 29 May 2026
+Cargo: frozen salmon fillets
+Consignee: Blue Harbor Foods
+
+Our proposed HS code is 0304.81. Please check it against the documents and fi=
+le the import declaration on arrival.
+
+As this is reefer cargo with 10 days free time, we would appreciate a smooth =
+clearance. If anything is missing or unclear in the set, please let me know.
+
+Haneul, copied for your follow-up.
+
+Best regards,
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============6212339119305581033==
+Content-Type: application/zip
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Docs_MFCIM260023.zip"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDIzLnppcF0=
+
+--===============6212339119305581033==--

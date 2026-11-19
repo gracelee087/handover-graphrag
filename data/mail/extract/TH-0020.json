@@ -1,0 +1,25 @@
+{
+ "thread": "TH-0020",
+ "usage": {
+  "input": 4011,
+  "output": 260
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Junho Oh to issue the invoice for shipment MFCIM260002 (MBL OCLU260074, container OCLU4169487) using the attached cost sheet and signed POD.",
+    "owner": "Junho Oh",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-002",
+    "evidence": [
+     "M-0022"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

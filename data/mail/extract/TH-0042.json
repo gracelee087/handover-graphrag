@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0042",
+ "usage": {
+  "input": 4467,
+  "output": 287
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-02-19",
+    "what": "Free time (10 days from arrival on 2026-02-10) expires for container OCLU2232702 under MBL OCLU260185; pick-up and empty return must be completed to avoid charges.",
+    "shipment_id": "S-005",
+    "evidence": [
+     "M-0046"
+    ]
+   }
+  ]
+ }
+}

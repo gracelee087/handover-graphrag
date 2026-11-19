@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0120",
+ "usage": {
+  "input": 3890,
+  "output": 236
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-04-15",
+    "what": "Free time (10 days) expires for container OCLU9895775 under HBL MFCIM260014 / MBL OCLU260518.",
+    "shipment_id": "S-014",
+    "evidence": [
+     "M-0121"
+    ]
+   }
+  ]
+ }
+}

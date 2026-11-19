@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0015",
+ "usage": {
+  "input": 4404,
+  "output": 319
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-01-29",
+    "what": "Last free day for container OCLU4169487 (MBL OCLU260074): pick-up and empty return are needed by then to avoid demurrage and detention charges.",
+    "shipment_id": "S-002",
+    "evidence": [
+     "M-0019"
+    ]
+   }
+  ]
+ }
+}

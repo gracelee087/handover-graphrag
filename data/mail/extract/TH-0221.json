@@ -1,0 +1,79 @@
+{
+ "thread": "TH-0221",
+ "usage": {
+  "input": 4622,
+  "output": 730
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Pacific Meridian voy 019N carrying container PSSU5173790 (HBL MFCIM260003 / MBL PSSU260111) delayed 6 days due to Shanghai port congestion, ETA Busan moved from 2026-01-28 to 2026-02-03, escalated as Severity 1.",
+    "kind": "vessel_delay",
+    "shipment_id": "S-003",
+    "raised_by": "Ryan Tanaka",
+    "detected_date": "2026-01-22",
+    "sop_refs": [],
+    "evidence": [
+     "M-0221",
+     "M-0222",
+     "M-0223"
+    ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "Daehan Precision requested priority customs clearance for container PSSU5173790 upon arrival as the sensors are needed for production; release obtained 2026-02-04.",
+    "kind": "urgent_clearance",
+    "shipment_id": "S-003",
+    "raised_by": "Jaehyun Lee",
+    "detected_date": "2026-01-26",
+    "sop_refs": [],
+    "evidence": [
+     "M-0225",
+     "M-0226"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Minseo Park decided to accept the 6-day delay without re-routing the cargo and to send Daehan Precision daily ETA updates until arrival in Busan.",
+    "date": "2026-01-23",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-003",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0224"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Send Daehan Precision a daily ETA update for container PSSU5173790 until the vessel arrives in Busan.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-003",
+    "evidence": [
+     "M-0224",
+     "M-0225"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Arrange priority customs clearance for HBL MFCIM260003 (container PSSU5173790) as soon as it arrives in Busan.",
+    "owner": "Sunwoo Choi",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-003",
+    "evidence": [
+     "M-0225",
+     "M-0226"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

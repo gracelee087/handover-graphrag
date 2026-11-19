@@ -1,0 +1,147 @@
+{
+ "thread": "TH-0277",
+ "usage": {
+  "input": 5242,
+  "output": 1442
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Hanseatic Marine Lines invoiced USD 900 detention for container HMLU6066254 (40HC), MBL HMLU260592, as the empty was returned 6 days after the 7-day free time (2 days typhoon terminal closure, 4 days Rapid Haul dispatch backlog).",
+    "kind": "detention",
+    "shipment_id": "S-016",
+    "raised_by": "Marcus Keller",
+    "detected_date": "2026-05-08",
+    "sop_refs": [],
+    "evidence": [
+     "M-0277",
+     "M-0278",
+     "M-0279",
+     "M-0280"
+    ]
+   },
+   {
+    "key": "ISS2",
+    "summary": "The USD 900 detention case for HMLU6066254 was not escalated to the Import Team Lead within 48 hours and was only discovered via the May KPI report.",
+    "kind": "other",
+    "shipment_id": "S-016",
+    "raised_by": "Minseo Park",
+    "detected_date": "2026-05-15",
+    "sop_refs": [],
+    "evidence": [
+     "M-0281"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Dispute 2 of the 6 detention days on HMLU6066254 with Hanseatic Marine Lines due to the typhoon terminal closure.",
+    "date": "2026-05-15",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-016",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0281"
+    ]
+   },
+   {
+    "key": "DEC2",
+    "summary": "Bill Rapid Haul Logistics for the other 4 detention days on HMLU6066254 caused by their dispatch backlog.",
+    "date": "2026-05-15",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-016",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0281"
+    ]
+   },
+   {
+    "key": "DEC3",
+    "summary": "Payment of the disputed portion of the USD 900 detention invoice is to be held until the carrier responds.",
+    "date": "2026-05-15",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-016",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0281"
+    ]
+   },
+   {
+    "key": "DEC4",
+    "summary": "Jiwoo Han handed over the carrier dispute with Hanseatic Marine Lines on HMLU6066254 to Daniel Cho ahead of leaving on 30 June.",
+    "date": "2026-06-23",
+    "decided_by": "Jiwoo Han",
+    "shipment_id": "S-016",
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0282"
+    ]
+   },
+   {
+    "key": "DEC5",
+    "summary": "Jiwoo Han handed over issuing the debit note to Rapid Haul Logistics for 4 detention days on HMLU6066254 to Junho Oh.",
+    "date": "2026-06-23",
+    "decided_by": "Jiwoo Han",
+    "shipment_id": "S-016",
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0283"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Hold payment of the disputed 2-day portion of the USD 900 detention invoice for HMLU6066254 until Hanseatic Marine Lines responds.",
+    "owner": "Junho Oh",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-016",
+    "evidence": [
+     "M-0281"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Pursue the 2-day typhoon closure dispute with Marcus Keller at Hanseatic Marine Lines through to a revised invoice or credit for HMLU6066254.",
+    "owner": "Daniel Cho",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-016",
+    "evidence": [
+     "M-0282"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Issue a debit note to Kyungho Nam at Rapid Haul Logistics for 4 of 6 detention days on HMLU6066254, with the carrier detention invoice as backup.",
+    "owner": "Junho Oh",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-016",
+    "evidence": [
+     "M-0283"
+    ]
+   },
+   {
+    "key": "TASK4",
+    "summary": "Ensure detention cases are escalated to the Import Team Lead within 48 hours going forward.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0281"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

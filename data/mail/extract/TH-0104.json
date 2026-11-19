@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0104",
+ "usage": {
+  "input": 3882,
+  "output": 186
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-03-30",
+    "what": "Free time (7 days) expires for container PSSU5689097 under HBL MFCIM260012 / MBL PSSU260444.",
+    "shipment_id": "S-012",
+    "evidence": [
+     "M-0105"
+    ]
+   }
+  ]
+ }
+}

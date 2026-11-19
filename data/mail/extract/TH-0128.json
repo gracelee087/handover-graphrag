@@ -1,0 +1,36 @@
+{
+ "thread": "TH-0128",
+ "usage": {
+  "input": 4009,
+  "output": 253
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Issue the invoice for shipment MFCIM260014 (MBL OCLU260518, container OCLU9895775) based on the attached cost sheet CostSheet_MFCIM260014.xlsx.",
+    "owner": "Junho Oh",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-014",
+    "evidence": [
+     "M-0130"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "File the signed POD_MFCIM260014.pdf with the shipment documents for MFCIM260014.",
+    "owner": "Hoon Jang",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-014",
+    "evidence": [
+     "M-0130"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

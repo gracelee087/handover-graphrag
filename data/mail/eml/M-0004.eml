@@ -1,0 +1,51 @@
+Message-ID: <M-0004@meridianfreight.example>
+Date: Tue, 13 Jan 2026 15:53:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Dongwook Kim <dongwook.kim@kimpark-customs.example>
+Cc: Haneul Park <haneul.park@kimpark-customs.example>
+Subject:
+ Customs clearance [MFCIM260001 / HMLU260037] Canned Tuna - HML Bremen 026W
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6768371311809348810=="
+
+--===============6768371311809348810==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Mr. Kim,
+
+Please find attached the full document set for the shipment below (Docs_MFCIM=
+260001.zip):
+
+HBL: MFCIM260001
+MBL: HMLU260037
+Container: HMLU9595553 (20GP)
+Vessel: HML Bremen voy 026W, Rotterdam -> Busan
+ETA Busan: 17 January 2026
+Cargo: canned tuna
+Consignee: Blue Harbor Foods
+
+Our proposed HS code is 1604.14. Please review it and let me know if you see =
+any issue with the classification.
+
+Kindly file the import declaration on arrival so we can move the container ou=
+t within the free time.
+
+Haneul, copying you for the file preparation.
+
+Thank you in advance.
+
+Best regards,
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============6768371311809348810==
+Content-Type: application/zip
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Docs_MFCIM260001.zip"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBEb2NzX01GQ0lNMjYwMDAxLnppcF0=
+
+--===============6768371311809348810==--

@@ -1,0 +1,98 @@
+{
+ "thread": "TH-0265",
+ "usage": {
+  "input": 4613,
+  "output": 1222
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Daehan Precision needed same-day customs clearance and delivery of industrial sensors in container HMLU6425478 (HBL MFCIM260019 / MBL HMLU260703) to avoid a production line stop the next day.",
+    "kind": "urgent_clearance",
+    "shipment_id": "S-019",
+    "raised_by": "Jaehyun Lee",
+    "detected_date": "2026-05-06",
+    "sop_refs": [],
+    "evidence": [
+     "M-0265",
+     "M-0266",
+     "M-0268"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Jiwoo Han accepted Harbor Gate's USD 150 expedite fee for same-day clearance of HBL MFCIM260019, to be invoiced to Meridian Freight.",
+    "date": "2026-05-06",
+    "decided_by": "Jiwoo Han",
+    "shipment_id": "S-019",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0266",
+     "M-0268"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Expedite import clearance of container HMLU6425478 (HBL MFCIM260019) the same day; release obtained at 15:40 on 2026-05-06.",
+    "owner": "Sunwoo Choi",
+    "due": "2026-05-06",
+    "status": "done",
+    "shipment_id": "S-019",
+    "evidence": [
+     "M-0266",
+     "M-0268"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Send the D/O for container HMLU6425478 (HBL MFCIM260019) to Jiwoo Han as soon as it is ready.",
+    "owner": "Sunwoo Choi",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-019",
+    "evidence": [
+     "M-0268"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Review and approve Thomas Kwon's request that Meridian absorb the USD 150 Harbor Gate expedite fee as goodwill instead of billing Daehan Precision.",
+    "owner": "Minseo Park",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-019",
+    "evidence": [
+     "M-0269"
+    ]
+   },
+   {
+    "key": "TASK4",
+    "summary": "Keep a truck ready for same-day pick-up of container HMLU6425478 and coordinate delivery with Soyeon Moon at Daehan Precision.",
+    "owner": "Kyungho Nam",
+    "due": "2026-05-06",
+    "status": "open",
+    "shipment_id": "S-019",
+    "evidence": [
+     "M-0267"
+    ]
+   }
+  ],
+  "deadlines": [
+   {
+    "date": "2026-05-06",
+    "what": "Same-day delivery of industrial sensors (container HMLU6425478) to Daehan Precision plant to avoid line stop on 2026-05-07.",
+    "shipment_id": "S-019",
+    "evidence": [
+     "M-0265",
+     "M-0266"
+    ]
+   }
+  ]
+ }
+}

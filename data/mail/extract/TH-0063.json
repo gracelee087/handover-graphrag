@@ -1,0 +1,36 @@
+{
+ "thread": "TH-0063",
+ "usage": {
+  "input": 3999,
+  "output": 417
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Junho Oh to proceed with invoicing for shipment MFCIM260007 (MBL HMLU260259, container HMLU3394415) using the attached CostSheet_MFCIM260007.xlsx.",
+    "owner": "Junho Oh",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-007",
+    "evidence": [
+     "M-0065"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Hoon Jang to file the signed POD_MFCIM260007.pdf with the shipment documents for MFCIM260007.",
+    "owner": "Hoon Jang",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-007",
+    "evidence": [
+     "M-0065"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

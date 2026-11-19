@@ -1,0 +1,25 @@
+{
+ "thread": "TH-0096",
+ "usage": {
+  "input": 3927,
+  "output": 325
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "File the cost sheet (CostSheet_MFCIM260010.xlsx) and signed POD (POD_MFCIM260010.pdf) for HBL MFCIM260010 / container HMLU9996621 in the shipment folder.",
+    "owner": "Hoon Jang",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-010",
+    "evidence": [
+     "M-0098"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

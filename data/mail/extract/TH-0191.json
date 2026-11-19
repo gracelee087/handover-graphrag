@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0191",
+ "usage": {
+  "input": 4496,
+  "output": 122
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-05-28",
+    "what": "Free time for container HMLU7660532 (7 days from arrival on 2026-05-22) expires; pick-up must be arranged before then to avoid charges.",
+    "shipment_id": "S-022",
+    "evidence": [
+     "M-0195"
+    ]
+   }
+  ]
+ }
+}

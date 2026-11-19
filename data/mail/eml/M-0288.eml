@@ -1,0 +1,50 @@
+Message-ID: <M-0288@meridianfreight.example>
+Date: Wed, 03 Jun 2026 11:02:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Minseo Park <minseo.park@meridianfreight.example>,
+ Grace Yoon <grace.yoon@meridianfreight.example>
+Subject: Monthly import KPI - May 2026
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============0313444981126131709=="
+
+--===============0313444981126131709==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Minseo, Grace,
+
+Please find attached the import KPI report for May 2026 (Import_KPI_2026-05.x=
+lsx).
+
+The sheet covers three areas:
+
+1. Files closed: the count of import files closed during May is in the first =
+tab, broken down by operator.
+
+2. Demurrage/detention incidents: S-009 and S-015 are both settled and closed=
+ out. S-016 is still open. The detention invoice for that file has not been s=
+ettled yet, so I have kept it on the open list for follow-up.
+
+3. Broker lead times: the third tab shows customs broker lead times for the m=
+onth, per broker.
+
+The S-016 detention invoice is the one item that needs follow-up. I'd like to=
+ hand it over properly before I leave on 30 June so it doesn't fall through t=
+he cracks.
+
+Happy to go through the figures if you have any questions.
+
+Best regards,
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============0313444981126131709==
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Import_KPI_2026-05.xlsx"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBJbXBvcnRfS1BJXzIwMjYtMDUueGxzeF0=
+
+--===============0313444981126131709==--

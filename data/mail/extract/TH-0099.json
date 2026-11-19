@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0099",
+ "usage": {
+  "input": 3935,
+  "output": 197
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-03-25",
+    "what": "Free time (7 days) expires for container OCLU3488652 under HBL MFCIM260011 / MBL OCLU260407 at Busan.",
+    "shipment_id": "S-011",
+    "evidence": [
+     "M-0100"
+    ]
+   }
+  ]
+ }
+}

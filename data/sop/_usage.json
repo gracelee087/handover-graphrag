@@ -1,0 +1,7 @@
+{
+ "model": "claude-opus-5-5",
+ "sops": 5,
+ "input_tokens": 8714,
+ "output_tokens": 5271,
+ "cost_usd_list_price": 0.14
+}

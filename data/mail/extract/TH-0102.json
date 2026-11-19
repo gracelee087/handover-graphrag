@@ -1,0 +1,26 @@
+{
+ "thread": "TH-0102",
+ "usage": {
+  "input": 3790,
+  "output": 189
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "File the import declaration for HBL MFCIM260011 / MBL OCLU260407 (container OCLU3488652, infusion pumps, HS 9018.90) on arrival of OCL Ningbo Star voy 2602E and keep Meridian updated on clearance status.",
+    "owner": "Sunwoo Choi",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-011",
+    "evidence": [
+     "M-0102",
+     "M-0103"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

@@ -1,0 +1,589 @@
+[
+ {
+  "id": "Q01",
+  "type": "factual",
+  "question": "What is the container number for HBL MFCIM260009?",
+  "gold": "Container PSSU4527862 (40RF).",
+  "must_contain": [
+   "PSSU4527862"
+  ],
+  "basis": [
+   "S-009"
+  ]
+ },
+ {
+  "id": "Q02",
+  "type": "factual",
+  "question": "On which vessel and voyage was MBL HMLU260481 shipped?",
+  "gold": "HML Lubeck voyage 031W.",
+  "must_contain": [
+   "HML Lubeck",
+   "031W"
+  ],
+  "basis": [
+   "S-013"
+  ]
+ },
+ {
+  "id": "Q03",
+  "type": "factual",
+  "question": "Which customs broker handled the clearance of HBL MFCIM260006?",
+  "gold": "Kim & Park Customs Services.",
+  "must_contain": [
+   "Kim & Park"
+  ],
+  "basis": [
+   "S-006"
+  ]
+ },
+ {
+  "id": "Q04",
+  "type": "factual",
+  "question": "How many days of free time did HBL MFCIM260003 have and on which date did it expire?",
+  "gold": "7 days, expiring 2026-02-04.",
+  "must_contain": [
+   "7",
+   "2026-02-04"
+  ],
+  "basis": [
+   "S-003"
+  ]
+ },
+ {
+  "id": "Q05",
+  "type": "factual",
+  "question": "What cargo and HS code were declared for HBL MFCIM260017?",
+  "gold": "diagnostic reagent kits, HS 3822.00.",
+  "must_contain": [
+   "3822.00"
+  ],
+  "basis": [
+   "S-017"
+  ]
+ },
+ {
+  "id": "Q06",
+  "type": "factual",
+  "question": "Who handles the demurrage and detention desk at Hanseatic Marine Lines?",
+  "gold": "Marcus Keller (Demurrage & Detention Desk).",
+  "must_contain": [
+   "Marcus Keller"
+  ],
+  "basis": [
+   "P-014"
+  ]
+ },
+ {
+  "id": "Q07",
+  "type": "factual",
+  "question": "According to SOP-04, what makes an exception Severity 1?",
+  "gold": "Severity 1: potential cost over USD 500 or delivery delay over 5 days; Severity 2: all other exceptions.",
+  "must_contain": [
+   "500",
+   "5 days"
+  ],
+  "basis": [
+   "SOP-04-C1.2"
+  ]
+ },
+ {
+  "id": "Q08",
+  "type": "factual",
+  "question": "What was the demurrage invoice amount on HBL MFCIM260009 and for how many days?",
+  "gold": "USD 1,120 for 4 days of demurrage.",
+  "must_contain": [
+   "1,120",
+   "4 days"
+  ],
+  "basis": [
+   "I-03"
+  ]
+ },
+ {
+  "id": "Q09",
+  "type": "aggregate",
+  "question": "How many shipments in the mailbox were consigned to Blue Harbor Foods? List their HBL numbers.",
+  "gold": "9 shipments: MFCIM260001, MFCIM260005, MFCIM260006, MFCIM260009, MFCIM260010, MFCIM260014, MFCIM260021, MFCIM260023, MFCIM260024.",
+  "must_contain": [
+   "9"
+  ],
+  "basis": [
+   "S-001",
+   "S-005",
+   "S-006",
+   "S-009",
+   "S-010",
+   "S-014",
+   "S-021",
+   "S-023",
+   "S-024"
+  ]
+ },
+ {
+  "id": "Q10",
+  "type": "aggregate",
+  "question": "How many e-mails did Jiwoo Han send in total?",
+  "gold": "133 e-mails.",
+  "must_contain": [
+   "133"
+  ],
+  "basis": [
+   "P-001"
+  ]
+ },
+ {
+  "id": "Q11",
+  "type": "aggregate",
+  "question": "How many shipments were carried by Pacific Star Shipping?",
+  "gold": "8 shipments.",
+  "must_contain": [
+   "8"
+  ],
+  "basis": [
+   "S-003",
+   "S-006",
+   "S-009",
+   "S-012",
+   "S-015",
+   "S-018",
+   "S-021",
+   "S-024"
+  ]
+ },
+ {
+  "id": "Q12",
+  "type": "aggregate",
+  "question": "Which shipments moved in reefer (40RF) containers?",
+  "gold": "S-006 (HBL MFCIM260006), S-009 (HBL MFCIM260009), S-023 (HBL MFCIM260023), S-024 (HBL MFCIM260024).",
+  "must_contain": [
+   "MFCIM260006",
+   "MFCIM260009",
+   "MFCIM260023",
+   "MFCIM260024"
+  ],
+  "basis": [
+   "S-006",
+   "S-009",
+   "S-023",
+   "S-024"
+  ]
+ },
+ {
+  "id": "Q13",
+  "type": "aggregate",
+  "question": "How many SOP documents and how many clauses in total are in the SOP set?",
+  "gold": "5 SOP documents with 52 clauses.",
+  "must_contain": [
+   "5",
+   "52"
+  ],
+  "basis": [
+   "SOP-01",
+   "SOP-02",
+   "SOP-03",
+   "SOP-04",
+   "SOP-05"
+  ]
+ },
+ {
+  "id": "Q14",
+  "type": "aggregate",
+  "question": "Which customs brokerage companies appear in the mailbox, and which consignees does each one serve?",
+  "gold": "Harbor Gate Customs Brokerage (Daehan Precision, Seoul Medica Supplies) and Kim & Park Customs Services (Blue Harbor Foods).",
+  "must_contain": [
+   "Harbor Gate",
+   "Kim & Park"
+  ],
+  "basis": [
+   "ORG-HGC",
+   "ORG-KPC"
+  ]
+ },
+ {
+  "id": "Q15",
+  "type": "aggregate",
+  "question": "Which shipments had a problem or exception reported (delay, demurrage, inspection, damage, document issue)? List the shipment ids.",
+  "gold": "S-003, S-006, S-009, S-011, S-013, S-015, S-016, S-017, S-019, S-021 (10 shipments).",
+  "must_contain": [
+   "S-003",
+   "S-006",
+   "S-009",
+   "S-011",
+   "S-013"
+  ],
+  "basis": [
+   "S-003",
+   "S-006",
+   "S-009",
+   "S-011",
+   "S-013",
+   "S-015",
+   "S-016",
+   "S-017",
+   "S-019",
+   "S-021"
+  ]
+ },
+ {
+  "id": "Q16",
+  "type": "aggregate",
+  "question": "How many open tasks are assigned to Daniel Cho, and what are they?",
+  "gold": "5 open tasks: Collect surveyor report and submit formal claim to Orient Container Line. (due 2026-07-10) | Follow up Hanseatic D&D desk on detention dispute for the two terminal-closure days. (due 2026-07-03) | Obtain signed POD for S-024 and hand cost sheet to Accounting. (due 2026-07-01) | Send Arrival Notice and request documents for S-025 (ETA 29 June). (due 2026-06-26) | Update the SOP-03 free-time table after Pacific Star's new reefer free time (5 days from July). (due 2026-07-07)",
+  "must_contain": [
+   "5"
+  ],
+  "basis": [
+   "T-01",
+   "T-02",
+   "T-04",
+   "T-05",
+   "T-07"
+  ]
+ },
+ {
+  "id": "Q17",
+  "type": "multihop",
+  "question": "Who decided how the demurrage on HBL MFCIM260009 would be split, and what exactly was decided?",
+  "gold": "Minseo Park (Import Team Lead) on 2026-03-24: Meridian absorbs 50% of USD 1,120 demurrage (USD 560) because the extension request was late; the rest billed to Blue Harbor Foods.",
+  "must_contain": [
+   "Minseo Park",
+   "560",
+   "50"
+  ],
+  "basis": [
+   "D-03",
+   "I-03"
+  ]
+ },
+ {
+  "id": "Q18",
+  "type": "multihop",
+  "question": "What did Grace Yoon decide about the wet-damage claim on HBL MFCIM260017, and when?",
+  "gold": "On 2026-05-01: Appoint an independent surveyor; pursue the claim against Orient Container Line; Seoul Medica is kept informed weekly.",
+  "must_contain": [
+   "surveyor",
+   "Orient Container Line"
+  ],
+  "basis": [
+   "D-07",
+   "I-07"
+  ]
+ },
+ {
+  "id": "Q19",
+  "type": "multihop",
+  "question": "Which tasks were handed over to Daniel Cho, and which shipment does each one concern?",
+  "gold": "Collect surveyor report and submit formal claim to Orient Container Line. -> S-017 | Follow up Hanseatic D&D desk on detention dispute for the two terminal-closure days. -> S-016 | Obtain signed POD for S-024 and hand cost sheet to Accounting. -> S-024 | Send Arrival Notice and request documents for S-025 (ETA 29 June). -> S-025 | Update the SOP-03 free-time table after Pacific Star's new reefer free time (5 days from July). -> no shipment",
+  "must_contain": [
+   "S-017",
+   "S-024",
+   "S-025"
+  ],
+  "basis": [
+   "T-01",
+   "T-02",
+   "T-04",
+   "T-05",
+   "T-07"
+  ]
+ },
+ {
+  "id": "Q20",
+  "type": "multihop",
+  "question": "Who is responsible for issuing the debit note to Rapid Haul Logistics for the detention days, and when is it due?",
+  "gold": "Junho Oh (Accounts Payable Clerk), due 2026-07-15.",
+  "must_contain": [
+   "Junho Oh",
+   "2026-07-15"
+  ],
+  "basis": [
+   "T-03",
+   "I-10"
+  ]
+ },
+ {
+  "id": "Q21",
+  "type": "multihop",
+  "question": "On HBL MFCIM260015, which shipper was asked to arrange the telex release and who was the contact person?",
+  "gold": "Nordlicht Maschinenbau GmbH, contact Klaus Richter (Export Sales).",
+  "must_contain": [
+   "Klaus Richter"
+  ],
+  "basis": [
+   "I-06",
+   "S-015"
+  ]
+ },
+ {
+  "id": "Q22",
+  "type": "multihop",
+  "question": "What policy did Grace Yoon decide for Blue Harbor Foods reefer imports, and from when does it apply?",
+  "gold": "From Q2 2026 all reefer imports for Blue Harbor Foods are routed via Kim & Park's Busan office only. (decided 2026-04-28).",
+  "must_contain": [
+   "Kim & Park",
+   "Q2"
+  ],
+  "basis": [
+   "D-11"
+  ]
+ },
+ {
+  "id": "Q23",
+  "type": "multihop",
+  "question": "Which carrier declined the free-time extension on the Blue Harbor Foods frozen salmon shipment, and who at the carrier declined it?",
+  "gold": "Pacific Star Shipping; Aiko Mori (Equipment Control).",
+  "must_contain": [
+   "Pacific Star",
+   "Aiko Mori"
+  ],
+  "basis": [
+   "I-03",
+   "S-009"
+  ]
+ },
+ {
+  "id": "Q24",
+  "type": "multihop",
+  "question": "Who reported the manifest discrepancy on HBL MFCIM260021, how big was it, and how was it resolved?",
+  "gold": "Dongwook Kim (Kim & Park Customs Services) reported 18 pallets on the manifest vs 20 on the B/L; Minseo Park decided: File the manifest correction at Meridian's cost (USD 90) and ask Pacific Star to confirm the correction in writing.",
+  "must_contain": [
+   "18",
+   "20",
+   "90"
+  ],
+  "basis": [
+   "I-09",
+   "D-09"
+  ]
+ },
+ {
+  "id": "Q25",
+  "type": "compliance",
+  "question": "Was the free-time extension request on HBL MFCIM260009 compliant with SOP-03 section 4.2? Explain.",
+  "gold": "No. Extension request sent on expiry day (SOP-03 4.2 requires 2 working days before). Escalation took 5 days (SOP-04 3.1 requires 48h). Clause 4.2: The extension request must be sent no later than 2 working days before free time expires; requests after expiry are generally refused by carriers.",
+  "must_contain": [
+   "No",
+   "2 working days"
+  ],
+  "basis": [
+   "I-03",
+   "SOP-03-C4.2"
+  ]
+ },
+ {
+  "id": "Q26",
+  "type": "compliance",
+  "question": "Which SOP clause requires Severity-1 exceptions to be escalated within 48 hours, and was the detention case on HBL MFCIM260016 escalated in time?",
+  "gold": "SOP-04 section 3.1 (Severity 1 exceptions are escalated to the Import Team Lead in writing within 48 hours of detection.). No: No written empty-return date (SOP-03 5.1); never escalated within 48h (SOP-04 3.1); consignee informed after 2 days (SOP-04 2.1).",
+  "must_contain": [
+   "3.1",
+   "48",
+   "No"
+  ],
+  "basis": [
+   "SOP-04-C3.1",
+   "I-10"
+  ]
+ },
+ {
+  "id": "Q27",
+  "type": "compliance",
+  "question": "Did the delivery order request on HBL MFCIM260015 comply with SOP-02 section 2.4? What happened?",
+  "gold": "No. D/O requested before telex release was confirmed; carrier refused release, 2 days lost, demurrage USD 560. D/O requested before release confirmation (SOP-02 2.4). Escalation itself was on time.",
+  "must_contain": [
+   "No",
+   "telex release"
+  ],
+  "basis": [
+   "I-06",
+   "SOP-02-C2.4"
+  ]
+ },
+ {
+  "id": "Q28",
+  "type": "compliance",
+  "question": "Which SOP clause governs who pays the demurrage on HBL MFCIM260009, and how was it applied?",
+  "gold": "SOP-03 section 4.3 (Demurrage caused by consignee document delay is billed to the consignee; demurrage caused by Meridian's error is absorbed with Team Lead approval and recorded as a cost-absorption decision.). Applied in the decision: Meridian absorbs 50% of USD 1,120 demurrage (USD 560) because the extension request was late; the rest billed to Blue Harbor Foods.",
+  "must_contain": [
+   "4.3",
+   "560"
+  ],
+  "basis": [
+   "SOP-03-C4.3",
+   "D-03"
+  ]
+ },
+ {
+  "id": "Q29",
+  "type": "compliance",
+  "question": "Was the claim notice for the wet damage on HBL MFCIM260017 sent within the deadline in SOP-04 section 4.1?",
+  "gold": "Yes. Claim notice sent the next day; photos and survey arranged; escalated to Ops Manager. Clause 4.1: Cargo damage or shortage noted at delivery is notified to the carrier in writing within 3 days of delivery to preserve recourse.",
+  "must_contain": [
+   "Yes",
+   "3 days"
+  ],
+  "basis": [
+   "I-07",
+   "SOP-04-C4.1"
+  ]
+ },
+ {
+  "id": "Q30",
+  "type": "compliance",
+  "question": "Which SOP rules did the same-day urgent clearance on HBL MFCIM260019 breach?",
+  "gold": "Trucking booked same day (SOP-01 5.3 requires 1 working day notice) and expedite fee incurred without approved quotation (SOP-05 2.2).",
+  "must_contain": [
+   "5.3",
+   "2.2"
+  ],
+  "basis": [
+   "I-08",
+   "SOP-01-C5.3",
+   "SOP-05-C2.2"
+  ]
+ },
+ {
+  "id": "Q31",
+  "type": "compliance",
+  "question": "What reefer free time does SOP-03 section 2.1 give for Pacific Star Shipping, and which open task changes it?",
+  "gold": "4 days reefer free time. Task: Update the SOP-03 free-time table after Pacific Star's new reefer free time (5 days from July). (owner Daniel Cho, due 2026-07-07).",
+  "must_contain": [
+   "4 days",
+   "5 days"
+  ],
+  "basis": [
+   "SOP-03-C2.1",
+   "T-07"
+  ]
+ },
+ {
+  "id": "Q32",
+  "type": "compliance",
+  "question": "Which SOP clause requires the trucker's empty-return date to be confirmed in writing, and in which case was that missing?",
+  "gold": "SOP-03 section 5.1 (Trucker confirms empty return date in writing; operator records the return date to close detention exposure.). Missing on S-016 (HBL MFCIM260016): Empty container returned 6 days late by trucker; detention invoice USD 900; no written return date recorded.",
+  "must_contain": [
+   "5.1",
+   "MFCIM260016"
+  ],
+  "basis": [
+   "SOP-03-C5.1",
+   "I-10"
+  ]
+ },
+ {
+  "id": "Q33",
+  "type": "handover",
+  "question": "What is still outstanding on HBL MFCIM260024?",
+  "gold": "Obtain signed POD for S-024 and hand cost sheet to Accounting. (due 2026-07-01, owner Daniel Cho).",
+  "must_contain": [
+   "POD",
+   "cost sheet"
+  ],
+  "basis": [
+   "T-04",
+   "S-024"
+  ]
+ },
+ {
+  "id": "Q34",
+  "type": "handover",
+  "question": "What must be done first for HBL MFCIM260025 and by when?",
+  "gold": "Send Arrival Notice and request documents for S-025 (ETA 29 June). Due 2026-06-26; ETA 2026-06-29.",
+  "must_contain": [
+   "Arrival Notice",
+   "2026-06-26"
+  ],
+  "basis": [
+   "T-05",
+   "S-025"
+  ]
+ },
+ {
+  "id": "Q35",
+  "type": "handover",
+  "question": "Which customer files does Daniel Cho take over from Jiwoo Han, from which date, and who decided it?",
+  "gold": "Daniel Cho takes over all open Daehan Precision and Seoul Medica files from Jiwoo Han effective 1 July 2026. Decided by Minseo Park on 2026-06-19.",
+  "must_contain": [
+   "Daehan Precision",
+   "Seoul Medica",
+   "1 July"
+  ],
+  "basis": [
+   "D-12"
+  ]
+ },
+ {
+  "id": "Q36",
+  "type": "handover",
+  "question": "What watch-outs did Jiwoo Han list in the handover summary for the successor?",
+  "gold": "Telex release confirmation before D/O, free-time reminders, and written empty-return dates from truckers.",
+  "must_contain": [
+   "telex",
+   "free-time",
+   "empty"
+  ],
+  "basis": [
+   "TH-handover"
+  ]
+ },
+ {
+  "id": "Q37",
+  "type": "handover",
+  "question": "Which tasks are still open for the detention case on the Seoul Medica syringes shipment, and who owns each?",
+  "gold": "Follow up Hanseatic D&D desk on detention dispute for the two terminal-closure days. -> Daniel Cho (due 2026-07-03) | Issue debit note to Rapid Haul Logistics for 4 days detention. -> Junho Oh (due 2026-07-15)",
+  "must_contain": [
+   "Daniel Cho",
+   "Junho Oh"
+  ],
+  "basis": [
+   "T-02",
+   "T-03"
+  ]
+ },
+ {
+  "id": "Q38",
+  "type": "handover",
+  "question": "What does Grace Yoon plan to discuss with Harbor Gate Customs Brokerage in the Q2 vendor review, and why?",
+  "gold": "Q2 vendor review: discuss recorded non-conformance with Harbor Gate Customs Brokerage. Background: Broker filed under HS 8482.99 instead of the consignee's usual 8482.10 without written confirmation; duty difference USD 380. Decision: Keep the filed HS code (broker's classification confirmed correct); record a non-conformance against Harbor Gate for filing without written confirmation.",
+  "must_contain": [
+   "non-conformance",
+   "HS"
+  ],
+  "basis": [
+   "T-06",
+   "I-05",
+   "D-05"
+  ]
+ },
+ {
+  "id": "Q39",
+  "type": "handover",
+  "question": "Which open tasks are due before 10 July 2026?",
+  "gold": "Follow up Hanseatic D&D desk on detention dispute for the two terminal-closure days. (due 2026-07-03, Daniel Cho) | Obtain signed POD for S-024 and hand cost sheet to Accounting. (due 2026-07-01, Daniel Cho) | Send Arrival Notice and request documents for S-025 (ETA 29 June). (due 2026-06-26, Daniel Cho) | Update the SOP-03 free-time table after Pacific Star's new reefer free time (5 days from July). (due 2026-07-07, Daniel Cho) | File Pacific Star's written manifest-correction confirmation in the S-021 document register. (due 2026-07-04, Hoon Jang)",
+  "must_contain": [
+   "2026-07-03",
+   "2026-07-01",
+   "2026-06-26"
+  ],
+  "basis": [
+   "T-02",
+   "T-04",
+   "T-05",
+   "T-07",
+   "T-08"
+  ]
+ },
+ {
+  "id": "Q40",
+  "type": "handover",
+  "question": "Which shipment is still before arrival at the time of the handover, and what is its ETA?",
+  "gold": "S-025 (HBL MFCIM260025, diagnostic reagent kits), ETA 2026-06-29.",
+  "must_contain": [
+   "MFCIM260025",
+   "2026-06-29"
+  ],
+  "basis": [
+   "S-025"
+  ]
+ }
+]

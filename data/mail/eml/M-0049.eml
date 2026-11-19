@@ -1,0 +1,52 @@
+Message-ID: <M-0049@meridianfreight.example>
+Date: Mon, 16 Feb 2026 14:35:00 +0900
+From: Jiwoo Han <jiwoo.han@meridianfreight.example>
+To: Junho Oh <junho.oh@meridianfreight.example>
+Cc: Hoon Jang <hoon.jang@meridianfreight.example>
+Subject: Re: Trucking & delivery [MFCIM260005 / OCLU260185] Canned Tuna - OCL
+ Qingdao Star 2609E
+In-Reply-To: <M-0048@meridianfreight.example>
+References: <M-0047@meridianfreight.example> <M-0048@meridianfreight.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1196693646288118267=="
+
+--===============1196693646288118267==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Junho,
+
+Shipment MFCIM260005 (MBL OCLU260185, container OCLU2232702) has been deliver=
+ed and Blue Harbor Foods has confirmed the cargo was received in good order.
+
+Attached please find:
+- CostSheet_MFCIM260005.xlsx - cost sheet for invoicing
+- POD_MFCIM260005.pdf - signed POD
+
+Please go ahead with invoicing. Hoon, copying you so the signed POD can be fi=
+led with the shipment documents.
+
+Let me know if anything is missing.
+
+Thanks,
+Jiwoo Han
+Senior Import Operator
+Meridian Freight Co.
+
+--===============1196693646288118267==
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="POD_MFCIM260005.pdf"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBQT0RfTUZDSU0yNjAwMDUucGRmXQ==
+
+--===============1196693646288118267==
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="CostSheet_MFCIM260005.xlsx"
+MIME-Version: 1.0
+
+W3BsYWNlaG9sZGVyIGZvciBDb3N0U2hlZXRfTUZDSU0yNjAwMDUueGxzeF0=
+
+--===============1196693646288118267==--

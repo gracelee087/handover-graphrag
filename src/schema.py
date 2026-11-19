@@ -95,6 +95,10 @@ EXTRACTION_PATTERNS = [
     ("Rule", "APPLIES_TO_ROLE", "Role"),
 ]
 
+ISSUE_KINDS = ["vessel_delay", "missing_documents", "demurrage", "detention", "customs_inspection",
+               "hs_code_dispute", "do_release_hold", "cargo_damage_claim", "urgent_clearance",
+               "manifest_discrepancy", "other"]
+
 # Link produced in link_sop.py (vector similarity + LLM confirm), not by extraction
 LINK_RELS = [
     ("Issue", "GOVERNED_BY", "Clause"),
@@ -130,6 +134,19 @@ VECTOR_INDEXES = {
     "chunk_embedding": (CHUNK_LABEL, CHUNK_EMBEDDING_PROP),
     "clause_embedding": ("Clause", "embedding"),
 }
+
+
+def vector_index_ddl(name: str, label: str, prop: str) -> str:
+    """Relate / Neo4j 5 compatible vector index DDL (verified on relate-db 1.1.0)."""
+    return (
+        f"CREATE VECTOR INDEX {name} IF NOT EXISTS FOR (n:{label}) ON (n.{prop}) "
+        f"OPTIONS {{indexConfig: {{`vector.dimensions`: {EMBEDDING_DIM}, "
+        f"`vector.similarity_function`: 'cosine'}}}}"
+    )
+
+
+# Relate store (hackathon deliverable: single-file persistent store, committed to git)
+STORE_PATH = "data/handover.rl"
 
 # LLM (Anthropic). Key is read from ANTHROPIC_API_KEY by the SDK.
 LLM_MODEL = "claude-opus-5-5"

@@ -1,0 +1,95 @@
+{
+ "thread": "TH-0270",
+ "usage": {
+  "input": 5064,
+  "output": 1302
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "Busan customs manifest for MBL PSSU260777 / HBL MFCIM260021 (container PSSU2430001, canned tuna) showed 18 pallets versus 20 pallets on the B/L, blocking the import declaration and requiring a post-arrival manifest correction.",
+    "kind": "manifest_discrepancy",
+    "shipment_id": "S-021",
+    "raised_by": "Dongwook Kim",
+    "detected_date": "2026-05-18",
+    "sop_refs": [
+     "SOP-02 3.2"
+    ],
+    "evidence": [
+     "M-0270",
+     "M-0271",
+     "M-0272",
+     "M-0273",
+     "M-0275"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Minseo Park decided to file the post-arrival manifest correction to 20 pallets at Meridian's cost of USD 90 rather than delay the cargo over cost allocation, and to request written confirmation of the error from Pacific Star Shipping.",
+    "date": "2026-05-18",
+    "decided_by": "Minseo Park",
+    "shipment_id": "S-021",
+    "resolves": "ISS1",
+    "sop_refs": [],
+    "evidence": [
+     "M-0274",
+     "M-0276"
+    ]
+   },
+   {
+    "key": "DEC2",
+    "summary": "Jiwoo Han handed over the outstanding follow-up on S-021 (filing Pacific Star's written manifest-error confirmation in the register) to Hoon Jang ahead of leaving at the end of June.",
+    "date": "2026-06-22",
+    "decided_by": "Jiwoo Han",
+    "shipment_id": "S-021",
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0276"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Ryan Tanaka (Pacific Star Shipping) to file the manifest correction for MBL PSSU260777 from 18 to 20 pallets.",
+    "owner": "Ryan Tanaka",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-021",
+    "evidence": [
+     "M-0271",
+     "M-0275"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Dongwook Kim to file the import declaration for HBL MFCIM260021 once the corrected manifest is in the system.",
+    "owner": "Dongwook Kim",
+    "due": null,
+    "status": "done",
+    "shipment_id": "S-021",
+    "evidence": [
+     "M-0270",
+     "M-0275"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Hoon Jang to file Pacific Star Shipping's outstanding written confirmation of the 18-vs-20 pallet manifest error and correction in the register against S-021 once received.",
+    "owner": "Hoon Jang",
+    "due": null,
+    "status": "open",
+    "shipment_id": "S-021",
+    "evidence": [
+     "M-0274",
+     "M-0276"
+    ]
+   }
+  ],
+  "deadlines": []
+ }
+}

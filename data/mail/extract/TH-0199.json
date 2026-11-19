@@ -1,0 +1,22 @@
+{
+ "thread": "TH-0199",
+ "usage": {
+  "input": 3932,
+  "output": 272
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [],
+  "tasks": [],
+  "deadlines": [
+   {
+    "date": "2026-06-08",
+    "what": "Free time (10 days) for reefer container OCLU5648055 under HBL MFCIM260023 / MBL OCLU260851 expires.",
+    "shipment_id": "S-023",
+    "evidence": [
+     "M-0200"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "per_sop": {
+  "SOP-01": {
+   "sections": 6,
+   "clauses": 16,
+   "empty_clauses": []
+  },
+  "SOP-02": {
+   "sections": 4,
+   "clauses": 9,
+   "empty_clauses": []
+  },
+  "SOP-03": {
+   "sections": 5,
+   "clauses": 11,
+   "empty_clauses": []
+  },
+  "SOP-04": {
+   "sections": 4,
+   "clauses": 9,
+   "empty_clauses": []
+  },
+  "SOP-05": {
+   "sections": 4,
+   "clauses": 7,
+   "empty_clauses": []
+  }
+ },
+ "recall": 1.0,
+ "missing": [],
+ "extra": []
+}

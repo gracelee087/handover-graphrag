@@ -1,0 +1,82 @@
+{
+ "thread": "TH-0290",
+ "usage": {
+  "input": 3933,
+  "output": 919
+ },
+ "extraction": {
+  "issues": [],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Minseo Park decided that Daniel Cho takes over all open Daehan Precision and Seoul Medica import files from 2026-07-01 as single point of contact, following Jiwoo Han's departure on 30 June.",
+    "date": "2026-06-19",
+    "decided_by": "Minseo Park",
+    "shipment_id": null,
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0290"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Jiwoo Han to prepare handover notes for Daniel Cho covering open tasks, carrier and broker contacts, and watch-outs for the Daehan Precision and Seoul Medica files.",
+    "owner": "Jiwoo Han",
+    "due": "2026-06-30",
+    "status": "done",
+    "shipment_id": null,
+    "evidence": [
+     "M-0290",
+     "M-0291"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Daniel Cho to block time with Jiwoo Han to go through the handover.",
+    "owner": "Daniel Cho",
+    "due": null,
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0290"
+    ]
+   },
+   {
+    "key": "TASK3",
+    "summary": "Daniel Cho to ensure the Arrival Notice for S-025 is sent to the consignee ahead of arrival.",
+    "owner": "Daniel Cho",
+    "due": null,
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0292"
+    ]
+   },
+   {
+    "key": "TASK4",
+    "summary": "Daniel Cho to keep chasing the outstanding POD for S-024 so the file can be closed.",
+    "owner": "Daniel Cho",
+    "due": null,
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0292"
+    ]
+   }
+  ],
+  "deadlines": [
+   {
+    "date": "2026-06-30",
+    "what": "Jiwoo Han's last day; handover to Daniel Cho must be completed before she leaves.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0290",
+     "M-0291"
+    ]
+   }
+  ]
+ }
+}

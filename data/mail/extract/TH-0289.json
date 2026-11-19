@@ -1,0 +1,71 @@
+{
+ "thread": "TH-0289",
+ "usage": {
+  "input": 3416,
+  "output": 898
+ },
+ "extraction": {
+  "issues": [
+   {
+    "key": "ISS1",
+    "summary": "An HS-code non-conformance was recorded against vendor Harbor Gate this quarter and is to be reviewed at the Q2 vendor review, including whether Harbor Gate has provided a satisfactory explanation and corrective action.",
+    "kind": "hs_code_dispute",
+    "shipment_id": null,
+    "raised_by": "Grace Yoon",
+    "detected_date": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0289"
+    ]
+   }
+  ],
+  "decisions": [
+   {
+    "key": "DEC1",
+    "summary": "Grace Yoon decided that Minseo Park will take over the Harbor Gate non-conformance follow-up from the import side after Jiwoo Han leaves on 30 June.",
+    "date": "2026-06-18",
+    "decided_by": "Grace Yoon",
+    "shipment_id": null,
+    "resolves": null,
+    "sop_refs": [],
+    "evidence": [
+     "M-0289"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "key": "TASK1",
+    "summary": "Jiwoo Han to bring notes and related Harbor Gate correspondence on the HS-code non-conformance to the Q2 vendor review.",
+    "owner": "Jiwoo Han",
+    "due": null,
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0289"
+    ]
+   },
+   {
+    "key": "TASK2",
+    "summary": "Minseo Park to be ready to take over the Harbor Gate follow-up from the import side once Jiwoo Han has left.",
+    "owner": "Minseo Park",
+    "due": "2026-06-30",
+    "status": "open",
+    "shipment_id": null,
+    "evidence": [
+     "M-0289"
+    ]
+   }
+  ],
+  "deadlines": [
+   {
+    "date": "2026-06-30",
+    "what": "Harbor Gate HS-code non-conformance item to be settled before Jiwoo Han leaves on 30 June.",
+    "shipment_id": null,
+    "evidence": [
+     "M-0289"
+    ]
+   }
+  ]
+ }
+}
