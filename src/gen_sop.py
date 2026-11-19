@@ -19,6 +19,7 @@ import json
 import re
 import sys
 import unicodedata
+from datetime import datetime, timezone
 from pathlib import Path
 
 import anthropic
@@ -136,6 +137,7 @@ class SopPDF(FPDF):
 
 def to_pdf(sop: dict, rec: dict, path: Path) -> None:
     pdf = SopPDF(sop)
+    pdf.set_creation_date(datetime(2026, 1, 5, 9, 0, tzinfo=timezone.utc))   # deterministic bytes across re-runs
     pdf.alias_nb_pages()
     pdf.add_page()
     pdf.set_font("Helvetica", "B", 18)
