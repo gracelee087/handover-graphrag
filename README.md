@@ -13,7 +13,7 @@ and SOPs.
 The Relate store `data/handover.rl` (≈8 MB) and the whole corpus are committed. No API key is needed to explore the graph:
 
 ```bash
-git clone <this repo> && cd handover-graphrag
+git clone https://github.com/gracelee087/handover-graphrag.git && cd handover-graphrag
 uv sync                                   # Python 3.13; installs relate-db, sentence-transformers, docling ...
 uv run python src/store.py                # prints indexes + node counts of data/handover.rl
 relate serve --bolt 7687 --database ./data/handover.rl --read-only   # optional: open it in any Cypher client
